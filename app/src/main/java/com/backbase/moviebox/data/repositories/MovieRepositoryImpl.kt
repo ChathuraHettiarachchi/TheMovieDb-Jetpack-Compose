@@ -1,6 +1,5 @@
 package com.backbase.moviebox.data.repositories
 
-import com.backbase.moviebox.common.Constants
 import com.backbase.moviebox.data.remote.MovieDbAPI
 import com.backbase.moviebox.data.remote.dto.GenreDto
 import com.backbase.moviebox.data.remote.dto.MovieDetailsDto

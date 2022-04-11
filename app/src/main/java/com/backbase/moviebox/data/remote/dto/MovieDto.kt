@@ -1,6 +1,7 @@
 package com.backbase.moviebox.data.remote.dto
 
 import com.backbase.moviebox.domain.model.Movie
+import com.backbase.moviebox.domain.model.MoviePage
 
 data class MovieDto(
     val dates: Dates,
@@ -48,4 +49,13 @@ fun MovieDto.toMovies(): List<Movie> {
             vote_count = it.vote_count
         )
     }.toList() as List<Movie>
+}
+
+fun MovieDto.toPage(): MoviePage {
+    return MoviePage(
+        page = page,
+        results = this.toMovies(),
+        total_pages = total_pages,
+        total_results = total_results
+    )
 }
