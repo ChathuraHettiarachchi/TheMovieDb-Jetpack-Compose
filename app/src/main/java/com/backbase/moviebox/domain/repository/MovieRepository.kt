@@ -6,7 +6,7 @@ import com.backbase.moviebox.data.remote.dto.MovieDto
 
 interface MovieRepository {
     suspend fun getNowPlayingMovies(): MovieDto
-    suspend fun getPopularMovies(): MovieDto
-    suspend fun getMovieDetails(): MovieDetailsDto
+    suspend fun getPopularMovies(pageNumber: Int = 1): MovieDto
+    suspend fun getMovieDetails(id: Long): MovieDetailsDto
     suspend fun getMovieGenres(): GenreDto
 }
