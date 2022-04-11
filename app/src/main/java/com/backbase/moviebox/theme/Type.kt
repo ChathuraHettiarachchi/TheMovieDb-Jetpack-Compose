@@ -1,4 +1,4 @@
-package com.backbase.moviebox.presentation.theme
+package com.backbase.moviebox.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
