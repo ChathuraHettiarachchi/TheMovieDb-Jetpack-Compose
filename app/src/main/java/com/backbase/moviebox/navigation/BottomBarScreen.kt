@@ -2,9 +2,8 @@ package com.backbase.moviebox.navigation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Done
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.outlined.AccountCircle
+import androidx.compose.material.icons.outlined.LocalActivity
+import androidx.compose.material.icons.outlined.Theaters
 import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class BottomBarScreen(
@@ -15,13 +14,13 @@ sealed class BottomBarScreen(
     object PlayingNow : BottomBarScreen(
         route = "playing_now",
         title = "Playing Now",
-        icon = Icons.Outlined.AccountCircle,
+        icon = Icons.Outlined.Theaters,
     )
 
     object MostPopular : BottomBarScreen(
         route = "most_popular",
         title = "Most Popular",
-        icon = Icons.Default.Person
+        icon = Icons.Outlined.LocalActivity
     )
 
     object MovieDetail : BottomBarScreen(

@@ -11,13 +11,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import com.backbase.moviebox.theme.primary
 
 @Composable
 fun PlayingNowScreen() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Red),
+            .background(primary),
         contentAlignment = Alignment.Center
     ) {
         Text(

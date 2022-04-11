@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
@@ -12,6 +13,8 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.backbase.moviebox.navigation.BottomBarScreen
 import com.backbase.moviebox.navigation.MovieNavGraph
+import com.backbase.moviebox.theme.accent
+import com.backbase.moviebox.theme.textRating
 
 @Composable
 fun MainScreen() {
@@ -33,7 +36,7 @@ fun BottomBar(navController: NavHostController) {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
 
-    BottomNavigation {
+    BottomNavigation(elevation = 12.dp) {
         screens.forEach {
             AddItem(
                 screen = it,
@@ -51,6 +54,8 @@ fun RowScope.AddItem(
     navController: NavHostController
 ) {
     BottomNavigationItem(
+        selectedContentColor = accent,
+        unselectedContentColor = textRating,
         label = {
             Text(text = screen.title)
         },
@@ -63,7 +68,6 @@ fun RowScope.AddItem(
         selected = currentDestination?.hierarchy?.any {
             it.route == screen.route
         } == true,
-        unselectedContentColor = LocalContentColor.current.copy(alpha = ContentAlpha.disabled),
         onClick = {
             navController.navigate(screen.route) {
                 popUpTo(navController.graph.findStartDestination().id)
