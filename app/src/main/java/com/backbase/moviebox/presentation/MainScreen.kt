@@ -3,6 +3,7 @@ package com.backbase.moviebox.presentation
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavDestination
@@ -15,6 +16,7 @@ import com.backbase.moviebox.navigation.MovieScreenList
 import com.backbase.moviebox.navigation.MovieNavGraph
 import com.backbase.moviebox.theme.accent
 import com.backbase.moviebox.theme.textRating
+import kotlinx.coroutines.delay
 
 @Composable
 fun MainScreen() {
@@ -32,6 +34,11 @@ fun BottomBar(navController: NavHostController) {
         MovieScreenList.PlayingNow,
         MovieScreenList.MostPopular
     )
+
+    LaunchedEffect(key1 = true){
+        delay(500)
+        navController.navigate(MovieScreenList.PlayingNow.route)
+    }
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination

@@ -11,6 +11,11 @@ sealed class MovieScreenList(
     val title: String,
     val icon: ImageVector = Icons.Default.Done
 ) {
+    object MainScreen : MovieScreenList(
+        route = "main_screen",
+        title = "Main Screen",
+    )
+
     object PlayingNow : MovieScreenList(
         route = "playing_now",
         title = "Playing Now",

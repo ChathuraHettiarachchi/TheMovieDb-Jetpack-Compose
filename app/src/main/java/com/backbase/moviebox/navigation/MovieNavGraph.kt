@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.backbase.moviebox.presentation.AnimatedSplashScreen
+import com.backbase.moviebox.presentation.MainScreen
 import com.backbase.moviebox.presentation.most_popular.MostPopularScreen
 import com.backbase.moviebox.presentation.movie_details.MovieDetailScreen
 import com.backbase.moviebox.presentation.playing_now.PlayingNowScreen
@@ -13,7 +14,10 @@ import com.backbase.moviebox.presentation.playing_now.PlayingNowScreen
 fun MovieNavGraph(navController: NavHostController) {
     NavHost(navController = navController, startDestination = MovieScreenList.SplashScreen.route){
         composable(route = MovieScreenList.SplashScreen.route){
-            AnimatedSplashScreen()
+            AnimatedSplashScreen(navController)
+        }
+        composable(route = MovieScreenList.MainScreen.route){
+            MainScreen()
         }
         composable(route = MovieScreenList.MostPopular.route){
             MostPopularScreen()
