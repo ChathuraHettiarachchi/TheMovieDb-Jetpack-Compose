@@ -12,7 +12,7 @@ import androidx.compose.ui.unit.sp
 import com.backbase.moviebox.theme.text
 
 @Composable
-fun ScreenTitle(title: String, isCentered: Boolean = false, size: Int = 24) {
+fun ScreenTitleView(title: String, isCentered: Boolean = false, size: Int = 24) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -35,11 +35,11 @@ fun ScreenTitle(title: String, isCentered: Boolean = false, size: Int = 24) {
 @Composable
 @Preview
 fun ScreenTitlePreview() {
-    ScreenTitle("Playing now")
+    ScreenTitleView("Playing now")
 }
 
 @Composable
 @Preview
 fun ScreenTitlePreviewCenter() {
-    ScreenTitle("Playing now", true)
+    ScreenTitleView("Playing now", true)
 }
