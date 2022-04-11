@@ -14,7 +14,14 @@ import androidx.compose.ui.unit.sp
 import com.backbase.moviebox.theme.text
 
 @Composable
-fun ScreenTitleView(title: String, isCentered: Boolean = false, size: Int = 24, top: Int = 20, bottom: Int = 20) {
+fun ScreenTitleView(
+    title: String,
+    isCentered: Boolean = false,
+    size: Int = 24,
+    top: Int = 20,
+    bottom: Int = 20,
+    weight: FontWeight = FontWeight.Bold
+) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -29,7 +36,7 @@ fun ScreenTitleView(title: String, isCentered: Boolean = false, size: Int = 24, 
             text = title,
             textAlign = if (isCentered) TextAlign.Center else TextAlign.Left,
             fontSize = size.sp,
-            fontWeight = FontWeight.Bold,
+            fontWeight = weight,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis
         )
