@@ -6,29 +6,34 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.max
 import androidx.compose.ui.unit.sp
 import com.backbase.moviebox.theme.text
 
 @Composable
-fun ScreenTitleView(title: String, isCentered: Boolean = false, size: Int = 24) {
+fun ScreenTitleView(title: String, isCentered: Boolean = false, size: Int = 24, top: Int = 20, bottom: Int = 20) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
 
     ) {
-        Spacer(Modifier.height(20.dp))
+        Spacer(Modifier.height(top.dp))
         Text(
             modifier = Modifier
-                .fillMaxWidth(),
+                .fillMaxWidth()
+                .weight(1f, fill = false),
             color = text,
             text = title,
             textAlign = if (isCentered) TextAlign.Center else TextAlign.Left,
             fontSize = size.sp,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis
         )
-        Spacer(Modifier.height(20.dp))
+        Spacer(Modifier.height(bottom.dp))
     }
 }
 
