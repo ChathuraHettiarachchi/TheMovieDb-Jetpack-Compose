@@ -11,7 +11,7 @@ import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.backbase.moviebox.navigation.BottomBarScreen
+import com.backbase.moviebox.navigation.MovieScreenList
 import com.backbase.moviebox.navigation.MovieNavGraph
 import com.backbase.moviebox.theme.accent
 import com.backbase.moviebox.theme.textRating
@@ -29,8 +29,8 @@ fun MainScreen() {
 @Composable
 fun BottomBar(navController: NavHostController) {
     val screens = listOf(
-        BottomBarScreen.PlayingNow,
-        BottomBarScreen.MostPopular
+        MovieScreenList.PlayingNow,
+        MovieScreenList.MostPopular
     )
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()
@@ -49,7 +49,7 @@ fun BottomBar(navController: NavHostController) {
 
 @Composable
 fun RowScope.AddItem(
-    screen: BottomBarScreen,
+    screen: MovieScreenList,
     currentDestination: NavDestination?,
     navController: NavHostController
 ) {

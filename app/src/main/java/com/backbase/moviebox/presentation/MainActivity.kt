@@ -10,6 +10,8 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
+import com.backbase.moviebox.navigation.MovieNavGraph
 import com.backbase.moviebox.theme.MovieBoxTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +23,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    MainScreen()
+                    val navController = rememberNavController()
+                    MovieNavGraph(navController = navController)
                 }
             }
         }
