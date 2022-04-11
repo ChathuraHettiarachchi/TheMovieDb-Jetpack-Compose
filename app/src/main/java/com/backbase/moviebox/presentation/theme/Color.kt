@@ -1,4 +1,4 @@
-package com.backbase.moviebox.ui.theme
+package com.backbase.moviebox.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

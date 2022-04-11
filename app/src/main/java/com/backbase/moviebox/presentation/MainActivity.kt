@@ -1,4 +1,4 @@
-package com.backbase.moviebox
+package com.backbase.moviebox.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.backbase.moviebox.ui.theme.MovieBoxTheme
+import com.backbase.moviebox.presentation.theme.MovieBoxTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
