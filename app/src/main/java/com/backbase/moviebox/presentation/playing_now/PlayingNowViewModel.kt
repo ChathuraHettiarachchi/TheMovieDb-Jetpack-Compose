@@ -27,7 +27,7 @@ class PlayingNowViewModel @Inject constructor(
         nowPlayingMoviesUseCase().onEach { result ->
             when(result){
                 is Resource.Success ->{
-                    _state.value = PlayingNowListState(movies = result.data ?: emptyList())
+                    _state.value = PlayingNowListState(isLoading = false, movies = result.data ?: emptyList())
                 }
                 is Resource.Loading ->{
                     _state.value = PlayingNowListState(isLoading = true)

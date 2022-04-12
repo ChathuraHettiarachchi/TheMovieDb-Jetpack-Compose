@@ -16,6 +16,7 @@ import com.backbase.moviebox.navigation.MovieScreenList
 import com.backbase.moviebox.navigation.MovieNavGraph
 import com.backbase.moviebox.theme.accent
 import com.backbase.moviebox.theme.textRating
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 
 @Composable
@@ -42,14 +43,17 @@ fun BottomBar(navController: NavHostController) {
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
+    val currentRoute = navBackStackEntry?.destination?.route?.substringBeforeLast("/")
 
-    BottomNavigation(elevation = 12.dp) {
-        screens.forEach {
-            AddItem(
-                screen = it,
-                currentDestination = currentDestination,
-                navController = navController
-            )
+    if (currentRoute?.substringBeforeLast("/") != MovieScreenList.MovieDetail.route) {
+        BottomNavigation(elevation = 12.dp) {
+            screens.forEach {
+                AddItem(
+                    screen = it,
+                    currentDestination = currentDestination,
+                    navController = navController
+                )
+            }
         }
     }
 }

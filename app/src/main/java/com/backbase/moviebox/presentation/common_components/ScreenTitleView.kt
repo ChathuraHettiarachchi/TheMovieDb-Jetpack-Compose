@@ -20,7 +20,8 @@ fun ScreenTitleView(
     size: Int = 24,
     top: Int = 20,
     bottom: Int = 20,
-    weight: FontWeight = FontWeight.Bold
+    weight: FontWeight = FontWeight.Bold,
+    paddingStart: Int = 0
 ) {
     Column(
         modifier = Modifier
@@ -31,7 +32,8 @@ fun ScreenTitleView(
         Text(
             modifier = Modifier
                 .fillMaxWidth()
-                .weight(1f, fill = false),
+                .weight(1f, fill = false)
+                .padding(start = paddingStart.dp),
             color = text,
             text = title,
             textAlign = if (isCentered) TextAlign.Center else TextAlign.Left,

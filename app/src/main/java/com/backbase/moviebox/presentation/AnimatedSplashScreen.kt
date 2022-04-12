@@ -1,6 +1,8 @@
 package com.backbase.moviebox.presentation
 
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
+import android.opengl.Visibility
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
@@ -28,27 +30,33 @@ import kotlinx.coroutines.delay
 @Composable
 fun AnimatedSplashScreen(navController: NavHostController) {
     var startAnimation by remember { mutableStateOf(false) }
+    var visibility by remember { mutableStateOf(true) }
     val alphaAnim = animateFloatAsState(targetValue = if(startAnimation) 1f else 0f, animationSpec = tween(durationMillis = 2500))
     
     LaunchedEffect(key1 = true){
         startAnimation = true
         delay(3500)
         navController.popBackStack()
+        visibility = false
         navController.navigate(MovieScreenList.MainScreen.route)
     }
 
-    Splash(alpha = alphaAnim.value)
+    Splash(alpha = alphaAnim.value, visibility = visibility)
 }
 
 @Composable
-fun Splash(alpha: Float) {
+fun Splash(alpha: Float, visibility: Boolean = true) {
     Box(
         modifier = Modifier
             .background(if (isSystemInDarkTheme()) primary else primaryNight)
             .fillMaxSize(),
         contentAlignment = Alignment.Center
     ){
-        Image(modifier = Modifier.size(300.dp).alpha(alpha * alpha), painter = painterResource(id = R.drawable.app_logo), contentDescription = "Logo")
+        AnimatedVisibility(visible = visibility) {
+            Image(modifier = Modifier
+                .size(300.dp)
+                .alpha(alpha * alpha), painter = painterResource(id = R.drawable.app_logo), contentDescription = "Logo")
+        }
     }
 }
 

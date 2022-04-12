@@ -93,4 +93,7 @@ dependencies {
 
     // flow layouts
     implementation "com.google.accompanist:accompanist-flowlayout:0.23.1"
+
+    // lottie animation
+    implementation "com.airbnb.android:lottie-compose:5.0.3"
 }
