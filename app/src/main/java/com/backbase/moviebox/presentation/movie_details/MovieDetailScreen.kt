@@ -37,13 +37,15 @@ fun MovieDetailScreen(
 
     val dispatcher = LocalOnBackPressedDispatcherOwner.current!!.onBackPressedDispatcher
 
-    if(!stateDetails.isLoading) {
+    if (!stateDetails.isLoading) {
         val parser = SimpleDateFormat("yyyy-MM-dd")
         val formatter = SimpleDateFormat("MMMM, dd yyyy")
         var formattedDate = "N/A"
-        try{
-            formattedDate = (parser.parse(stateDetails.data.release_date)?.let { formatter.format(it) }).toString()
-        } catch (ignored: Exception){}
+        try {
+            formattedDate = (parser.parse(stateDetails.data.release_date)
+                ?.let { formatter.format(it) }).toString()
+        } catch (ignored: Exception) {
+        }
 
         var runtime = "N/A"
         try {
@@ -55,7 +57,7 @@ fun MovieDetailScreen(
         }
 
         var genres = emptyList<Genre>()
-        if(!stateGenres.isLoading){
+        if (!stateGenres.isLoading) {
             genres = stateDetails.data.genres.map { genre ->
                 stateGenres.data.filter { item ->
                     item.id == genre.id
@@ -84,7 +86,8 @@ fun MovieDetailScreen(
                                 Modifier.fillMaxWidth(),
                                 horizontalArrangement = Arrangement.Center
                             ) {
-                                MoviePosterView(stateDetails.data.poster_path, isDetails = true)
+                                if (stateDetails.error.isBlank())
+                                    MoviePosterView(stateDetails.data.poster_path, isDetails = true)
                             }
                         }
                         item {
@@ -92,19 +95,25 @@ fun MovieDetailScreen(
                                 Modifier
                                     .fillMaxWidth()
                             ) {
-                                Spacer(modifier = Modifier.height(16.dp))
-                                TitleDescriptionView(
-                                    title = "Released on",
-                                    description = formattedDate.toString()
-                                )
-                                TitleDescriptionView(title = "Lasts", description = runtime, bottomMargin = 6)
-                                Spacer(modifier = Modifier.height(2.dp))
-                                DescriptionView(description = stateDetails.data.overview)
-                                Spacer(modifier = Modifier.height(2.dp))
-                                LanguageChipCollectionView(languages = stateDetails.data.spoken_languages)
-                                Spacer(modifier = Modifier.height(8.dp))
-                                GenreChipCollectionView(genres = genres)
-                                Spacer(modifier = Modifier.height(24.dp))
+                                if (stateDetails.error.isBlank()) {
+                                    Spacer(modifier = Modifier.height(16.dp))
+                                    TitleDescriptionView(
+                                        title = "Released on",
+                                        description = formattedDate.toString()
+                                    )
+                                    TitleDescriptionView(
+                                        title = "Lasts",
+                                        description = runtime,
+                                        bottomMargin = 6
+                                    )
+                                    Spacer(modifier = Modifier.height(2.dp))
+                                    DescriptionView(description = stateDetails.data.overview)
+                                    Spacer(modifier = Modifier.height(2.dp))
+                                    LanguageChipCollectionView(languages = stateDetails.data.spoken_languages)
+                                    Spacer(modifier = Modifier.height(8.dp))
+                                    GenreChipCollectionView(genres = genres)
+                                    Spacer(modifier = Modifier.height(24.dp))
+                                }
                             }
                         }
                     }
