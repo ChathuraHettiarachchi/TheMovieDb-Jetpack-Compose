@@ -12,10 +12,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 import com.backbase.moviebox.theme.primary
 
 @Composable
-fun MovieDetailScreen() {
+fun MovieDetailScreen(navController: NavController?, movieId: String?) {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -34,5 +35,5 @@ fun MovieDetailScreen() {
 @Composable
 @Preview
 fun MovieDetailScreenPreview() {
-    MovieDetailScreen()
+    MovieDetailScreen(null, null)
 }

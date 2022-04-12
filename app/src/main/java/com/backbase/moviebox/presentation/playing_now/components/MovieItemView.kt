@@ -2,6 +2,7 @@ package com.backbase.moviebox.presentation.playing_now.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
@@ -29,7 +30,7 @@ import com.backbase.moviebox.common.Constants
 import com.backbase.moviebox.domain.model.Movie
 
 @Composable
-fun MovieItemView(movie: Movie) {
+fun MovieItemView(movie: Movie, onMovieClick: (Movie) -> Unit) {
     val painter = rememberAsyncImagePainter(
         model = ImageRequest.Builder(LocalContext.current)
             .data("${Constants.POSTER_URL}${movie.poster_path}")
@@ -42,6 +43,7 @@ fun MovieItemView(movie: Movie) {
         modifier = Modifier
             .fillMaxWidth()
             .padding(16.dp)
+            .clickable { onMovieClick(movie) }
     ) {
         Column() {
             Card(
@@ -98,6 +100,7 @@ fun MovieItemViewPreview() {
             release_date = "2022-02-20",
             vote_average = 5.6,
             poster_path = "/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg"
-        )
+        ),
+        {}
     )
 }

@@ -10,28 +10,28 @@ import retrofit2.http.Query
 
 interface MovieDbAPI {
     @GET("/3/movie/now_playing")
-    fun getNowPlayingMovies(
+    suspend fun getNowPlayingMovies(
         @Query("api_key") apiKey: String = Constants.API_KEY,
         @Query("language") lan: String = "en-US",
         @Query("page") page: String = "undefined"
     ): MovieDto
 
     @GET("/3/movie/popular")
-    fun getPopularMovies(
+    suspend fun getPopularMovies(
         @Query("api_key") apiKey: String = Constants.API_KEY,
         @Query("language") lan: String = "en-US",
         @Query("page") page: Int = 1
     ): MovieDto
 
     @GET("/3/movie/{movieId}")
-    fun getMovieDetails(
+    suspend fun getMovieDetails(
         @Path("movieId") movieId:Long,
         @Query("api_key") apiKey: String = Constants.API_KEY,
         @Query("language") lan: String = "en-US"
     ): MovieDetailsDto
 
     @GET("/3/movie/list")
-    fun getMovieGenres(
+    suspend fun getMovieGenres(
         @Query("api_key") apiKey: String = Constants.API_KEY,
         @Query("language") lan: String = "en-US"
     ): GenreDto
