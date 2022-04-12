@@ -87,4 +87,10 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation "com.squareup.okhttp3:okhttp:5.0.0-alpha.2"
     implementation "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2"
+
+    // coil image loader
+    implementation("io.coil-kt:coil-compose:2.0.0-rc01")
+
+    // flow layouts
+    implementation "com.google.accompanist:accompanist-flowlayout:0.23.1"
 }
