@@ -82,7 +82,7 @@ fun MovieDetailScreen(
                                 Modifier.fillMaxWidth(),
                                 horizontalArrangement = Arrangement.Center
                             ) {
-                                MoviePosterView(stateDetails.data.poster_path)
+                                MoviePosterView(stateDetails.data.poster_path, isDetails = true)
                             }
                         }
                         item {
