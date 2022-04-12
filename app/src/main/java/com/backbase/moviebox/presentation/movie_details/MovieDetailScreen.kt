@@ -40,8 +40,10 @@ fun MovieDetailScreen(
     if(!stateDetails.isLoading) {
         val parser = SimpleDateFormat("yyyy-MM-dd")
         val formatter = SimpleDateFormat("MMMM, dd yyyy")
-        val formattedDate =
-            parser.parse(stateDetails.data.release_date)?.let { formatter.format(it) }
+        var formattedDate = "N/A"
+        try{
+            formattedDate = (parser.parse(stateDetails.data.release_date)?.let { formatter.format(it) }).toString()
+        } catch (ignored: Exception){}
 
         var runtime = "N/A"
         try {
