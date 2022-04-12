@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
 import com.backbase.moviebox.navigation.MovieNavGraph
 import com.backbase.moviebox.theme.MovieBoxTheme
+import com.backbase.moviebox.theme.primary
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
             MovieBoxTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                    color = primary
                 ) {
                     val navController = rememberNavController()
                     MovieNavGraph(navController = navController)

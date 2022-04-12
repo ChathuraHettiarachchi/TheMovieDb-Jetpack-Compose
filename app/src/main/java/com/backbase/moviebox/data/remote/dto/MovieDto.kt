@@ -18,7 +18,7 @@ data class Dates(
 
 data class MovieItem(
     val adult: Boolean,
-    val backdrop_path: String,
+    val backdrop_path: String?,
     val genre_ids: List<Int>,
     val id: Int,
     val original_language: String,
@@ -33,10 +33,10 @@ data class MovieItem(
     val vote_count: Int
 )
 
-fun MovieDto.toMovies(): List<Movie> {
+fun MovieDto.toMovies(): MutableList<Movie> {
     return results.map {
         Movie(
-            backdrop_path = it.backdrop_path,
+            backdrop_path = it.backdrop_path ?: "",
             genre_ids = it.genre_ids,
             id = it.id,
             original_title = it.original_title,
@@ -48,7 +48,7 @@ fun MovieDto.toMovies(): List<Movie> {
             vote_average = it.vote_average,
             vote_count = it.vote_count
         )
-    }.toList() as List<Movie>
+    }.toList() as MutableList<Movie>
 }
 
 fun MovieDto.toPage(): MoviePage {

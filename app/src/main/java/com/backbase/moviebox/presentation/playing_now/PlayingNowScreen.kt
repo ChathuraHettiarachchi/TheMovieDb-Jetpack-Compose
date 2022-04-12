@@ -38,7 +38,7 @@ fun PlayingNowScreen(
                         navController?.navigate(MovieScreenList.MovieDetail.route + "/${state.movies[index].id}")
                     })
                 }
-                item { 
+                item {
                     Column() {
                         Spacer(modifier = Modifier.height(40.dp))
                     }

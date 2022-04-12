@@ -44,7 +44,7 @@ fun MostPopularScreen(
 ) {
     val state = viewModel.state.value
     val pagerState = rememberPagerState()
-    val pages = mutableListOf<Movie>()
+    val pages = viewModel.pages.value
 
     Box(
         modifier = Modifier
@@ -58,12 +58,20 @@ fun MostPopularScreen(
                     .fillMaxWidth()
                     .weight(2f, true)
             ) {
-                if (!state.isLoading) {
-                    pages.addAll(state.data.results)
-                    HorizontalPager(count = pages.size, state = pagerState, contentPadding = PaddingValues(horizontal = 64.dp)) { page ->
-                        Column(
-                            modifier = Modifier.fillMaxSize().graphicsLayer {
-                                val pageOffset = calculateCurrentOffsetForPage(page).absoluteValue
+                HorizontalPager(
+                    count = pages.size,
+                    state = pagerState,
+                    contentPadding = PaddingValues(horizontal = 64.dp)
+                ) { page ->
+                    if (page > pages.size - 6 && !state.isLoading) {
+                        viewModel.requestNextPage()
+                    }
+                    Column(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .graphicsLayer {
+                                val pageOffset =
+                                    calculateCurrentOffsetForPage(page).absoluteValue
                                 lerp(
                                     start = 0.85f,
                                     stop = 1f,
@@ -80,11 +88,11 @@ fun MostPopularScreen(
                                     fraction = 1f - pageOffset.coerceIn(0f, 1f)
                                 )
                             },
-                            verticalArrangement = Arrangement.Center,
-                            horizontalAlignment = Alignment.CenterHorizontally
-                        ) {
+                        verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        if (pages.size > 0 && page < pages.size)
                             MoviePosterView(posterPath = pages[page].poster_path, isDetails = true)
-                        }
                     }
                 }
             }
@@ -103,7 +111,7 @@ fun MostPopularScreen(
     if (state.error.isNotBlank()) {
         ErrorView(state.error)
     }
-    if (state.isLoading) {
+    if (state.isLoading && pages.size == 0) {
         LoadingView()
     }
 }

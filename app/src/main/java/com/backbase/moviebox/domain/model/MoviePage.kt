@@ -1,8 +1,8 @@
 package com.backbase.moviebox.domain.model
 
 data class MoviePage(
-    val page: Int = 0,
-    val results: List<Movie> = emptyList(),
-    val total_pages: Int = 0,
-    val total_results: Int = 0
+    var page: Int = 0,
+    var results: MutableList<Movie> = mutableListOf(),
+    var total_pages: Int = 0,
+    var total_results: Int = 0
 )

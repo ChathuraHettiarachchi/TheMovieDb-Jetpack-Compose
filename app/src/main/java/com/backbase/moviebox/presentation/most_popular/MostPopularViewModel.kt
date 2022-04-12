@@ -5,6 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.backbase.moviebox.common.Resource
+import com.backbase.moviebox.domain.model.Movie
 import com.backbase.moviebox.domain.model.MoviePage
 import com.backbase.moviebox.domain.use_case.get_playing_now.GetNowPlayingMoviesUseCase
 import com.backbase.moviebox.domain.use_case.get_popular.GetPopularMoviesUseCase
@@ -21,6 +22,10 @@ class MostPopularViewModel @Inject constructor(
 
     private val _state = mutableStateOf<MostPopularDataState>(MostPopularDataState())
     val state: State<MostPopularDataState> = _state
+    val pages = mutableStateOf<MutableList<Movie>>(mutableListOf())
+
+    private var _totalPages: Int = 1
+    private var _currentPage: Int = 2
 
     init {
         getPopularMovies()
@@ -30,17 +35,44 @@ class MostPopularViewModel @Inject constructor(
         popularMoviesUseCase(pageId = page).onEach { result ->
             when (result) {
                 is Resource.Success -> {
-                    _state.value = MostPopularDataState(data = result.data ?: MoviePage())
+                    _state.value =
+                        MostPopularDataState(data = result.data ?: MoviePage(), isLoading = false)
+//                    _state.value.data.results.addAll(result.data!!.results)
+//                    _state.value.data.page = result.data.page
+//                    _state.value.data.total_pages = result.data.total_pages
+//                    _state.value.data.total_results = result.data.total_results
+//                    _state.value.isLoading = false
+
+                    _totalPages = _state.value.data.total_pages
+                    _currentPage = _state.value.data.page
+
+                    val data: MutableList<Movie> = pages.value
+                    data.addAll(result.data!!.results)
+                    pages.value = data
                 }
                 is Resource.Loading -> {
+//                    _state.value.isLoading = true
                     _state.value = MostPopularDataState(isLoading = true)
                 }
                 is Resource.Error -> {
                     _state.value = MostPopularDataState(
+                        isLoading = false,
                         error = result.message ?: "An unexpected error occurred"
                     )
+//                    _state.value.isLoading = false
+//                    _state.value.error = result.message ?: "An unexpected error occurred"
                 }
             }
         }.launchIn(viewModelScope)
+    }
+
+    fun requestNextPage() {
+        if (_currentPage < _totalPages) {
+            getPopularMovies(++_currentPage)
+        } else {
+            _state.value = MostPopularDataState(
+                error = "No more pages found in the TMDB server"
+            )
+        }
     }
 }

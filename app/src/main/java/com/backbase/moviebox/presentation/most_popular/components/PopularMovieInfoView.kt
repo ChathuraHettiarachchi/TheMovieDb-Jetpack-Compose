@@ -32,7 +32,9 @@ fun PopularMovieInfoView(movie: Movie, navController: NavController?) {
             isCentered = true,
             size = 20,
             top = 12,
-            bottom = 8
+            bottom = 8,
+            paddingEnd = 16,
+            paddingStart = 16
         )
         RatingView(rating = (movie.vote_average * 10).toInt())
         Text(
