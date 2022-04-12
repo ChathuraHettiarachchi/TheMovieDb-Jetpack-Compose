@@ -96,15 +96,17 @@ fun MostPopularScreen(
                     }
                 }
             }
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .weight(1f, true)
-            ) {
-                PopularMovieInfoView(
-                    movie = if (pages.size > 0) pages[pagerState.currentPage] else Movie(),
-                    navController = navController
-                )
+            if(pages.size > 0) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .weight(1f, true)
+                ) {
+                    PopularMovieInfoView(
+                        movie = if (pages.size > 0) pages[pagerState.currentPage] else Movie(),
+                        navController = navController
+                    )
+                }
             }
         }
     }
