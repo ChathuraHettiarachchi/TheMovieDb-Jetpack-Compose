@@ -21,7 +21,7 @@ fun ToolbarWithButtonView(title: String, onClick: () -> Unit) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(start = 16.dp, end = 16.dp),
+            .padding(start = 4.dp, end = 16.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         IconButton(onClick = onClick) {
@@ -32,7 +32,7 @@ fun ToolbarWithButtonView(title: String, onClick: () -> Unit) {
                 tint = text
             )
         }
-        ScreenTitleView(title = title, size = 20, weight = FontWeight.W400)
+        ScreenTitleView(title = title, size = 20, weight = FontWeight.W400, paddingEnd = 16)
     }
 }
 
