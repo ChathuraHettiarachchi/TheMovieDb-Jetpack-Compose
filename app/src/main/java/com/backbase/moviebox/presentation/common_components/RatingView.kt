@@ -35,7 +35,7 @@ fun RatingView(rating: Int){
 fun RatingDot(rating: Int){
     Box(
         modifier = Modifier
-            .size(15.dp)
+            .size(18.dp)
             .background(
                 brush = Brush.radialGradient(
                     colors = listOf(
@@ -44,7 +44,7 @@ fun RatingDot(rating: Int){
                     )
                 )
             )
-            .padding(bottom = 3.dp),
+            .padding(bottom = 4.dp),
         contentAlignment = Alignment.Center
     ){
         Surface(

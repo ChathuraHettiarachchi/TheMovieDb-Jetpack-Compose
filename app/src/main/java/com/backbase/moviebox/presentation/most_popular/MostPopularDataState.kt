@@ -4,7 +4,7 @@ import com.backbase.moviebox.domain.model.Movie
 import com.backbase.moviebox.domain.model.MoviePage
 
 data class MostPopularDataState(
-    val isLoading: Boolean = false,
-    val data: MoviePage = MoviePage(),
-    val error: String = ""
+    var isLoading: Boolean = false,
+    var data: MoviePage = MoviePage(),
+    var error: String = ""
 )

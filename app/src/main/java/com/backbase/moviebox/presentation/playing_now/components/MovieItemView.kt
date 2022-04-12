@@ -49,7 +49,7 @@ fun MovieItemView(movie: Movie, onMovieClick: (Movie) -> Unit) {
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(219.dp),
+                    .height(230.dp),
                 shape = RoundedCornerShape(14.dp)
             ) {
                 Image(

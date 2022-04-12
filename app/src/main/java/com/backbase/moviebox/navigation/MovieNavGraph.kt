@@ -20,7 +20,7 @@ fun MovieNavGraph(navController: NavHostController) {
             MainScreen()
         }
         composable(route = MovieScreenList.MostPopular.route){
-            MostPopularScreen()
+            MostPopularScreen(navController)
         }
         composable(route = MovieScreenList.PlayingNow.route){
             PlayingNowScreen(navController)
