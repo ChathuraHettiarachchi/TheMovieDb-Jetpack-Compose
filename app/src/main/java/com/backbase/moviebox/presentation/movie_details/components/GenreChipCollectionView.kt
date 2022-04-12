@@ -22,11 +22,12 @@ import com.backbase.moviebox.theme.genre
 import com.backbase.moviebox.theme.genreText
 import com.backbase.moviebox.theme.text
 import com.google.accompanist.flowlayout.FlowRow
+import java.util.*
 
 @Composable
-fun GenreChipCollectionView(languages: List<Genre>?) {
+fun GenreChipCollectionView(genres: List<Genre>?) {
     FlowRow(mainAxisSpacing = 8.dp, crossAxisSpacing = 8.dp, modifier = Modifier.fillMaxWidth()) {
-        languages?.forEach { item ->
+        genres?.forEach { item ->
             GenreChipView(item.name)
         }
     }
@@ -35,12 +36,11 @@ fun GenreChipCollectionView(languages: List<Genre>?) {
 @Composable
 fun GenreChipView(lan: String) {
     Card(
-
         backgroundColor = genre,
         shape = RoundedCornerShape(4.dp),
     ) {
-        Row(Modifier.padding(4.dp)) {
-            Text(text = lan, color = genreText, textAlign = TextAlign.Center, fontSize = 12.sp)
+        Row(Modifier.padding(6.dp)) {
+            Text(text = lan.uppercase(Locale.getDefault()), color = genreText, textAlign = TextAlign.Center, fontSize = 14.sp)
         }
     }
 }

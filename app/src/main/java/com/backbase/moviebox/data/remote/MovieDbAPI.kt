@@ -30,7 +30,7 @@ interface MovieDbAPI {
         @Query("language") lan: String = "en-US"
     ): MovieDetailsDto
 
-    @GET("/3/movie/list")
+    @GET("/3/genre/movie/list")
     suspend fun getMovieGenres(
         @Query("api_key") apiKey: String = Constants.API_KEY,
         @Query("language") lan: String = "en-US"
