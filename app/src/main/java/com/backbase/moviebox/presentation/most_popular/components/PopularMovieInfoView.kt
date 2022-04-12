@@ -13,8 +13,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
+import com.backbase.moviebox.common.addEmptyLines
 import com.backbase.moviebox.domain.model.Movie
 import com.backbase.moviebox.navigation.MovieScreenList
 import com.backbase.moviebox.presentation.common_components.RatingView
@@ -37,11 +39,12 @@ fun PopularMovieInfoView(movie: Movie, navController: NavController?) {
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp),
-            text = movie.overview,
+            text = movie.overview.addEmptyLines(3),
             maxLines = 3,
             overflow = TextOverflow.Ellipsis,
             color = textDescription,
-            textAlign = TextAlign.Center
+            textAlign = TextAlign.Center,
+            fontSize = 14.sp
         )
         Text(
             modifier = Modifier
