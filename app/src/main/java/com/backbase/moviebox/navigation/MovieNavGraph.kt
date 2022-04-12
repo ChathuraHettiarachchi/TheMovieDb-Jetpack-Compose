@@ -25,8 +25,8 @@ fun MovieNavGraph(navController: NavHostController) {
         composable(route = MovieScreenList.PlayingNow.route){
             PlayingNowScreen(navController)
         }
-        composable(route = MovieScreenList.MovieDetail.route+"/{movieId}"){
-            MovieDetailScreen(navController, it.arguments?.getString("movieId"))
+        composable(route = MovieScreenList.MovieDetail.route+"/{movie_id}"){
+            MovieDetailScreen(navController, it.arguments?.getString("movie_id"))
         }
     }
 }

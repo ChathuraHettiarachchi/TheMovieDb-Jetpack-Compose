@@ -16,7 +16,7 @@ import com.backbase.moviebox.theme.textRating
 fun DescriptionView(description: String, bottomMargin: Int = 12, topMargin: Int = 4) {
     Column() {
         Spacer(modifier = Modifier.height(topMargin.dp))
-        Text(text = description, color = text, fontSize = 14.sp)
+        Text(text = description, color = text, fontSize = 16.sp)
         Spacer(modifier = Modifier.height(bottomMargin.dp))
     }
 }
