@@ -7,6 +7,7 @@ import androidx.compose.foundation.lazy.LazyVerticalGrid
 import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -14,9 +15,12 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.backbase.moviebox.navigation.MovieScreenList
+import com.backbase.moviebox.presentation.common_components.ErrorView
+import com.backbase.moviebox.presentation.common_components.LoadingView
 import com.backbase.moviebox.presentation.common_components.ScreenTitleView
 import com.backbase.moviebox.presentation.playing_now.components.MovieItemView
 import com.backbase.moviebox.theme.text
+import kotlinx.coroutines.delay
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
@@ -38,17 +42,10 @@ fun PlayingNowScreen(
         }
     }
     if (state.error.isNotBlank()) {
-        Text(
-            text = state.error,
-            color = text,
-            textAlign = TextAlign.Center,
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(20.dp)
-        )
+        ErrorView(state.error)
     }
     if(state.isLoading){
-        CircularProgressIndicator()
+        LoadingView()
     }
 }
 
