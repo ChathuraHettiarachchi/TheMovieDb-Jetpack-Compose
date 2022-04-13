@@ -1,92 +1,251 @@
-# BackBase-MovieBox
 
+# Backbase - Movie Box - Android (TMDB)
 
+![Poster](https://gitlab.com/chathurahettiarachchi/backbase-moviebox/-/raw/a252b74aefc5afc286f047854c6418c7cd547229/screen_shots/poster.jpg)
 
-## Getting started
+Movie Box is an Android application to showcase TheMovieDB API with Jetpack Compose as the UI builder. The goal of the project is to demonstrate best practices by using up to date tech-stack and presenting modern Android application Architecture that is scalable, maintainable, and testable. This application may look quite simple,
+but it has all of these small details that will set the rock-solid foundation for the larger app suitable for bigger teams
+and long application lifecycle.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## Project content
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+The MovieBox brings some of the best areas of Android development to one place.
 
-## Add your files
+* 100% Kotlin
+* Clean architecture
+* MVVM
+* Kotlin Flows, coroutins
+* Jetpack Compose
+* Testing
+* Dependency Injection with Dagger Hilt
+* Material design
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+## Tech-stack
+Because the minimum API level is set to 23, the provided approach is suitable for over 85% of Android devices. This project makes use of a number of well-known Android libraries and technologies. Unless there is a compelling need to use a non-stable dependency, the most of the libraries are in the stable version.
 
+* Tech-stack
+    * Koting + Coroutines
+    * Dagger Hilt - dependency injection
+    * Retrofit - networking
+    * Coil - image loading library with memory caching
+    * Lottie - animation library
+    * Jetpack Compose, ViewModel, Repository
+* Architecture
+    * Clean Architecture
+    * MVVM
+* Tests
+    * Unit test with JUnit4
+
+## Architecture of the app
+
+The MovieBox follows Clean Architecture with separating domain, data, and presentation as layers. The application use the data models and API implementations from the domains to populate the UI. The domain contains the useCase functions with Kotlin Flows to emit data to the viewModels when needed.
+
+The Data layer contains the functionality to call APIs, map data to DTOs. All DTOs support extension functions to convert DTO to model from domain layer for data population. This works as removing unwanted values before mapping.
+
+The benefits of the approch:
+- better separation of concerns.
+- can build use-case wise
+- each use-case is issolate from other implementations
+
+#### Presentation layer
+This layer is closest to what the user sees on the screen. The `presentation` layer is made of `MVVM` (Jetpack `ViewModel` used to manage state of the data and support flows). All UIs are build with the `Jetpack Compose` composable items. 
+`state` (for each main screen) approach has used to maintain state change from the APIs.
+
+Components:
+- **View (Composable)** - presents data on the screen and pass user interactions to View Model.
+- **ViewModel** - use Kotlin Flows to check state changes to the view and deals with user interactions.
+- **State** - state per main screen
+- **NavGraph** - Jetpack compose, navigation manager
+
+#### Domain layer
+This is the application's main layer. It's worth noting that the 'domain' layer is separate from all other layers. This enables domain models and business logic to be separated from other levels.
+In other words, modifications in other levels should have no impact on the 'domain' layer. For example, updating the database ('data' layer) or the screen UI ('presentation' layer) should not result in any code changes in the 'domain' layer.
+
+Components:
+- **UseCase** - contains business logic
+- **DomainModel** - defies the core structure of the data that will be used within the application.
+- **Repository interface** - required to keep the `domain` layer independent from the `data layer`.
+
+#### Data layer
+Manages application data and exposes these data sources to the 'domain' layer as repositories. This layer's typical tasks include retrieving data from the internet and, if desired, caching it locally.
+
+Components:
+- **Repository** is exposing data to the `domain` layer. Depending on application structure and quality of the external APIs repository can also merge, filter, and transform the data. The intention of
+these operations is to create high-quality data source for the `domain` layer, not to perform any business logic (`domain` layer `use case` responsibility).
+- **RetrofitService** - defines a set of API endpoints.
+- **DataModel** - defines the structure of the data retrieved from the network and contains annotations, so Retrofit (GSON) understands how to parse this network data (JSON) this data into objects. This also inclues extension funstion to convert data to Domain-Models.
+
+## Important view logics
+#### RatingView
+In the MovieBox application I'm using 100% `composables` for the UI or the presentation part. My inital intension was to go with XML based UIs and create a custom UI with extending from `View` and use `onDraw` overrides to create circle on top of another. Then I can use attributes to pass rating value, by that I can change the color of fill and the shadow.
+
+But with `Jetpack Compose` it's much easier. Let's check that method with the code now.
+
+```kotlin
+/**
+ * Rating view, can used to display rating value and dot icon with glowing shadow
+ * any rating > 50 will be green and below will be red
+ * either green or red, it will use liner gradient to fill the dot and shadow
+ *
+ * @param rating will be the rating value
+ */
+@Composable
+fun RatingView(rating: Int){
+    Row(horizontalArrangement = Arrangement.Start) {
+        Column() {
+            Spacer(Modifier.height(3.dp))
+            RatingDot(rating = rating)
+        }
+        Spacer(Modifier.width(2.dp))
+        Text(text = "$rating%", color = textRating, fontSize = 13.sp, textAlign = TextAlign.Center)
+    }
+}
+
+/**
+ * RatingDot, can used to display rating dot with glowing shadow
+ * any rating > 50 will be green and below will be red
+ * either green or red, it will use liner gradient to fill the dot and shadow
+ *
+ * @param rating will be the rating value
+ */
+@Composable
+fun RatingDot(rating: Int){
+    Box(
+        modifier = Modifier
+            .size(18.dp)
+            .background(
+                brush = Brush.radialGradient(
+                    colors = listOf(
+                        if (rating > 50) greenRatingShadow else redRatingShadow,
+                        Color.Transparent
+                    )
+                )
+            )
+            .padding(bottom = 4.dp),
+        contentAlignment = Alignment.Center
+    ){
+        Surface(
+            shape = CircleShape,
+            modifier = Modifier
+                .size(12.dp)
+                .background(Color.Transparent)
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(17.dp)
+                    .background(
+                        brush = Brush.linearGradient(
+                            colors = listOf(
+                                if (rating > 50) greenRatingStart else redRatingStart,
+                                if (rating > 50) greenRatingEnd else redRatingEnd
+                            )
+                        )
+                    )
+            )
+        }
+
+    }
+}
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/chathurahettiarachchi/backbase-moviebox.git
-git branch -M main
-git push -uf origin main
+
+First, the `RatingDot` which takes the rating value as a parameter (The TMDB sending voting_average value from 0-10, so I decide to multiply it by 10 to get the % value). Since the rating view contains 3 parts mainly, I decide to focus on dot and shadow on this composable funtion. As you can see, I have creates `Box` with background of a gradient. Starts from alpha color to end transparent. This will be the shadow. And on top of it I have a circle to fill with alphs 1f color gradient to match the UI.
+
+Next, we have `RatingView` which combine text value and `RatingDot` as one single row.
+
+This is how it looks on both below and over ratings.
+
+![Screenshot_2022-04-13_at_23.22.23](/uploads/b1fefe650cca6b8ef90d8bb8f5b169af/Screenshot_2022-04-13_at_23.22.23.png)
+
+#### Horizontal Pager for PopularMovies with Pagination
+Well, Jetpack has no way to implement this one, so I had come combine some basic state knowledge to pagination logic to achive that. I'm requesting data and update the state when ever user is reaching at the end. The treshold is 6.
+```kotlin
+HorizontalPager(
+                    count = pages.size,
+                    state = pagerState,
+                    contentPadding = PaddingValues(horizontal = 64.dp)
+                ) { page ->
+                    // custom logic to support pagination for pager
+                    if (page > pages.size - 6 && !state.isLoading) {
+                        viewModel.requestNextPage()
+                    }
+                    Column(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .graphicsLayer {
+                                val pageOffset =
+                                    calculateCurrentOffsetForPage(page).absoluteValue
+
+                                // scaling of poster view to change the size a little :)
+                                lerp(
+                                    start = 0.85f,
+                                    stop = 1f,
+                                    fraction = 1f - pageOffset.coerceIn(0f, 1f)
+                                ).also { scale ->
+                                    scaleX = scale
+                                    scaleY = scale
+                                }
+
+                                // We animate the alpha, between 50% and 100%
+                                alpha = lerp(
+                                    start = 0.5f,
+                                    stop = 1f,
+                                    fraction = 1f - pageOffset.coerceIn(0f, 1f)
+                                )
+                            },
+                        verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        if (pages.size > 0 && page < pages.size)
+                            MoviePosterView(posterPath = pages[page].poster_path, isDetails = true)
+                    }
+                }
+```
+<img src="/screen_shots/003.jpg" width="300">
+
+Additionally I have added alpha change on page offset items and the size. Check how it looks.
+
+## Demo of the application
+![ezgif.com-gif-maker](/uploads/418bcc6482676851e75fe90233788b0c/ezgif.com-gif-maker.gif)
+
+## Dependencies and the usage
+```gradle
+    // Compose dependencies
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-alpha06"
+    implementation "androidx.navigation:navigation-compose:2.5.0-alpha04"
+    implementation "com.google.accompanist:accompanist-flowlayout:0.17.0"
+    implementation "androidx.compose.material:material-icons-extended:$compose_version"
+
+    // Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
+
+    // Coroutine Lifecycle Scopes
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
+
+    //Dagger - Hilt
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    kapt "com.google.dagger:hilt-android-compiler:2.38.1"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
+    kapt "androidx.hilt:hilt-compiler:1.0.0"
+    implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation "com.squareup.okhttp3:okhttp:5.0.0-alpha.2"
+    implementation "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2"
+
+    // coil image loader
+    implementation("io.coil-kt:coil-compose:2.0.0-rc01")
+
+    // flow layouts
+    implementation "com.google.accompanist:accompanist-flowlayout:0.23.1"
+    implementation "com.google.accompanist:accompanist-pager:0.23.1"
+
+    // lottie animation
+    implementation "com.airbnb.android:lottie-compose:5.0.3"
 ```
 
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/chathurahettiarachchi/backbase-moviebox/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+## Known issues
+- Back press on landin initiate app to load again without bottom bar state.
