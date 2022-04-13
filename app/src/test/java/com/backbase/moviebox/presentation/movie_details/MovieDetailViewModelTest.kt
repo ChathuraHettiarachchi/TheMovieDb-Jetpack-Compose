@@ -70,4 +70,24 @@ class MovieDetailViewModelTest {
         val result = viewModelSuccess.stateDetails.value
         assertThat(result.data.id == 100).isTrue()
     }
+
+    // genre vm action test
+    @Test
+    fun `error on genres isTrue`(){
+        val result = viewModelError.state.value
+        assertThat(result.error.isNotBlank()).isTrue()
+    }
+
+    @Test
+    fun `success on genres isTrue`(){
+        val result = viewModelSuccess.state.value
+        assertThat(result.data.isNotEmpty()).isTrue()
+    }
+
+    @Test
+    fun `success on genres and genre object has correct data isTrue`(){
+        val result = viewModelSuccess.state.value
+        assertThat(result.data.size > 1).isTrue()
+        assertThat(result.data[1].name == "genre1").isTrue()
+    }
 }
