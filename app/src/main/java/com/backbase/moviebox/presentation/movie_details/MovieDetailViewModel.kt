@@ -83,4 +83,14 @@ class MovieDetailViewModel @Inject constructor(
             }
         }.launchIn(viewModelScope)
     }
+
+    /**
+     * Request data from API
+     */
+    fun getData(){
+        getGenres()
+        savedStateHandle.get<String>(Constants.MOVIE_ID)?.let { id ->
+            getDetails(id)
+        }
+    }
 }

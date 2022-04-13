@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImagePainter
 import coil.compose.rememberAsyncImagePainter
+import coil.request.CachePolicy
 import coil.request.ImageRequest
 import coil.size.Size
 import com.backbase.moviebox.presentation.common_components.RatingView
@@ -40,6 +41,7 @@ fun MovieItemView(movie: Movie, onMovieClick: (Movie) -> Unit) {
     val painter = rememberAsyncImagePainter(
         model = ImageRequest.Builder(LocalContext.current)
             .data("${Constants.POSTER_URL}${movie.poster_path}")
+            .memoryCachePolicy(CachePolicy.ENABLED)
             .size(Size.ORIGINAL)
             .build(),
         placeholder = painterResource(R.drawable.movie_placeholder)

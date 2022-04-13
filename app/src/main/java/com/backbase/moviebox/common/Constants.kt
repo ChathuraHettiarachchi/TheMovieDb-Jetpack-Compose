@@ -11,6 +11,7 @@ object Constants {
     const val BASE_URL = "https://api.themoviedb.org/"
     const val MOVIE_ID = "movie_id"
     const val POSTER_URL = "https://image.tmdb.org/t/p/w500"
+    const val HOST_ERROR = "No address associated with hostname"
 }
 
 /**

@@ -21,13 +21,12 @@ import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
 import coil.size.Size
 import com.backbase.moviebox.R
+import com.backbase.moviebox.common.ConnectionState
 import com.backbase.moviebox.common.Constants
 import com.backbase.moviebox.common.lerp
 import com.backbase.moviebox.domain.model.Movie
-import com.backbase.moviebox.presentation.common_components.ErrorView
-import com.backbase.moviebox.presentation.common_components.LoadingView
-import com.backbase.moviebox.presentation.common_components.MoviePosterView
-import com.backbase.moviebox.presentation.common_components.ScreenTitleView
+import com.backbase.moviebox.presentation.common_components.*
+import com.backbase.moviebox.presentation.connectivityState
 import com.backbase.moviebox.presentation.most_popular.components.PopularMovieInfoView
 import com.backbase.moviebox.theme.primary
 import com.google.accompanist.pager.ExperimentalPagerApi
@@ -49,6 +48,10 @@ fun MostPopularScreen(
     val pagerState = rememberPagerState()
     val pages = viewModel.pages.value
 
+    val connection by connectivityState()
+    val isConnected = connection === ConnectionState.Available
+
+
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -56,6 +59,7 @@ fun MostPopularScreen(
     ) {
         Column(modifier = Modifier.fillMaxSize()) {
             ScreenTitleView(title = "Most popular", paddingStart = 16, isCentered = true)
+            NetworkStateView(!isConnected)
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -102,7 +106,7 @@ fun MostPopularScreen(
                     }
                 }
             }
-            if(pages.size > 0) {
+            if (pages.size > 0) {
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -117,7 +121,13 @@ fun MostPopularScreen(
         }
     }
     if (state.error.isNotBlank()) {
-        ErrorView(state.error)
+        if (isConnected) {
+            if (state.error.contains(Constants.HOST_ERROR))
+                viewModel.getData()
+            else
+                ErrorView(state.error)
+        } else
+            NetworkErrorView()
     }
     if (state.isLoading && pages.size == 0) {
         LoadingView()

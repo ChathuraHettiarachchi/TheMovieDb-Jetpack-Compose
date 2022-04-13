@@ -7,17 +7,18 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
+import com.backbase.moviebox.common.ConnectionState
+import com.backbase.moviebox.common.Constants
 import com.backbase.moviebox.domain.model.Genre
-import com.backbase.moviebox.presentation.common_components.ErrorView
-import com.backbase.moviebox.presentation.common_components.LoadingView
-import com.backbase.moviebox.presentation.common_components.MoviePosterView
-import com.backbase.moviebox.presentation.common_components.ToolbarWithButtonView
+import com.backbase.moviebox.presentation.common_components.*
+import com.backbase.moviebox.presentation.connectivityState
 import com.backbase.moviebox.presentation.movie_details.components.DescriptionView
 import com.backbase.moviebox.presentation.movie_details.components.GenreChipCollectionView
 import com.backbase.moviebox.presentation.movie_details.components.LanguageChipCollectionView
@@ -37,6 +38,9 @@ fun MovieDetailScreen(
 ) {
     val stateDetails = viewModel.stateDetails.value
     val stateGenres = viewModel.state.value
+
+    val connection by connectivityState()
+    val isConnected = connection === ConnectionState.Available
 
     val dispatcher = LocalOnBackPressedDispatcherOwner.current!!.onBackPressedDispatcher
 
@@ -78,6 +82,7 @@ fun MovieDetailScreen(
                 ToolbarWithButtonView(title = stateDetails.data.original_title, onClick = {
                     dispatcher.onBackPressed()
                 })
+                NetworkStateView(!isConnected)
                 Column(
                     modifier = Modifier
                         .fillMaxSize()
@@ -125,7 +130,13 @@ fun MovieDetailScreen(
         }
     }
     if (stateDetails.error.isNotBlank()) {
-        ErrorView(stateDetails.error)
+        if (isConnected) {
+            if (stateDetails.error.contains(Constants.HOST_ERROR))
+                viewModel.getData()
+            else
+                ErrorView(stateDetails.error)
+        } else
+            NetworkErrorView()
     }
     if (stateDetails.isLoading) {
         LoadingView()

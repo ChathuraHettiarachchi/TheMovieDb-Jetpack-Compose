@@ -10,6 +10,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
+import java.lang.Thread.sleep
 import javax.inject.Inject
 
 @HiltViewModel
@@ -28,7 +29,7 @@ class PlayingNowViewModel @Inject constructor(
     /**
      * get all playing now movie list from API
      */
-    private fun getPlayingNowMovies(){
+    fun getPlayingNowMovies(){
         nowPlayingMoviesUseCase().onEach { result ->
             when(result){
                 is Resource.Success ->{

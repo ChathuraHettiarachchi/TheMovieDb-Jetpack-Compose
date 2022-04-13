@@ -13,6 +13,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
+import coil.request.CachePolicy
 import coil.request.ImageRequest
 import coil.size.Size
 import com.backbase.moviebox.R
@@ -31,6 +32,7 @@ fun MoviePosterView(posterPath: String, isDetails: Boolean = false) {
     val painter = rememberAsyncImagePainter(
         model = ImageRequest.Builder(LocalContext.current)
             .data("${Constants.POSTER_URL}${posterPath}")
+            .memoryCachePolicy(CachePolicy.ENABLED)
             .size(Size.ORIGINAL)
             .build(),
         placeholder = painterResource(R.drawable.movie_placeholder)
