@@ -29,6 +29,12 @@ import com.backbase.moviebox.R
 import com.backbase.moviebox.common.Constants
 import com.backbase.moviebox.domain.model.Movie
 
+/**
+ * MovieItem view, is the grid cell on playing now movies page
+ *
+ * @param movie will be the movie object from domain package
+ * @param onMovieClick is the click event of the movie
+ */
 @Composable
 fun MovieItemView(movie: Movie, onMovieClick: (Movie) -> Unit) {
     val painter = rememberAsyncImagePainter(
@@ -64,6 +70,11 @@ fun MovieItemView(movie: Movie, onMovieClick: (Movie) -> Unit) {
     }
 }
 
+/**
+ * MovieItemInfoView view, is the grid cell info part of playing now movies page
+ *
+ * @param movie will be the movie object from domain package
+ */
 @Composable
 fun MovieItemInfoView(movie: Movie) {
     Column() {

@@ -27,9 +27,11 @@ class MovieDetailViewModel @Inject constructor(
     private val savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 
+    // state for movie details
     private val _stateDetails = mutableStateOf<MovieDetailState>(MovieDetailState())
     val stateDetails: State<MovieDetailState> = _stateDetails
 
+    // state for genres
     private val _stateGenre = mutableStateOf<GenreState>(GenreState())
     val state: State<GenreState> = _stateGenre
 
@@ -40,6 +42,9 @@ class MovieDetailViewModel @Inject constructor(
         }
     }
 
+    /**
+     * get details from API
+     */
     private fun getDetails(id: String) {
         movieDetailsUseCase(movie = id.toLong()).onEach { result ->
             when (result) {
@@ -58,6 +63,9 @@ class MovieDetailViewModel @Inject constructor(
         }.launchIn(viewModelScope)
     }
 
+    /**
+     * get genres from API
+     */
     private fun getGenres() {
         genresUseCase().onEach { result ->
             when (result) {

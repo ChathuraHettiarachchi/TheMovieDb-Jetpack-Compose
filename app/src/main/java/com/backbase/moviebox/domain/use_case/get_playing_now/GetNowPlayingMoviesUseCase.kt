@@ -11,9 +11,16 @@ import java.io.IOException
 import java.net.SocketException
 import javax.inject.Inject
 
+/**
+ * GetNowPlayingMoviesUseCase is used to get now playing movies
+ * Have used kotlin flow and will emit results from time to time
+ */
 class GetNowPlayingMoviesUseCase @Inject constructor(
     private val repository: MovieRepository
 ){
+    /**
+     * Used kotlin operator function, so it's corresponding member function is called automatically
+     */
     operator fun invoke() : Flow<Resource<List<Movie>>> = flow {
         try{
             emit(Resource.Loading<List<Movie>>())

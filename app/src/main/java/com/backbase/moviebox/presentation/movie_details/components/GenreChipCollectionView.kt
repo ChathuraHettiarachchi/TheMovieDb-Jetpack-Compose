@@ -24,6 +24,12 @@ import com.backbase.moviebox.theme.text
 import com.google.accompanist.flowlayout.FlowRow
 import java.util.*
 
+/**
+ * GenreChipCollection will use flowRow to populate and distribute all genres that are
+ * available. If the width is not enough, it will expand the height
+ *
+ * @param genres will be the list of genres from the movie
+ */
 @Composable
 fun GenreChipCollectionView(genres: List<Genre>?) {
     FlowRow(mainAxisSpacing = 8.dp, crossAxisSpacing = 8.dp, modifier = Modifier.fillMaxWidth()) {
@@ -33,6 +39,11 @@ fun GenreChipCollectionView(genres: List<Genre>?) {
     }
 }
 
+/**
+ * GenreChip view will act as a text holder for type of genre
+ *
+ * @param lan will be the text
+ */
 @Composable
 fun GenreChipView(lan: String) {
     Card(

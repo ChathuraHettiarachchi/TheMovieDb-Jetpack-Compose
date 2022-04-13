@@ -15,6 +15,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.backbase.moviebox.theme.text
 
+/**
+ * Toolbar with close action
+ *
+ * @param title will be the text
+ * @param onClick is the action needs to trigger on icon/button click
+ */
 @Composable
 fun ToolbarWithButtonView(title: String,onClick: () -> Unit) {
     Row(

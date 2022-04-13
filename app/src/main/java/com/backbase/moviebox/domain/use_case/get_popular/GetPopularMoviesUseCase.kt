@@ -13,9 +13,19 @@ import java.io.IOException
 import java.net.SocketException
 import javax.inject.Inject
 
+/**
+ * GetPopularMoviesUseCase is used to get popular movies
+ * Can use for pagination
+ * Have used kotlin flow and will emit results from time to time
+ */
 class GetPopularMoviesUseCase @Inject constructor(
     private val repository: MovieRepository
 ){
+    /**
+     * Used kotlin operator function, so it's corresponding member function is called automatically
+     *
+     * @param pageId pagination requested page
+     */
     operator fun invoke(pageId: Int) : Flow<Resource<MoviePage>> = flow {
         try{
             emit(Resource.Loading<MoviePage>())

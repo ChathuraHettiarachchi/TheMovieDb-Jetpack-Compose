@@ -22,6 +22,9 @@ import com.backbase.moviebox.presentation.playing_now.components.MovieItemView
 import com.backbase.moviebox.theme.text
 import kotlinx.coroutines.delay
 
+/**
+ * Now playing movies list page
+ */
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun PlayingNowScreen(

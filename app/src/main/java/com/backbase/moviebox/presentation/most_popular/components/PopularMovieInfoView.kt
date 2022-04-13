@@ -24,6 +24,12 @@ import com.backbase.moviebox.presentation.common_components.ScreenTitleView
 import com.backbase.moviebox.theme.accent
 import com.backbase.moviebox.theme.textDescription
 
+/**
+ * PopularMovieInfo view, can used to display main info of a movie
+ *
+ * @param movie movie object from domain package
+ * @param navController is the main navigation controller of the application
+ */
 @Composable
 fun PopularMovieInfoView(movie: Movie, navController: NavController?) {
     Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {

@@ -29,6 +29,9 @@ import com.backbase.moviebox.theme.primary
 import com.backbase.moviebox.theme.primaryNight
 import kotlinx.coroutines.delay
 
+/**
+ * Custom animated splash screen
+ */
 @Composable
 fun AnimatedSplashScreen(navController: NavHostController) {
     var startAnimation by remember { mutableStateOf(false) }

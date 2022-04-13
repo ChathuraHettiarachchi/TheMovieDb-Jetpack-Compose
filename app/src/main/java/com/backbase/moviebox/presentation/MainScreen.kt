@@ -20,6 +20,9 @@ import com.backbase.moviebox.theme.textRating
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 
+/**
+ * Bottom navigation holder
+ */
 @Composable
 fun MainScreen() {
     val navController = rememberNavController()

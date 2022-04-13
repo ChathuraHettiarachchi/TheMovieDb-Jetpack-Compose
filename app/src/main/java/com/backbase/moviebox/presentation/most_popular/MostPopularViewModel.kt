@@ -20,8 +20,11 @@ class MostPopularViewModel @Inject constructor(
     private val popularMoviesUseCase: GetPopularMoviesUseCase
 ) : ViewModel() {
 
+    // mutable state for api response
     private val _state = mutableStateOf<MostPopularDataState>(MostPopularDataState())
     val state: State<MostPopularDataState> = _state
+
+    // mutable list of pages, will append pages if pagination triggered
     val pages = mutableStateOf<MutableList<Movie>>(mutableListOf())
 
     private var _totalPages: Int = 1
@@ -31,6 +34,9 @@ class MostPopularViewModel @Inject constructor(
         getPopularMovies()
     }
 
+    /**
+     * get popular movies as user scroll through
+     */
     private fun getPopularMovies(page: Int = 1) {
         popularMoviesUseCase(pageId = page).onEach { result ->
             when (result) {
@@ -58,6 +64,9 @@ class MostPopularViewModel @Inject constructor(
         }.launchIn(viewModelScope)
     }
 
+    /**
+     * Will request the next page if there are other pages
+     */
     fun requestNextPage() {
         if (_currentPage < _totalPages) {
             getPopularMovies(++_currentPage)

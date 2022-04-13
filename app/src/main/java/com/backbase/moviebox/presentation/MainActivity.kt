@@ -16,6 +16,9 @@ import com.backbase.moviebox.theme.MovieBoxTheme
 import com.backbase.moviebox.theme.primary
 import dagger.hilt.android.AndroidEntryPoint
 
+/**
+ * Main screen of the application which init the navGraph
+ */
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

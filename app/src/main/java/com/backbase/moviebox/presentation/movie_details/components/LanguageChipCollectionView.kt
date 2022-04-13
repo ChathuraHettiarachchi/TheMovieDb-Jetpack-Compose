@@ -19,6 +19,12 @@ import com.backbase.moviebox.theme.text
 import com.google.accompanist.flowlayout.FlowRow
 import java.util.*
 
+/**
+ * LanguageChipCollectionView will use flowRow to populate and distribute all languages that are
+ * available. If the width is not enough, it will expand the height
+ *
+ * @param languages will be the list of languages from the movie
+ */
 @Composable
 fun LanguageChipCollectionView(languages: List<SpokenLanguage>?) {
     FlowRow(mainAxisSpacing = 8.dp, crossAxisSpacing = 8.dp, modifier = Modifier.fillMaxWidth()) {
@@ -28,6 +34,11 @@ fun LanguageChipCollectionView(languages: List<SpokenLanguage>?) {
     }
 }
 
+/**
+ * LanguageChipView will act as a text holder for each language
+ *
+ * @param lan will be the text
+ */
 @Composable
 fun LanguageChipView(lan: String) {
     Box(

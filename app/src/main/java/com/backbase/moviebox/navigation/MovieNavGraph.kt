@@ -10,6 +10,9 @@ import com.backbase.moviebox.presentation.most_popular.MostPopularScreen
 import com.backbase.moviebox.presentation.movie_details.MovieDetailScreen
 import com.backbase.moviebox.presentation.playing_now.PlayingNowScreen
 
+/**
+ * Navigation graph of the MovieBox application
+ */
 @Composable
 fun MovieNavGraph(navController: NavHostController) {
     NavHost(navController = navController, startDestination = MovieScreenList.SplashScreen.route){
@@ -25,6 +28,7 @@ fun MovieNavGraph(navController: NavHostController) {
         composable(route = MovieScreenList.PlayingNow.route){
             PlayingNowScreen(navController)
         }
+        // will act as an deeplink, param will be movie id
         composable(route = MovieScreenList.MovieDetail.route+"/{movie_id}"){
             MovieDetailScreen(navController, it.arguments?.getString("movie_id"))
         }

@@ -1,5 +1,8 @@
 package com.backbase.moviebox.common
 
+/**
+ * Provides const variables to default application usage
+ */
 object Constants {
     // it is best to add this to gradle, so we can remove it with BuildConfig or gradle.properties
     // using gitignore, for this one let's have it here
@@ -10,6 +13,9 @@ object Constants {
     const val POSTER_URL = "https://image.tmdb.org/t/p/w500"
 }
 
+/**
+ * Provides test tags for composable ui elements
+ */
 object TestTag{
     const val SPLASH = "splash"
     const val LOADING = "loading"

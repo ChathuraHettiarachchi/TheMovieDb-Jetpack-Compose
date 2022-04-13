@@ -13,6 +13,12 @@ import com.airbnb.lottie.compose.*
 import com.backbase.moviebox.R
 import com.backbase.moviebox.theme.text
 
+/**
+ * Error view, will contain lottie animation and error text container
+ * Used to display the any error in the app
+ *
+ * @param error will be the error message need set to the view
+ */
 @Composable
 fun ErrorView(error: String = "Something went wrong") {
     val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.error))

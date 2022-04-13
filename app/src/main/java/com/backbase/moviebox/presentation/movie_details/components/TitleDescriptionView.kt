@@ -12,6 +12,13 @@ import androidx.compose.ui.unit.sp
 import com.backbase.moviebox.theme.text
 import com.backbase.moviebox.theme.textRating
 
+/**
+ * TitleDescriptionView, a view with title and it's description, type and value
+ *
+ * @param title left text
+ * @param description right text
+ * @param bottomMargin margin from bottom
+ */
 @Composable
 fun TitleDescriptionView(title: String, description: String, bottomMargin: Int = 12){
     Column() {

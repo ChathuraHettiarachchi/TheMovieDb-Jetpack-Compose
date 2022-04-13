@@ -25,6 +25,9 @@ import com.backbase.moviebox.presentation.movie_details.components.TitleDescript
 import com.backbase.moviebox.theme.primary
 import java.text.SimpleDateFormat
 
+/**
+ * Movie details will be present here
+ */
 @SuppressLint("SimpleDateFormat")
 @Composable
 fun MovieDetailScreen(
