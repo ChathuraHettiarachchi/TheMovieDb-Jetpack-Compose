@@ -15,9 +15,16 @@ import java.io.IOException
 import java.net.SocketException
 import javax.inject.Inject
 
+/**
+ * GetMovieGenresUseCase is used to get movie genres
+ * Have used kotlin flow and will emit results from time to time
+ */
 class GetMovieGenresUseCase @Inject constructor(
     private val repository: MovieRepository
 ){
+    /**
+     * Used kotlin operator function, so it's corresponding member function is called automatically
+     */
     operator fun invoke() : Flow<Resource<List<Genre>>> = flow {
         try{
             emit(Resource.Loading<List<Genre>>())

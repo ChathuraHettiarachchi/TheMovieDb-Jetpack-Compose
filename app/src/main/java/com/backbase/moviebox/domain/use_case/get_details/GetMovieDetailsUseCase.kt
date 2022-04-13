@@ -13,9 +13,18 @@ import java.io.IOException
 import java.net.SocketException
 import javax.inject.Inject
 
+/**
+ * GetMovieDetailsUseCase is used to get movieDetails
+ * Have used kotlin flow and will emit results from time to time
+ */
 class GetMovieDetailsUseCase @Inject constructor(
     private val repository: MovieRepository
 ){
+    /**
+     * Used kotlin operator function, so it's corresponding member function is called automatically
+     *
+     * @param movie will be movie id
+     */
     operator fun invoke(movie: Long) : Flow<Resource<MovieDetail>> = flow {
         try{
             emit(Resource.Loading<MovieDetail>())

@@ -36,6 +36,9 @@ import com.google.accompanist.pager.calculateCurrentOffsetForPage
 import com.google.accompanist.pager.rememberPagerState
 import kotlin.math.absoluteValue
 
+/**
+ * MostPopularScreen list all the popular movies
+ */
 @OptIn(ExperimentalPagerApi::class)
 @Composable
 fun MostPopularScreen(
@@ -63,6 +66,7 @@ fun MostPopularScreen(
                     state = pagerState,
                     contentPadding = PaddingValues(horizontal = 64.dp)
                 ) { page ->
+                    // custom logic to support pagination for pager
                     if (page > pages.size - 6 && !state.isLoading) {
                         viewModel.requestNextPage()
                     }
@@ -72,6 +76,8 @@ fun MostPopularScreen(
                             .graphicsLayer {
                                 val pageOffset =
                                     calculateCurrentOffsetForPage(page).absoluteValue
+
+                                // scaling of poster view to change the size a little :)
                                 lerp(
                                     start = 0.85f,
                                     stop = 1f,

@@ -19,6 +19,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.backbase.moviebox.theme.*
 
+/**
+ * Rating view, can used to display rating value and dot icon with glowing shadow
+ * any rating > 50 will be green and below will be red
+ * either green or red, it will use liner gradient to fill the dot and shadow
+ *
+ * @param rating will be the rating value
+ */
 @Composable
 fun RatingView(rating: Int){
     Row(horizontalArrangement = Arrangement.Start) {
@@ -31,6 +38,13 @@ fun RatingView(rating: Int){
     }
 }
 
+/**
+ * RatingDot, can used to display rating dot with glowing shadow
+ * any rating > 50 will be green and below will be red
+ * either green or red, it will use liner gradient to fill the dot and shadow
+ *
+ * @param rating will be the rating value
+ */
 @Composable
 fun RatingDot(rating: Int){
     Box(
@@ -68,14 +82,6 @@ fun RatingDot(rating: Int){
         }
 
     }
-
-//    Canvas(modifier = Modifier.size(18.dp), onDraw = {
-//        val size = 14.dp.toPx()
-//        drawCircle(
-//            color = Color.Red,
-//            radius = size / 2f
-//        )
-//    })
 }
 
 @Composable

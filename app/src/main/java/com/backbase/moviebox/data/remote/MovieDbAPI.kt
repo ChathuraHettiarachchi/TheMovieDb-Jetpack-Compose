@@ -8,6 +8,9 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
 
+/**
+ * MovieBox app API list
+ */
 interface MovieDbAPI {
     @GET("/3/movie/now_playing")
     suspend fun getNowPlayingMovies(

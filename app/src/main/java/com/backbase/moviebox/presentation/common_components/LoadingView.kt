@@ -10,6 +10,10 @@ import com.airbnb.lottie.compose.*
 import com.backbase.moviebox.R
 import com.backbase.moviebox.common.TestTag
 
+/**
+ * Loading view, will contains lottie animation
+ * Used to display the any loading action in the app
+ */
 @Composable
 fun LoadingView() {
     val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.searching))

@@ -3,6 +3,9 @@ package com.backbase.moviebox.domain.model
 import com.backbase.moviebox.data.remote.dto.*
 import com.backbase.moviebox.data.remote.dto.Genre
 
+/**
+ * UI movieDetail model
+ */
 data class MovieDetail(
     val backdrop_path: String = "",
     val genres: List<Genre> = emptyList(),

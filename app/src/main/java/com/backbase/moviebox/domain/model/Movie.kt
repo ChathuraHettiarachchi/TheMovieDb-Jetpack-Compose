@@ -1,5 +1,8 @@
 package com.backbase.moviebox.domain.model
 
+/**
+ * UI movie model
+ */
 data class Movie(
     val backdrop_path: String = "",
     val genre_ids: List<Int> = emptyList(),

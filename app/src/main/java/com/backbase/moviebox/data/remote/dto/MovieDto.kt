@@ -3,6 +3,9 @@ package com.backbase.moviebox.data.remote.dto
 import com.backbase.moviebox.domain.model.Movie
 import com.backbase.moviebox.domain.model.MoviePage
 
+/**
+ * MovieDto will used by both PlayNow, Popular movies API calls
+ */
 data class MovieDto(
     val dates: Dates,
     val page: Int,
@@ -11,11 +14,17 @@ data class MovieDto(
     val total_results: Int
 )
 
+/**
+ * Not used in the project
+ */
 data class Dates(
     val maximum: String = "",
     val minimum: String = ""
 )
 
+/**
+ * MovieItem will used by the GSON converter to map movie object
+ */
 data class MovieItem(
     val adult: Boolean = false,
     val backdrop_path: String = "",

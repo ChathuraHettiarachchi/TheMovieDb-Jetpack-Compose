@@ -17,6 +17,7 @@ class PlayingNowViewModel @Inject constructor(
     private val nowPlayingMoviesUseCase: GetNowPlayingMoviesUseCase
 ) : ViewModel() {
 
+    // state for movie list
     private val _state = mutableStateOf<PlayingNowListState>(PlayingNowListState())
     val state: State<PlayingNowListState> = _state
 
@@ -24,6 +25,9 @@ class PlayingNowViewModel @Inject constructor(
         getPlayingNowMovies()
     }
 
+    /**
+     * get all playing now movie list from API
+     */
     private fun getPlayingNowMovies(){
         nowPlayingMoviesUseCase().onEach { result ->
             when(result){

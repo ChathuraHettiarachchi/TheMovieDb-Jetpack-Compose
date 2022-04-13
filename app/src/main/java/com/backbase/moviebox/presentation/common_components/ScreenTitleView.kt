@@ -13,6 +13,18 @@ import androidx.compose.ui.unit.max
 import androidx.compose.ui.unit.sp
 import com.backbase.moviebox.theme.text
 
+/**
+ * ScreenTitleView, will used to display main headings of the application
+ *
+ * @param title will be the text
+ * @param isCentered used to center the text, default is false and left align
+ * @param size will be the font size
+ * @param top top margin
+ * @param bottom bottom margin
+ * @param weight fontWeight of the title
+ * @param paddingStart will be the padding from start of text
+ * @param paddingEnd will be the padding from end of title
+ */
 @Composable
 fun ScreenTitleView(
     title: String,

@@ -6,6 +6,13 @@ import androidx.compose.material.icons.outlined.LocalActivity
 import androidx.compose.material.icons.outlined.Theaters
 import androidx.compose.ui.graphics.vector.ImageVector
 
+/**
+ * Navigation screen list
+ *
+ * @param route will be the path or route to the page
+ * @param title will be the page title, used in the bottom navigation bar
+ * @param icon will used to set icon to the bottom navigation
+ */
 sealed class MovieScreenList(
     val route: String,
     val title: String,

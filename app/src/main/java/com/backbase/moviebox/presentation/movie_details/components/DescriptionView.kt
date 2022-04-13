@@ -12,6 +12,13 @@ import androidx.compose.ui.unit.sp
 import com.backbase.moviebox.theme.text
 import com.backbase.moviebox.theme.textRating
 
+/**
+ * DescriptionView, detail page movie overview description holder
+ *
+ * @param description text need to set
+ * @param bottomMargin will be the margin from bottom
+ * @param topMargin will be the margin from top
+ */
 @Composable
 fun DescriptionView(description: String, bottomMargin: Int = 12, topMargin: Int = 4) {
     Column() {

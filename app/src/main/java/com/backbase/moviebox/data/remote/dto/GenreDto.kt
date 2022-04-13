@@ -1,5 +1,8 @@
 package com.backbase.moviebox.data.remote.dto
 
+/**
+ * GenreDto will catch genres from API when converting with GSON
+ */
 data class GenreDto(
     val genres: List<Genre>
 )

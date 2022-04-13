@@ -2,6 +2,9 @@ package com.backbase.moviebox.data.remote.dto
 
 import com.backbase.moviebox.domain.model.MovieDetail
 
+/**
+ * MovieDetailsDto will capture movie details coming from the API
+ */
 data class MovieDetailsDto(
     val adult: Boolean = false,
     val backdrop_path: String = "",
@@ -30,6 +33,9 @@ data class MovieDetailsDto(
     val vote_count: Int = 1
 )
 
+/**
+ * Not used in the project
+ */
 data class BelongsToCollection(
     val backdrop_path: String = "",
     val id: Int = 0,
@@ -37,6 +43,9 @@ data class BelongsToCollection(
     val poster_path: String = ""
 )
 
+/**
+ * Not used in the project
+ */
 data class ProductionCompany(
     val id: Int = 0,
     val logo_path: String = "",
@@ -44,11 +53,18 @@ data class ProductionCompany(
     val origin_country: String = ""
 )
 
+/**
+ * Not used in the project
+ */
 data class ProductionCountry(
     val iso_3166_1: String = "",
     val name: String = ""
 )
 
+/**
+ * SpokenLanguage, a list of these objects will be get created with API response.
+ * Will be used to display language chips in the UI
+ */
 data class SpokenLanguage(
     val english_name: String = "",
     val iso_639_1: String = "",

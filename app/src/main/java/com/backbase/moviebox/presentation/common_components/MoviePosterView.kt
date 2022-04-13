@@ -19,6 +19,13 @@ import com.backbase.moviebox.R
 import com.backbase.moviebox.common.Constants
 import com.backbase.moviebox.domain.model.Movie
 
+/**
+ * MoviePoster view, used in places where only the rounded corner poster is shown
+ * Has ability to change from adapting to screen width or 300x210 size
+ *
+ * @param posterPath will be used to set the poster url part
+ * @param isDetails can used to change the size to adapt the screen width or 300x210 size
+ */
 @Composable
 fun MoviePosterView(posterPath: String, isDetails: Boolean = false) {
     val painter = rememberAsyncImagePainter(
