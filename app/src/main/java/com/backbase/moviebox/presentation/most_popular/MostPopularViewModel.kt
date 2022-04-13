@@ -37,11 +37,6 @@ class MostPopularViewModel @Inject constructor(
                 is Resource.Success -> {
                     _state.value =
                         MostPopularDataState(data = result.data ?: MoviePage(), isLoading = false)
-//                    _state.value.data.results.addAll(result.data!!.results)
-//                    _state.value.data.page = result.data.page
-//                    _state.value.data.total_pages = result.data.total_pages
-//                    _state.value.data.total_results = result.data.total_results
-//                    _state.value.isLoading = false
 
                     _totalPages = _state.value.data.total_pages
                     _currentPage = _state.value.data.page
@@ -51,7 +46,6 @@ class MostPopularViewModel @Inject constructor(
                     pages.value = data
                 }
                 is Resource.Loading -> {
-//                    _state.value.isLoading = true
                     _state.value = MostPopularDataState(isLoading = true)
                 }
                 is Resource.Error -> {
@@ -59,8 +53,6 @@ class MostPopularViewModel @Inject constructor(
                         isLoading = false,
                         error = result.message ?: "An unexpected error occurred"
                     )
-//                    _state.value.isLoading = false
-//                    _state.value.error = result.message ?: "An unexpected error occurred"
                 }
             }
         }.launchIn(viewModelScope)

@@ -41,7 +41,7 @@ class FakeMovieRepository : MovieRepository {
                     MovieItem(backdrop_path = "path1", original_title = "title1"),
                     MovieItem(backdrop_path = "path2", original_title = "title2")
                 ),
-                2,
+                3,
                 6
             )
     }
