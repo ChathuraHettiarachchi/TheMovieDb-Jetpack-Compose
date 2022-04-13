@@ -16,11 +16,13 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.backbase.moviebox.R
+import com.backbase.moviebox.common.TestTag
 import com.backbase.moviebox.navigation.MovieScreenList
 import com.backbase.moviebox.theme.accent
 import com.backbase.moviebox.theme.primary
@@ -55,7 +57,8 @@ fun Splash(alpha: Float, visibility: Boolean = true) {
         AnimatedVisibility(visible = visibility) {
             Image(modifier = Modifier
                 .size(300.dp)
-                .alpha(alpha * alpha), painter = painterResource(id = R.drawable.app_logo), contentDescription = "Logo")
+                .alpha(alpha * alpha)
+                .testTag(TestTag.SPLASH), painter = painterResource(id = R.drawable.app_logo), contentDescription = "Logo")
         }
     }
 }

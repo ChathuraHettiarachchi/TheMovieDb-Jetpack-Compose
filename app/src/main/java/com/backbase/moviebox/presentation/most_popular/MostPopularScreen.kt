@@ -52,7 +52,7 @@ fun MostPopularScreen(
             .background(primary),
     ) {
         Column(modifier = Modifier.fillMaxSize()) {
-            ScreenTitleView(title = "Most popular", paddingStart = 16)
+            ScreenTitleView(title = "Most popular", paddingStart = 16, isCentered = true)
             Box(
                 modifier = Modifier
                     .fillMaxWidth()

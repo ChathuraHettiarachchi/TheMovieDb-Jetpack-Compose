@@ -27,6 +27,8 @@ class GetMovieDetailsUseCase @Inject constructor(
             emit(Resource.Error<MovieDetail>(e.localizedMessage ?: "Couldn't connect to server. Please check the network connection"))
         } catch (e: SocketException){
             emit(Resource.Error<MovieDetail>(e.localizedMessage ?: "There is an exception occurred on Socket Connection"))
+        } catch (e: Exception){
+            emit(Resource.Error<MovieDetail>(e.localizedMessage ?: "Something went wrong"))
         }
     }
 }

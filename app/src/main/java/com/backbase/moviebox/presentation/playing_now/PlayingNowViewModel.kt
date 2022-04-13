@@ -7,13 +7,14 @@ import androidx.lifecycle.viewModelScope
 import com.backbase.moviebox.common.Resource
 import com.backbase.moviebox.domain.use_case.get_playing_now.GetNowPlayingMoviesUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
 
 @HiltViewModel
 class PlayingNowViewModel @Inject constructor(
-    private val nowPlayingMoviesUseCase: GetNowPlayingMoviesUseCase,
+    private val nowPlayingMoviesUseCase: GetNowPlayingMoviesUseCase
 ) : ViewModel() {
 
     private val _state = mutableStateOf<PlayingNowListState>(PlayingNowListState())
