@@ -26,7 +26,7 @@ class GetNowPlayingMoviesUseCase @Inject constructor(
         } catch (e: SocketException){
             emit(Resource.Error<List<Movie>>(e.localizedMessage ?: "There is an exception occurred on Socket Connection"))
         } catch (e: Exception){
-            print(e)
+            emit(Resource.Error<List<Movie>>(e.localizedMessage ?: "Something went wrong"))
         }
     }
 }

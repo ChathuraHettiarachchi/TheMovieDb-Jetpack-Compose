@@ -66,7 +66,7 @@ class GetNowPlayingMoviesUseCaseTest {
 
             val emitSuccess = awaitItem()
             assertThat(emitSuccess).isInstanceOf(Resource.Success::class.java)
-            
+
             assertThat(emitSuccess.data!!.size>2).isTrue()
 
             awaitComplete()

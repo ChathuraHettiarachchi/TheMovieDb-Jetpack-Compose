@@ -62,7 +62,7 @@ fun MovieDetailsDto.toMovieDetails(): MovieDetail {
     return MovieDetail(
         backdrop_path = backdrop_path,
         genres = genres,
-        id - id,
+        id = id,
         original_title = original_title,
         overview = overview,
         popularity = popularity,
