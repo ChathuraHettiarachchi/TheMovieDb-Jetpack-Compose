@@ -1,19 +1,25 @@
 package com.backbase.moviebox.presentation.common_components
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.tooling.preview.Preview
 import com.airbnb.lottie.compose.*
 import com.backbase.moviebox.R
+import com.backbase.moviebox.common.TestTag
 
 @Composable
 fun LoadingView() {
     val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.searching))
     val progress by animateLottieCompositionAsState(composition, iterations = LottieConstants.IterateForever)
-    LottieAnimation(
-        composition,
-        progress,
-    )
+    Column(modifier = Modifier.testTag(TestTag.LOADING)) {
+        LottieAnimation(
+            composition,
+            progress,
+        )
+    }
 }
 
 @Composable

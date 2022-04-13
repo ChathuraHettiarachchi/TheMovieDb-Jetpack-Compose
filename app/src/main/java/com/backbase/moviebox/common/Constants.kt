@@ -12,4 +12,5 @@ object Constants {
 
 object TestTag{
     const val SPLASH = "splash"
+    const val LOADING = "loading"
 }
