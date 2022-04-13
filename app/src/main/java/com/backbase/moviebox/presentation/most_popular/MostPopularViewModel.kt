@@ -76,4 +76,11 @@ class MostPopularViewModel @Inject constructor(
             )
         }
     }
+
+    /**
+     * Request data from API
+     */
+    fun getData(){
+        getPopularMovies()
+    }
 }

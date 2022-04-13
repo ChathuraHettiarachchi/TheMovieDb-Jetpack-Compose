@@ -22,7 +22,7 @@ import com.backbase.moviebox.theme.text
  * @param onClick is the action needs to trigger on icon/button click
  */
 @Composable
-fun ToolbarWithButtonView(title: String,onClick: () -> Unit) {
+fun ToolbarWithButtonView(title: String = "Movie",onClick: () -> Unit) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
