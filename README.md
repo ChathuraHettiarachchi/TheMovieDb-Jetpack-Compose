@@ -1,7 +1,7 @@
 
 # Backbase - Movie Box - Android (TMDB)
 
-<h3>Note: You can find dayNight theming support on branch feature/day-night-theming I haven't merge since it's not the inital requirement. Feel free to check it out</h2>
+<h3>Note: You can find dayNight theming support on branch [feature/day-night-theming](https://gitlab.com/chathurahettiarachchi/backbase-moviebox/-/tree/feature/day-night-theming) I haven't merge since it's not the inital requirement. Feel free to check it out</h2>
 
 ![Poster](https://gitlab.com/chathurahettiarachchi/backbase-moviebox/-/raw/a252b74aefc5afc286f047854c6418c7cd547229/screen_shots/poster.jpg)
 
