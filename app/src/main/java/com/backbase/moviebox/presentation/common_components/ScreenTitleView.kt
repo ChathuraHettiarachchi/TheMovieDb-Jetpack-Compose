@@ -1,6 +1,7 @@
 package com.backbase.moviebox.presentation.common_components
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -47,7 +48,7 @@ fun ScreenTitleView(
                 .fillMaxWidth()
                 .weight(1f, fill = false)
                 .padding(start = paddingStart.dp, end = paddingEnd.dp),
-            color = text,
+            color = MaterialTheme.colors.onSurface,
             text = title,
             textAlign = if (isCentered) TextAlign.Center else TextAlign.Left,
             fontSize = size.sp,

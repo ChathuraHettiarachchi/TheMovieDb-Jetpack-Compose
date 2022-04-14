@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
             MovieBoxTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = primary
+                    color = MaterialTheme.colors.primary
                 ) {
                     val navController = rememberNavController()
                     MovieNavGraph(navController = navController)

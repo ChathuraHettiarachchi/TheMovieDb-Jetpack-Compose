@@ -7,6 +7,7 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Icon
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Theaters
@@ -42,8 +43,8 @@ fun NetworkStateView(isNotConnected: Boolean) {
             horizontalArrangement = Arrangement.Center,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Icon(imageVector = Icons.Outlined.WifiOff, contentDescription = "error", tint = Color.White)
-            Text(text="No network connection", color=text, modifier = Modifier.padding(start = 8.dp), fontSize = 14.sp)
+            Icon(imageVector = Icons.Outlined.WifiOff, contentDescription = "error", tint = MaterialTheme.colors.onSurface)
+            Text(text="No network connection", color=MaterialTheme.colors.onSurface, modifier = Modifier.padding(start = 8.dp), fontSize = 14.sp)
         }
     }
 }

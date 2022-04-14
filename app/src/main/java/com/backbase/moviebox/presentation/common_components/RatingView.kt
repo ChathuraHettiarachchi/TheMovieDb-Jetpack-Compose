@@ -4,6 +4,7 @@ import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
@@ -34,7 +35,7 @@ fun RatingView(rating: Int){
             RatingDot(rating = rating)
         }
         Spacer(Modifier.width(2.dp))
-        Text(text = "$rating%", color = textRating, fontSize = 13.sp, textAlign = TextAlign.Center)
+        Text(text = "$rating%", color = MaterialTheme.colors.primaryVariant, fontSize = 13.sp, textAlign = TextAlign.Center)
     }
 }
 

@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -55,7 +56,7 @@ fun MostPopularScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(primary),
+            .background(MaterialTheme.colors.primary),
     ) {
         Column(modifier = Modifier.fillMaxSize()) {
             ScreenTitleView(title = "Most popular", paddingStart = 16, isCentered = true)

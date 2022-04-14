@@ -6,6 +6,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -91,7 +92,7 @@ fun MovieItemInfoView(movie: Movie) {
                     .padding(end = 4.dp),
                 text = movie.original_title,
                 fontSize = 14.sp,
-                color = text,
+                color = MaterialTheme.colors.onSurface,
                 fontWeight = FontWeight.Bold,
                 overflow = TextOverflow.Ellipsis,
                 maxLines = 1,
@@ -99,7 +100,7 @@ fun MovieItemInfoView(movie: Movie) {
             RatingView(rating = (movie.vote_average * 10).toInt())
         }
 
-        Text(text = movie.release_date, fontSize = 14.sp, color = textRating)
+        Text(text = movie.release_date, fontSize = 14.sp, color = MaterialTheme.colors.primaryVariant)
     }
 
 }

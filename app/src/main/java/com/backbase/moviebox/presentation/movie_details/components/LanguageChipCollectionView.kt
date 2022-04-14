@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -43,10 +44,10 @@ fun LanguageChipCollectionView(languages: List<SpokenLanguage>?) {
 fun LanguageChipView(lan: String) {
     Box(
         modifier = Modifier
-            .border(width = 1.dp, color = text, shape = RoundedCornerShape(4.dp))
+            .border(width = 1.dp, color = MaterialTheme.colors.onSurface, shape = RoundedCornerShape(4.dp))
             .padding(6.dp)
     ) {
-        Text(text = lan.uppercase(Locale.getDefault()), color = text, textAlign = TextAlign.Center, fontSize = 14.sp)
+        Text(text = lan.uppercase(Locale.getDefault()), color = MaterialTheme.colors.onSurface, textAlign = TextAlign.Center, fontSize = 14.sp)
     }
 }
 

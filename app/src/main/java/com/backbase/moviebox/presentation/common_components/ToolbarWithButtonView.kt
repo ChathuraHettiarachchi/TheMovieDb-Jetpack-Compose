@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.runtime.Composable
@@ -35,7 +36,7 @@ fun ToolbarWithButtonView(title: String = "Movie",onClick: () -> Unit) {
                 imageVector = Icons.Default.Close,
                 contentDescription = "Close",
                 Modifier.size(24.dp),
-                tint = text
+                tint = MaterialTheme.colors.onSurface
             )
         }
         ScreenTitleView(title = title, size = 20, weight = FontWeight.W400, paddingEnd = 16, bottom = 20)

@@ -50,7 +50,7 @@ fun BottomBar(navController: NavHostController) {
     val currentRoute = navBackStackEntry?.destination?.route?.substringBeforeLast("/")
 
     if (currentRoute?.substringBeforeLast("/") != MovieScreenList.MovieDetail.route) {
-        BottomNavigation(elevation = 12.dp, backgroundColor = primary) {
+        BottomNavigation(elevation = 12.dp, backgroundColor = MaterialTheme.colors.primary) {
             screens.forEach {
                 AddItem(
                     screen = it,
@@ -69,8 +69,8 @@ fun RowScope.AddItem(
     navController: NavHostController
 ) {
     BottomNavigationItem(
-        selectedContentColor = accent,
-        unselectedContentColor = textRating,
+        selectedContentColor = MaterialTheme.colors.secondary,
+        unselectedContentColor = MaterialTheme.colors.primaryVariant,
         label = {
             Text(text = screen.title)
         },

@@ -2,6 +2,7 @@ package com.backbase.moviebox.presentation.movie_details.components
 
 import android.widget.Space
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -23,9 +24,9 @@ import com.backbase.moviebox.theme.textRating
 fun TitleDescriptionView(title: String, description: String, bottomMargin: Int = 12){
     Column() {
         Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-            Text(text = title, color = textRating, fontSize = 14.sp)
+            Text(text = title, color = MaterialTheme.colors.primaryVariant, fontSize = 14.sp)
             Spacer(modifier = Modifier.width(8.dp))
-            Text(text = description, color = text, fontSize = 14.sp)
+            Text(text = description, color = MaterialTheme.colors.onSurface, fontSize = 14.sp)
         }
         Spacer(modifier = Modifier.height(bottomMargin.dp))
     }

@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.Image
 import androidx.compose.material.Icon
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -26,7 +27,6 @@ import com.backbase.moviebox.common.TestTag
 import com.backbase.moviebox.navigation.MovieScreenList
 import com.backbase.moviebox.theme.accent
 import com.backbase.moviebox.theme.primary
-import com.backbase.moviebox.theme.primaryNight
 import kotlinx.coroutines.delay
 
 /**
@@ -53,7 +53,7 @@ fun AnimatedSplashScreen(navController: NavHostController) {
 fun Splash(alpha: Float, visibility: Boolean = true) {
     Box(
         modifier = Modifier
-            .background(if (isSystemInDarkTheme()) primary else primaryNight)
+            .background(MaterialTheme.colors.error)
             .fillMaxSize(),
         contentAlignment = Alignment.Center
     ){

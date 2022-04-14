@@ -6,6 +6,7 @@ import androidx.activity.compose.LocalOnBackPressedDispatcherOwner
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -75,7 +76,7 @@ fun MovieDetailScreen(
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .background(primary),
+                .background(MaterialTheme.colors.primary),
             contentAlignment = Alignment.Center
         ) {
             Column(modifier = Modifier.fillMaxSize()) {

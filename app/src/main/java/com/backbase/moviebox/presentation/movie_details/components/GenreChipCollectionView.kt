@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -47,11 +48,11 @@ fun GenreChipCollectionView(genres: List<Genre>?) {
 @Composable
 fun GenreChipView(lan: String) {
     Card(
-        backgroundColor = genre,
+        backgroundColor = MaterialTheme.colors.secondaryVariant,
         shape = RoundedCornerShape(4.dp),
     ) {
         Row(Modifier.padding(6.dp)) {
-            Text(text = lan.uppercase(Locale.getDefault()), color = genreText, textAlign = TextAlign.Center, fontSize = 14.sp)
+            Text(text = lan.uppercase(Locale.getDefault()), color = MaterialTheme.colors.surface, textAlign = TextAlign.Center, fontSize = 14.sp)
         }
     }
 }

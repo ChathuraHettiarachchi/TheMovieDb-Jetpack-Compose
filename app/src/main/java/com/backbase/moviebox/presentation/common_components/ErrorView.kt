@@ -1,6 +1,7 @@
 package com.backbase.moviebox.presentation.common_components
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -11,7 +12,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.airbnb.lottie.compose.*
 import com.backbase.moviebox.R
-import com.backbase.moviebox.theme.text
 
 /**
  * Error view, will contain lottie animation and error text container
@@ -33,7 +33,7 @@ fun ErrorView(error: String = "Something went wrong") {
         Spacer(modifier = Modifier.height(16.dp))
         Text(
             text = error,
-            color = text,
+            color = MaterialTheme.colors.onSurface,
             fontSize = 14.sp,
             modifier = Modifier
                 .fillMaxWidth()
