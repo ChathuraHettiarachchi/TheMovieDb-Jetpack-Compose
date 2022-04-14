@@ -157,7 +157,7 @@ This is how it looks on both below and over ratings.
 ![Screenshot_2022-04-13_at_23.22.23](/uploads/b1fefe650cca6b8ef90d8bb8f5b169af/Screenshot_2022-04-13_at_23.22.23.png)
 
 #### Horizontal Pager for PopularMovies with Pagination
-Well, Jetpack has no way to implement this one, so I had come combine some basic state knowledge to pagination logic to achive that. I'm requesting data and update the state when ever user is reaching at the end. The treshold is 6.
+Well, Jetpack has no way to implement this one, so I had come combine some basic with Accompanist-pager library, knowledge about state and pagination logic to achive that. I'm requesting data and update the state when ever user is reaching at the end. The treshold is 6.
 ```kotlin
 HorizontalPager(
                     count = pages.size,
@@ -210,31 +210,36 @@ Additionally I have added alpha change on page offset items and the size. Check 
 ## Dependencies and the usage
 ```gradle
     // Compose dependencies
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-alpha06"
-    implementation "androidx.navigation:navigation-compose:2.5.0-alpha04"
-    implementation "com.google.accompanist:accompanist-flowlayout:0.17.0"
+    // To get the lifecycle state to the application, as we do in activity and fragments
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1"
+    // To manage application navigation, data passing and all
+    implementation "androidx.navigation:navigation-compose:2.4.2"
+    // Used to get the material icons for compose modules
     implementation "androidx.compose.material:material-icons-extended:$compose_version"
 
-    // Coroutines
+    // Coroutines support for android
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
 
-    // Coroutine Lifecycle Scopes
+    // Coroutine Lifecycle Scopes and viewmodel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
 
-    //Dagger - Hilt
+    //Dagger - Hilt - dependancy injection
     implementation "com.google.dagger:hilt-android:2.38.1"
     kapt "com.google.dagger:hilt-android-compiler:2.38.1"
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
     kapt "androidx.hilt:hilt-compiler:1.0.0"
+    // Dagger support for navigation injections
     implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
 
-    // Retrofit
+    // Retrofit API calls
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    // GSON json converter and mapper
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-    implementation "com.squareup.okhttp3:okhttp:5.0.0-alpha.2"
-    implementation "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2"
+    // OKHttp for logs and timeout overrieds
+    implementation "com.squareup.okhttp3:okhttp:4.9.3"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.3"
 
     // coil image loader
     implementation("io.coil-kt:coil-compose:2.0.0-rc01")
