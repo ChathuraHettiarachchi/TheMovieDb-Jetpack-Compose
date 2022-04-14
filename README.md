@@ -1,6 +1,8 @@
 
 # Backbase - Movie Box - Android (TMDB)
 
+<h3>Note: You can find dayNight theming support on branch feature/day-night-theming I haven't merge since it's not the inital requirement. Feel free to check it out</h2>
+
 ![Poster](https://gitlab.com/chathurahettiarachchi/backbase-moviebox/-/raw/a252b74aefc5afc286f047854c6418c7cd547229/screen_shots/poster.jpg)
 
 Movie Box is an Android application to showcase TheMovieDB API with Jetpack Compose as the UI builder. The goal of the project is to demonstrate best practices by using up to date tech-stack and presenting modern Android application Architecture that is scalable, maintainable, and testable. This application may look quite simple,
