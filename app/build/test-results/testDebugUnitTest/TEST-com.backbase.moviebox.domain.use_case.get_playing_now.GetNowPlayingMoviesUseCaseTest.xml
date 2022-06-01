@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.backbase.moviebox.domain.use_case.get_playing_now.GetNowPlayingMoviesUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-04-13T12:14:32" hostname="SL-CHettiarachchi.local" time="0.008">
+  <properties/>
+  <testcase name="verify state change from loading to success on API success" classname="com.backbase.moviebox.domain.use_case.get_playing_now.GetNowPlayingMoviesUseCaseTest" time="0.003"/>
+  <testcase name="verify state change from loading to error on API or any error" classname="com.backbase.moviebox.domain.use_case.get_playing_now.GetNowPlayingMoviesUseCaseTest" time="0.002"/>
+  <testcase name="verify API success return movie list" classname="com.backbase.moviebox.domain.use_case.get_playing_now.GetNowPlayingMoviesUseCaseTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

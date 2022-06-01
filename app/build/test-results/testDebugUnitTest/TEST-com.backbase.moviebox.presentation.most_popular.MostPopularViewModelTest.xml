@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.backbase.moviebox.presentation.most_popular.MostPopularViewModelTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-04-13T12:14:32" hostname="SL-CHettiarachchi.local" time="0.005">
+  <properties/>
+  <testcase name="verify that next page request will append data to previous list of movies" classname="com.backbase.moviebox.presentation.most_popular.MostPopularViewModelTest" time="0.002"/>
+  <testcase name="error on getNowPlayingMovies isTrue" classname="com.backbase.moviebox.presentation.most_popular.MostPopularViewModelTest" time="0.001"/>
+  <testcase name="success on getNowPlayingMovies and movie object two present isTrue" classname="com.backbase.moviebox.presentation.most_popular.MostPopularViewModelTest" time="0.001"/>
+  <testcase name="success on getNowPlayingMovies isTrue" classname="com.backbase.moviebox.presentation.most_popular.MostPopularViewModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

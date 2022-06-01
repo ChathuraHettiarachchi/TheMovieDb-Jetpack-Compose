@@ -1,0 +1,187 @@
+04-13 17:44:04.107 15388 15409 I TestRunner: started: loading_animation_visibility(com.backbase.moviebox.presentation.playing_now.PlayingNowScreenKtTest)
+04-13 17:44:04.108  1412  1412 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+04-13 17:44:04.108  1412  1412 I GsaVoiceInteractionSrv: disregardVoiceMatch: false
+04-13 17:44:04.108  1412  1412 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+04-13 17:44:04.113 15388 15409 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+04-13 17:44:04.129   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f0000000 0x1f0968000]
+04-13 17:44:04.130   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f12d0000 0x1f1c38000]
+04-13 17:44:04.131   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f3164000 0x1f3acc000]
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.140   548  2150 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.145   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f5d8c000 0x1f66f4000]
+04-13 17:44:04.146  1412  1412 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+04-13 17:44:04.146  1412  1412 E HwDetectorWithState: a: 3
+04-13 17:44:04.147   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f66f4000 0x1f705c000]
+04-13 17:44:04.150   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1faaa4000 0x1fb40c000]
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.163   548  2150 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.167 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2194097 in: PRE_ON_CREATE
+04-13 17:44:04.167 15388 15388 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+04-13 17:44:04.169 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2194097 in: CREATED
+04-13 17:44:04.169 15388 15388 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.backbase.moviebox.presentation.MainActivity@2194097
+04-13 17:44:04.170 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2194097 in: STARTED
+04-13 17:44:04.170 15388 15388 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.backbase.moviebox.presentation.MainActivity@2194097
+04-13 17:44:04.170 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2194097 in: RESUMED
+04-13 17:44:04.170 15388 15388 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.backbase.moviebox.presentation.MainActivity@2194097
+04-13 17:44:04.175  1642  1642 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=66, right=0, bottom=44}
+04-13 17:44:04.175  1642  1642 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=66, right=0, bottom=44}
+04-13 17:44:04.187   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f3164000 0x1f3acc000]
+04-13 17:44:04.190   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f12d0000 0x1f1c38000]
+04-13 17:44:04.191   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f1c38000 0x1f25a0000]
+04-13 17:44:04.195   548   563 I ActivityTaskManager: Displayed com.backbase.moviebox/.presentation.MainActivity: +79ms
+04-13 17:44:04.253 15388 15388 W ckbase.moviebo: Accessing hidden method Ljava/lang/invoke/MethodHandles$Lookup;-><init>(Ljava/lang/Class;I)V (unsupported, reflection, allowed)
+04-13 17:44:04.277 15388 15459 I okhttp.OkHttpClient: --> GET https://api.themoviedb.org/3/movie/now_playing?api_key=11245ed4526d2f51019f511d08a66728&language=en-US&page=undefined
+04-13 17:44:04.277 15388 15459 I okhttp.OkHttpClient: --> END GET
+04-13 17:44:04.289 15388 15388 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10151; state: ENABLED
+04-13 17:44:04.350  1356  1356 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3269
+04-13 17:44:04.350  1356  1356 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1947
+04-13 17:44:04.350  1356  1356 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():79 Notify device unlocked.
+04-13 17:44:04.385 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2194097 in: PAUSED
+04-13 17:44:04.385 15388 15388 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.backbase.moviebox.presentation.MainActivity@2194097
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.386   548  2150 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.414   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f0968000 0x1f12d0000]
+04-13 17:44:04.415   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f705c000 0x1f79c4000]
+04-13 17:44:04.416   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1fb49c000 0x1fbe04000]
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.430   548  2152 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.462   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f8b0c000 0x1f9474000]
+04-13 17:44:04.463   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1fdc38000 0x1fe5a0000]
+04-13 17:44:04.463   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1fe5a0000 0x1fef08000]
+04-13 17:44:04.476   548   563 I ActivityTaskManager: Displayed com.backbase.moviebox.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +75ms
+04-13 17:44:04.480   548   561 W InputManager-JNI: Input channel object 'be00462 Splash Screen com.backbase.moviebox.test (client)' was disposed without first being removed with the input manager!
+04-13 17:44:04.482   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f79c4000 0x1f7fc8000]
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.492   548   561 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.510  1642  1642 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=66, right=0, bottom=44}
+04-13 17:44:04.510  1642  1642 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=66, right=0, bottom=44}
+04-13 17:44:04.512   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f66f4000 0x1f705c000]
+04-13 17:44:04.513   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1fef08000 0x1ff870000]
+04-13 17:44:04.521   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1ec000000 0x1ec968000]
+04-13 17:44:04.530   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1ec968000 0x1ed2d0000]
+04-13 17:44:04.533  1412  1412 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+04-13 17:44:04.533  1412  1412 I GsaVoiceInteractionSrv: disregardVoiceMatch: false
+04-13 17:44:04.533  1412  1412 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+04-13 17:44:04.535   731   935 D EGL_emulation: app_time_stats: avg=47272.04ms min=14.55ms max=803059.06ms count=17
+04-13 17:44:04.538   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1ed2d0000 0x1edc38000]
+04-13 17:44:04.540   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1edc38000 0x1ee5a0000]
+04-13 17:44:04.541  1019  1086 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+04-13 17:44:04.595  1356  1356 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3269
+04-13 17:44:04.595  1356  1356 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1947
+04-13 17:44:04.595  1356  1356 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():79 Notify device unlocked.
+04-13 17:44:04.662   548  2152 W InputManager-JNI: Input channel object '1043e9b com.backbase.moviebox.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: <-- 200 https://api.themoviedb.org/3/movie/now_playing?api_key=11245ed4526d2f51019f511d08a66728&language=en-US&page=undefined (436ms)
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: content-type: application/json;charset=utf-8
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: date: Wed, 13 Apr 2022 07:51:01 GMT
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: server: openresty
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: access-control-allow-origin: *
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: access-control-allow-methods: GET, HEAD, POST, PUT, DELETE, OPTIONS
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: access-control-expose-headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After, Content-Length, Content-Range
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: cache-control: public, max-age=21600
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: vary: Accept-Encoding
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: x-cache: Hit from cloudfront
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: via: 1.1 824b6b17b59323f523bbeab054eeb246.cloudfront.net (CloudFront)
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: x-amz-cf-pop: SIN52-C2
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: x-amz-cf-id: AXZIKHaWYzw1ww342ebpBTfy4dsAjQisnRcBQ3whUUckTM2qjodkjg==
+04-13 17:44:04.714 15388 15459 I okhttp.OkHttpClient: age: 15787
+04-13 17:44:04.716 15388 15459 I okhttp.OkHttpClient: {"dates":{"maximum":"2022-04-11","minimum":"2022-02-22"},"page":1,"results":[{"adult":false,"backdrop_path":"/egoyMDLqCxzjnSrWOz50uLlJWmD.jpg","genre_ids":[28,878,35,10751],"id":675353,"original_language":"en","original_title":"Sonic the Hedgehog 2","overview":"After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero. His test comes when Dr. Robotnik returns, this time with a new partner, Knuckles, in search for an emerald that has the power to destroy civilizations. Sonic teams up with his own sidekick, Tails, and together they embark on a globe-trotting journey to find the emerald before it falls into the wrong hands.","popularity":6401.627,"poster_path":"/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg","release_date":"2022-03-30","title":"Sonic the Hedgehog 2","video":false,"vote_average":7.7,"vote_count":376},{"adult":false,"backdrop_path":"/fOy2Jurz9k6RnJnMUMRDAgBwru2.jpg","genre_ids":[16,10751,35,14],"id":508947,"original_language":"en","original_title":"Turning Red","overview":"Thirteen-year-old Mei is experiencing the awkwardness of being a teenager with a twist – when she gets too excited, she transforms into a giant red panda.","popularity":5475.263,"poster_path":"/qsdjk9oAKSQMWs0Vt5Pyfh6O4GZ.jpg","release_date":"2022-03-10","title":"Turning Red","video":false,"vote_average":7.5,"vote_count":1582},{"adult":false,"backdrop_path":"/x747ZvF0CcYYTTpPRCoUrxA2cYy.jpg","genre_ids":[28,12,878],"id":406759,"original_language":"en","original_title":"Moonfall","overview":"A mysterious force knocks the moon from its orbit around Earth and sends it hurtling on a collision course with life as we know it.","popularity":4650.633,"poster_path":"/odVv1sqVs0KxBXiA8bhIBlPgalx.jpg","release_date":"2022-02-03","title":"Moonfall","video":false,"vote_average":6.5,"vote_count":629},{"adult":false,"backdrop_path":"/ewUqXnwiRLhgmGhuksOdLgh49Ch.jpg","genre_ids":[28,12,35,878],"id":696806,"original_language":"en","original_title":"The Adam Project","overview":"After accidentally crash-landing in 2022, time-traveling fighter pilot Adam Reed teams up with his 12-year-old self on a mission to save the future.","popularity":2018.424,"poster_path":"/wFjboE0aFZNbVOF05fzrka9Fqyx.jpg","release_date":"2022-03-11","title":"The Adam Project","video":false,"vote_average":7,"vote_count":1709},{"adult":false,"backdrop_path":"/5P8SmMzSNYikXpxil6BYzJ16611.jpg","genre_ids":[80,9648,53],"id":414906,"original_language":"en","original_title":"The Batman","overview":"In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.","popularity":2288.853,"poster_path":"/74xTEgt7R36Fpooo50r9T25onhq.jpg","release_date":"2022-03-01","title":"The Batman","video":false,"vote_average":7.9,"vote_count":2806},{"adult":false,"backdrop_path":"/2hGjmgZrS1nlsEl5PZorn7EsmzH.jpg","genre_ids":[28,53],"id":823625,"original_language":"en","original_title":"Blacklight","overview":"Travis Block is a shadowy Government agent who specializes in removing operatives whose covers have been exposed. He then has to uncover a deadly conspiracy within his own ranks that reaches the highest echelons of power.","popularity":1678.647,"poster_path":"/bv9dy8mnwftdY2j6gG39gCfSFpV.jpg","release_date":"2022-02-10","title":"Blacklight","video":false,"vote_average":6,"vote_count":260},{"adult":false,"backdrop_path":"/tq3klWQevRK0Or0cGhsw0h3FDWQ.jpg","genre_ids":[12,16,35,10751,14],"id":676705,"original_language":"fr","original_title":"Pil","overview":"Pil, a little vagabond girl, lives on the streets of the medieval city of Roc-en-Brume, along with her three tame weasels. She survives of food stolen from the castle of the sinister Regent Tristain. One day, to escape his guards, Pil disguises herself as a princess. Thus she embarks upon a mad, delirious adventure, together with Crobar, a big clumsy guard who thinks she's a noble, and Rigolin, a young crackpot jester. Pil is going to have
+04-13 17:44:04.716 15388 15459 I okhttp.OkHttpClient: to save Roland, rightful heir to the throne under the curse of a spell. This adventure will turn the entire kingdom upside down, and teach Pil that nobility can be found in all of us.","popularity":1829.619,"poster_path":"/abPQVYyNfVuGoFUfGVhlNecu0QG.jpg","release_date":"2021-08-11","title":"Pil's Adventures","video":false,"vote_average":7.1,"vote_count":51},{"adult":false,"backdrop_path":"/An1nKjXahrChfEbZ3MAE8fsiut1.jpg","genre_ids":[27],"id":661791,"original_language":"es","original_title":"La abuela","overview":"A Paris model must return to Madrid where her grandmother, who raised her, has had a stroke. But spending just a few days with this relative turns into an unexpected nightmare.","popularity":1632.66,"poster_path":"/19rA9FjhwI4VEfaCXV7648XUInR.jpg","release_date":"2022-01-28","title":"The Grandmother","video":false,"vote_average":6.2,"vote_count":83},{"adult":false,"backdrop_path":"/yzH5zvuEzzsHLZnn0jwYoPf0CMT.jpg","genre_ids":[53,28],"id":760926,"original_language":"en","original_title":"Gold","overview":"In the not-too-distant future, two drifters traveling through the desert stumble across the biggest gold nugget ever found and the dream of immense wealth and greed takes hold. They hatch a plan to excavate their bounty, with one man leaving to secure the necessary tools while the other remains with the gold. The man who remains must endure harsh desert elements, ravenous wild dogs, and mysterious intruders, while battling the sinking suspicion that he has been abandoned to his fate.","popularity":1126.574,"poster_path":"/ejXBuNLvK4kZ7YcqeKqUWnCxdJq.jpg","release_date":"2022-01-13","title":"Gold","video":false,"vote_average":6.5,"vote_count":176},{"adult":false,"backdrop_path":"/qBLEWvJNVsehJkEJqIigPsWyBse.jpg","genre_ids":[16,10751,14,35,12],"id":585083,"original_language":"en","original_title":"Hotel Transylvania: Transformania","overview":"When Van Helsing's mysterious invention, the \"Monsterfication Ray,\" goes haywire, Drac and his monster pals are all transformed into humans, and Johnny becomes a monster. In their new mismatched bodies, Drac and Johnny must team up and race across the globe to find a cure before it's too late, and before they drive each other crazy.","popularity":1310.582,"poster_path":"/teCy1egGQa0y8ULJvlrDHQKnxBL.jpg","release_date":"2022-02-25","title":"Hotel Transylvania: Transformania","video":false,"vote_average":7.1,"vote_count":659},{"adult":false,"backdrop_path":"/6mJrgL7Mi13XjJeGYJFlD6UEVQw.jpg","genre_ids":[16,35,10751,10402],"id":438695,"original_language":"en","original_title":"Sing 2","overview":"Buster and his new cast now have their sights set on debuting a new show at the Crystal Tower Theater in glamorous Redshore City. But with no connections, he and his singers must sneak into the Crystal Entertainment offices, run by the ruthless wolf mogul Jimmy Crystal, where the gang pitches the ridiculous idea of casting the lion rock legend Clay Calloway in their show. Buster must embark on a quest to find the now-isolated Clay and persuade him to return to the stage.","popularity":1063.811,"poster_path":"/aWeKITRFbbwY8txG5uCj4rMCfSP.jpg","release_date":"2021-12-01","title":"Sing 2","video":false,"vote_average":8.1,"vote_count":2526},{"adult":false,"backdrop_path":"/tj4lzGgHrfjnjVqAKkLIjFqPSyO.jpg","genre_ids":[28,878,14],"id":526896,"original_language":"en","original_title":"Morbius","overview":"Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.","popularity":1162.809,"poster_path":"/6nhwr1LCozBiIN47b8oBEomOADm.jpg","release_date":"2022-03-30","title":"Morbius","video":false,"vote_average":5.8,"vote_count":399},{"adult":false,"backdrop_path":"/i5dUmY2xRzgkmjHJYKNj8kPX1Xx.jpg","genre_ids":[37,28],"id":928999,"original_language":"en","original_title":"Desperate Riders","ov
+04-13 17:44:04.716 15388 15459 I okhttp.OkHttpClient: erview":"After Kansas Red rescues young Billy from a card-game shootout, the boy asks Red for help protecting his family from the outlaw Thorn, who’s just kidnapped Billy’s mother, Carol. As Red and Billy ride off to rescue Carol, they run into beautiful, tough-as-nails Leslie, who’s managed to escape Thorn’s men. The three race to stop Thorn’s wedding to Carol with guns a-blazing - but does she want to be rescued?","popularity":892.063,"poster_path":"/7pYYGm1dWZGkbJuhcuaHD6nE6k7.jpg","release_date":"2022-02-25","title":"Desperate Riders","video":false,"vote_average":5.9,"vote_count":29},{"adult":false,"backdrop_path":"/oojlC3gH0bxD7hsnQa3kE9WbEBy.jpg","genre_ids":[35],"id":765119,"original_language":"en","original_title":"The Bubble","overview":"Sneaking out. Hooking up. Melting down. The cast and crew of a blockbuster action franchise attempt to shoot a sequel while quarantining at a posh hotel.","popularity":880.303,"poster_path":"/edYk5TSowZIDv138bCpF5ls3XI5.jpg","release_date":"2022-03-25","title":"The Bubble","video":false,"vote_average":4.8,"vote_count":138},{"adult":false,"backdrop_path":"/xHRabofjmMGoIV3mb6xgy4nwOcS.jpg","genre_ids":[27],"id":801071,"original_language":"en","original_title":"The Jack in the Box: Awakening","overview":"When a vintage Jack-in-the-box is opened by a dying woman, she enters into a deal with the demon within that would see her illness cured in return for helping it claim six innocent victims.","popularity":925.453,"poster_path":"/3Ib8vlWTrAKRrTWUrTrZPOMW4jp.jpg","release_date":"2022-02-24","title":"The Jack in the Box: Awakening","video":false,"vote_average":5.7,"vote_count":30},{"adult":false,"backdrop_path":"/f2J8DpT5bqV0AiI9VVcfiuqKo5l.jpg","genre_ids":[28,99,35],"id":656663,"original_language":"en","original_title":"Jackass Forever","overview":"Celebrate the joy of a perfectly executed shot to the groin as Johnny Knoxville, Steve-O and the rest of the gang return alongside some newcomers for one final round of hilarious, wildly absurd and often dangerous displays of stunts and comedy.","popularity":819.979,"poster_path":"/ugIdyvtAzHWOguD91UjHKoAvfum.jpg","release_date":"2022-02-01","title":"Jackass Forever","video":false,"vote_average":6.9,"vote_count":233},{"adult":false,"backdrop_path":"/mqDnDhG5N6fn1H4MKQqr8E5wfeK.jpg","genre_ids":[80,18,53],"id":597208,"original_language":"en","original_title":"Nightmare Alley","overview":"An ambitious carnival man with a talent for manipulating people with a few well-chosen words hooks up with a female psychiatrist who is even more dangerous than he is.","popularity":739.372,"poster_path":"/680klE0dIreQQOyWKFgNnCAJtws.jpg","release_date":"2021-12-02","title":"Nightmare Alley","video":false,"vote_average":7.1,"vote_count":1448},{"adult":false,"backdrop_path":"/mZ3dl55cY8xtbzX06MOh31pV84Y.jpg","genre_ids":[14,12],"id":338953,"original_language":"en","original_title":"Fantastic Beasts: The Secrets of Dumbledore","overview":"In an effort to thwart Grindelwald's plans of raising pure-blood wizards to rule over all non-magical beings, Albus Dumbledore enlists his former student Newt Scamander, who agrees to help, though he's unaware of the dangers that lie ahead. Lines are drawn as love and loyalty are tested, even among the truest friends and family, in an increasingly divided wizarding world.","popularity":869.597,"poster_path":"/jrgifaYeUtTnaH7NF5Drkgjg2MB.jpg","release_date":"2022-04-07","title":"Fantastic Beasts: The Secrets of Dumbledore","video":false,"vote_average":7.4,"vote_count":109},{"adult":false,"backdrop_path":"/cTTggc927lEPCMsWUsdugSj6wAY.jpg","genre_ids":[28,12],"id":335787,"original_language":"en","original_title":"Uncharted","overview":"A young street-smart, Nathan Drake and his wisecracking partner Victor “Sully” Sullivan embark on a dangerous pursuit of “the greatest treasure never found” while also tracking clues that may lead to Nathan’s long-lost brother.","popularity":697.49,"poster_path":"/sqLowacltbZLoCa4KYye64RvvdQ.jpg","rele
+04-13 17:44:04.716 15388 15459 I okhttp.OkHttpClient: ase_date":"2022-02-10","title":"Uncharted","video":false,"vote_average":7,"vote_count":936},{"adult":false,"backdrop_path":"/8pgKccb5PfE1kWB9qqiXJem83VC.jpg","genre_ids":[28,53],"id":522016,"original_language":"en","original_title":"The 355","overview":"A group of top female agents from American, British, Chinese, Columbian and German  government agencies are drawn together to try and stop an organization from acquiring a deadly weapon to send the world into chaos.","popularity":609.826,"poster_path":"/zxizwEPE8jhpbMgrFbwCztgvh2m.jpg","release_date":"2022-01-05","title":"The 355","video":false,"vote_average":6,"vote_count":386}],"total_pages":62,"total_results":1240}
+04-13 17:44:04.716 15388 15459 I okhttp.OkHttpClient: <-- END HTTP (12697-byte body)
+04-13 17:44:04.932 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2194097 in: STOPPED
+04-13 17:44:04.932 15388 15388 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.backbase.moviebox.presentation.MainActivity@2194097
+04-13 17:44:04.939 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2194097 in: DESTROYED
+04-13 17:44:04.940 15388 15388 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+04-13 17:44:04.944   548  2152 W InputManager-JNI: Input channel object '4955dd3 com.backbase.moviebox/com.backbase.moviebox.presentation.MainActivity (client)' was disposed without first being removed with the input manager!
+04-13 17:44:04.950 15388 15409 I TestRunner: finished: loading_animation_visibility(com.backbase.moviebox.presentation.playing_now.PlayingNowScreenKtTest)

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.backbase.moviebox.common.MovieExtensionKtTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-13T12:14:31" hostname="SL-CHettiarachchi.local" time="0.029">
+  <properties/>
+  <testcase name="verity string new line add requested amount of lines isTrue" classname="com.backbase.moviebox.common.MovieExtensionKtTest" time="0.029"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

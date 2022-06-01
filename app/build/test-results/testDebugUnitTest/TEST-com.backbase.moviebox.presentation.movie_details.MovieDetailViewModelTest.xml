@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.backbase.moviebox.presentation.movie_details.MovieDetailViewModelTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-04-13T12:14:32" hostname="SL-CHettiarachchi.local" time="0.024">
+  <properties/>
+  <testcase name="error on genres isTrue" classname="com.backbase.moviebox.presentation.movie_details.MovieDetailViewModelTest" time="0.019"/>
+  <testcase name="success on getDetails and movie object has correct data isTrue" classname="com.backbase.moviebox.presentation.movie_details.MovieDetailViewModelTest" time="0.0"/>
+  <testcase name="error on getDetails isTrue" classname="com.backbase.moviebox.presentation.movie_details.MovieDetailViewModelTest" time="0.002"/>
+  <testcase name="success on genres isTrue" classname="com.backbase.moviebox.presentation.movie_details.MovieDetailViewModelTest" time="0.0"/>
+  <testcase name="success on genres and genre object has correct data isTrue" classname="com.backbase.moviebox.presentation.movie_details.MovieDetailViewModelTest" time="0.001"/>
+  <testcase name="success on getDetails isTrue" classname="com.backbase.moviebox.presentation.movie_details.MovieDetailViewModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

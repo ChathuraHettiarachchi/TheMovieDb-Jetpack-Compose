@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.backbase.moviebox.data.remote.dto.MovieDetailsDtoKtTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-04-13T12:14:32" hostname="SL-CHettiarachchi.local" time="0.006">
+  <properties/>
+  <testcase name="verify movieDetailsDto_details set correct values isTrue" classname="com.backbase.moviebox.data.remote.dto.MovieDetailsDtoKtTest" time="0.006"/>
+  <testcase name="verify movieDetailsDto can generate movieDetail object isTrue" classname="com.backbase.moviebox.data.remote.dto.MovieDetailsDtoKtTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

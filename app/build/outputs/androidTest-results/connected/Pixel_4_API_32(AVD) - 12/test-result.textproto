@@ -1,0 +1,172 @@
+# 2022-04-13T12:14:10.770Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 3
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ExampleInstrumentedTest"
+    test_package: "com.backbase.moviebox"
+    test_method: "useAppContext"
+    start_time {
+      seconds: 1649852046
+      nanos: 710000000
+    }
+    end_time {
+      seconds: 1649852047
+      nanos: 24000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/chettiarachchi/Documents/Try Outs/Android/backbase-moviebox/app/build/outputs/androidTest-results/connected/Pixel_4_API_32(AVD) - 12/logcat-com.backbase.moviebox.ExampleInstrumentedTest-useAppContext.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/chettiarachchi/Documents/Try Outs/Android/backbase-moviebox/app/build/outputs/androidTest-results/connected/Pixel_4_API_32(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/chettiarachchi/Documents/Try Outs/Android/backbase-moviebox/app/build/outputs/androidTest-results/connected/Pixel_4_API_32(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/chettiarachchi/Documents/Try Outs/Android/backbase-moviebox/app/build/outputs/androidTest-results/connected/Pixel_4_API_32(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AnimatedSplashScreenKtTest"
+    test_package: "com.backbase.moviebox.presentation"
+    test_method: "splash_image_appeared"
+    start_time {
+      seconds: 1649852047
+      nanos: 57000000
+    }
+    end_time {
+      seconds: 1649852048
+      nanos: 91000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/chettiarachchi/Documents/Try Outs/Android/backbase-moviebox/app/build/outputs/androidTest-results/connected/Pixel_4_API_32(AVD) - 12/logcat-com.backbase.moviebox.presentation.AnimatedSplashScreenKtTest-splash_image_appeared.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/chettiarachchi/Documents/Try Outs/Android/backbase-moviebox/app/build/outputs/androidTest-results/connected/Pixel_4_API_32(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/chettiarachchi/Documents/Try Outs/Android/backbase-moviebox/app/build/outputs/androidTest-results/connected/Pixel_4_API_32(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/chettiarachchi/Documents/Try Outs/Android/backbase-moviebox/app/build/outputs/androidTest-results/connected/Pixel_4_API_32(AVD) - 12/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PlayingNowScreenKtTest"
+    test_package: "com.backbase.moviebox.presentation.playing_now"
+    test_method: "loading_animation_visibility"
+    start_time {
+      seconds: 1649852048
+      nanos: 97000000
+    }
+    end_time {
+      seconds: 1649852048
+      nanos: 918000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/chettiarachchi/Documents/Try Outs/Android/backbase-moviebox/app/build/outputs/androidTest-results/connected/Pixel_4_API_32(AVD) - 12/logcat-com.backbase.moviebox.presentation.playing_now.PlayingNowScreenKtTest-loading_animation_visibility.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/chettiarachchi/Documents/Try Outs/Android/backbase-moviebox/app/build/outputs/androidTest-results/connected/Pixel_4_API_32(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/chettiarachchi/Documents/Try Outs/Android/backbase-moviebox/app/build/outputs/androidTest-results/connected/Pixel_4_API_32(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/chettiarachchi/Documents/Try Outs/Android/backbase-moviebox/app/build/outputs/androidTest-results/connected/Pixel_4_API_32(AVD) - 12/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/chettiarachchi/Documents/Try Outs/Android/backbase-moviebox/app/build/outputs/androidTest-results/connected/Pixel_4_API_32(AVD) - 12/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}
