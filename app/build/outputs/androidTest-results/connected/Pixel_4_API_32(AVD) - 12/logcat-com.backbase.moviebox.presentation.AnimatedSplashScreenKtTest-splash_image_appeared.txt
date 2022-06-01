@@ -1,0 +1,235 @@
+04-13 17:44:02.758 15388 15409 I TestRunner: started: splash_image_appeared(com.backbase.moviebox.presentation.AnimatedSplashScreenKtTest)
+04-13 17:44:02.797 15388 15409 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+04-13 17:44:02.803 15388 15409 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10151; state: ENABLED
+04-13 17:44:02.822   361   361 W RanchuHwc: validateDisplay: layer 125 CompositionType 1, fallback
+04-13 17:44:02.844   361   361 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+04-13 17:44:02.847   361   361 W RanchuHwc: validateDisplay: layer 125 CompositionType 1, fallback
+04-13 17:44:02.847   361   361 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+04-13 17:44:02.889   361   361 W RanchuHwc: validateDisplay: layer 125 CompositionType 1, fallback
+04-13 17:44:02.889   361   361 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+04-13 17:44:02.894   344   344 D Zygote  : Forked child process 15411
+04-13 17:44:02.904   386   386 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+04-13 17:44:02.905   361   361 W RanchuHwc: validateDisplay: layer 125 CompositionType 1, fallback
+04-13 17:44:02.905   361   361 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+04-13 17:44:02.923   361   361 W RanchuHwc: validateDisplay: layer 125 CompositionType 1, fallback
+04-13 17:44:02.924   361   361 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+04-13 17:44:02.930 15411 15411 I e.moviebox.tes: Late-enabling -Xcheck:jni
+04-13 17:44:02.941   361   361 W RanchuHwc: validateDisplay: layer 125 CompositionType 1, fallback
+04-13 17:44:02.963   360   360 D goldfish-address-space: claimShared: Ask to claim region [0x1f0968000 0x1f12d0000]
+04-13 17:44:02.965   361   361 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+04-13 17:44:02.965  1019  1551 D EGL_emulation: app_time_stats: avg=1754.42ms min=1754.42ms max=1754.42ms count=1
+04-13 17:44:02.967   361   361 W RanchuHwc: validateDisplay: layer 125 CompositionType 1, fallback
+04-13 17:44:02.980   361   361 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+04-13 17:44:02.983   360   360 D goldfish-address-space: claimShared: Ask to claim region [0x1f6a58000 0x1f73c0000]
+04-13 17:44:03.006   361   361 W RanchuHwc: validateDisplay: layer 125 CompositionType 1, fallback
+04-13 17:44:03.007   360   360 D goldfish-address-space: claimShared: Ask to claim region [0x1f73c0000 0x1f7d28000]
+04-13 17:44:03.011  1412  1412 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+04-13 17:44:03.012   361   361 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+04-13 17:44:03.015  1412  1412 E HwDetectorWithState: a: 3
+04-13 17:44:03.023   361   361 W RanchuHwc: validateDisplay: layer 125 CompositionType 1, fallback
+04-13 17:44:03.028   361   361 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+04-13 17:44:03.048   386   702 E SurfaceFlinger: Only WindowManager is allowed to use eEarlyWakeup[Start|End] flags
+04-13 17:44:03.060  1019  1019 D b/195430732: currentRunningTaskViewId: -1 requestedTaskViewId: -1
+04-13 17:44:03.107   402   445 I adbd    : jdwp connection from 15411
+04-13 17:44:03.138   548  1747 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.138   548  1747 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.138   548  1747 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.139   548  1747 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.139   548  1747 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.139   548  1747 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.139   548  1747 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.139   548  1747 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.139   548  1747 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.139   548  1747 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.140   548  1747 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.140   548  1747 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.140   548  1747 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.140   548  1747 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.140   548  1747 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.140   548  1747 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.140   548  1747 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.140   548  1747 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.140   548  1747 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.140   548  1747 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.157 15411 15411 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10149; state: ENABLED
+04-13 17:44:03.167 15411 15411 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-13 17:44:03.175 15411 15411 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-13 17:44:03.266 15411 15411 V GraphicsEnvironment: ANGLE Developer option for 'com.backbase.moviebox.test' set to: 'default'
+04-13 17:44:03.267 15411 15411 V GraphicsEnvironment: ANGLE GameManagerService for com.backbase.moviebox.test: false
+04-13 17:44:03.267 15411 15411 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+04-13 17:44:03.268 15411 15411 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+04-13 17:44:03.269 15411 15411 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+04-13 17:44:03.316 15411 15435 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+04-13 17:44:03.319 15411 15435 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+04-13 17:44:03.321 15411 15435 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+04-13 17:44:03.342  1642  1642 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=66, right=0, bottom=44}
+04-13 17:44:03.342  1642  1642 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=66, right=0, bottom=44}
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.357   548  2150 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.375 15388 15440 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+04-13 17:44:03.376 15388 15440 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+04-13 17:44:03.377 15388 15440 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+04-13 17:44:03.389 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2f5c9c1 in: PRE_ON_CREATE
+04-13 17:44:03.389 15388 15388 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+04-13 17:44:03.405 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2f5c9c1 in: CREATED
+04-13 17:44:03.405 15388 15388 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.backbase.moviebox.presentation.MainActivity@2f5c9c1
+04-13 17:44:03.406   386   386 W SurfaceFlinger: couldn't log to binary event log: overflow.
+04-13 17:44:03.406   386   386 W SurfaceFlinger: couldn't log to binary event log: overflow.
+04-13 17:44:03.406 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2f5c9c1 in: STARTED
+04-13 17:44:03.406 15388 15388 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.backbase.moviebox.presentation.MainActivity@2f5c9c1
+04-13 17:44:03.407 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2f5c9c1 in: RESUMED
+04-13 17:44:03.407 15388 15388 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.backbase.moviebox.presentation.MainActivity@2f5c9c1
+04-13 17:44:03.503 15388 15388 W ckbase.moviebo: Class androidx.compose.runtime.snapshots.SnapshotStateList failed lock verification and will run slower.
+04-13 17:44:03.503 15388 15388 W ckbase.moviebo: Common causes for lock verification issues are non-optimized dex code
+04-13 17:44:03.503 15388 15388 W ckbase.moviebo: and incorrect proguard optimizations.
+04-13 17:44:03.515 15388 15438 D HostConnection: createUnique: call
+04-13 17:44:03.522 15388 15438 D HostConnection: HostConnection::get() New Host Connection established 0xb4000073e21e2310, tid 15438
+04-13 17:44:03.555 15388 15438 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+04-13 17:44:03.557   203   203 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+04-13 17:44:03.557 15388 15438 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+04-13 17:44:03.557 15388 15438 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+04-13 17:44:03.558 15388 15438 D EGL_emulation: eglCreateContext: 0xb4000073e21e2190: maj 3 min 0 rcv 3
+04-13 17:44:03.559 15388 15438 D EGL_emulation: eglMakeCurrent: 0xb4000073e21e2190: ver 3 0 (tinfo 0x75fa03c080) (first time)
+04-13 17:44:03.566   203   203 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+04-13 17:44:03.566 15388 15438 I Gralloc4: mapper 4.x is not supported
+04-13 17:44:03.567 15388 15438 D HostConnection: createUnique: call
+04-13 17:44:03.567 15388 15438 D HostConnection: HostConnection::get() New Host Connection established 0xb4000073e21e2fd0, tid 15438
+04-13 17:44:03.567 15388 15438 D goldfish-address-space: allocate: Ask for block of size 0x100
+04-13 17:44:03.567 15388 15438 D goldfish-address-space: allocate: ioctl allocate returned offset 0x1efff8000 size 0x8000
+04-13 17:44:03.568   203   203 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+04-13 17:44:03.568 15388 15438 W Gralloc4: allocator 4.x is not supported
+04-13 17:44:03.569   360   360 D goldfish-address-space: claimShared: Ask to claim region [0x1f0000000 0x1f0968000]
+04-13 17:44:03.590 15388 15438 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+04-13 17:44:03.591   360   360 D goldfish-address-space: claimShared: Ask to claim region [0x1f3164000 0x1f3acc000]
+04-13 17:44:03.592   360   360 D goldfish-address-space: claimShared: Ask to claim region [0x1f12d0000 0x1f1c38000]
+04-13 17:44:03.633 15388 15388 D EventInjectionStrategy: Creating injection strategy with input manager.
+04-13 17:44:03.634 15388 15388 W ckbase.moviebo: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+04-13 17:44:03.634 15388 15388 W ckbase.moviebo: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+04-13 17:44:03.634 15388 15388 W ckbase.moviebo: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+04-13 17:44:03.636   548   563 I ActivityTaskManager: Displayed com.backbase.moviebox/.presentation.MainActivity: +830ms
+04-13 17:44:03.761  1137 14294 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService started execution. cause:4 exec_start_elapsed_seconds: 7043 [CONTEXT service_id=218 ]
+04-13 17:44:03.763  1137 15343 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService finished executing. cause:4 result: 1 elapsed_millis: 20 uptime_millis: 20 exec_start_elapsed_seconds: 7043 [CONTEXT service_id=218 ]
+04-13 17:44:03.805 15388 15388 W ckbase.moviebo: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+04-13 17:44:03.805 15388 15388 W ckbase.moviebo: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+04-13 17:44:03.805 15388 15388 W ckbase.moviebo: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+04-13 17:44:03.821  1356  1356 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3269
+04-13 17:44:03.823  1356  1356 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1947
+04-13 17:44:03.825  1356  1356 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():79 Notify device unlocked.
+04-13 17:44:03.908 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2f5c9c1 in: PAUSED
+04-13 17:44:03.909 15388 15388 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.backbase.moviebox.presentation.MainActivity@2f5c9c1
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.914   548   561 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:03.915   548  1747 W InputManager-JNI: Input channel object 'fa7ea83 Splash Screen com.backbase.moviebox.test (client)' was disposed without first being removed with the input manager!
+04-13 17:44:03.938   386   386 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+04-13 17:44:03.945 15411 15433 D HostConnection: createUnique: call
+04-13 17:44:03.946 15411 15433 D HostConnection: HostConnection::get() New Host Connection established 0xb4000073e21e5850, tid 15433
+04-13 17:44:03.957 15411 15433 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+04-13 17:44:03.958   203   203 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+04-13 17:44:03.958 15411 15433 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+04-13 17:44:03.958 15411 15433 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+04-13 17:44:03.959 15411 15433 D EGL_emulation: eglCreateContext: 0xb4000073e21e7290: maj 3 min 0 rcv 3
+04-13 17:44:03.960 15411 15433 D EGL_emulation: eglMakeCurrent: 0xb4000073e21e7290: ver 3 0 (tinfo 0x75fd350080) (first time)
+04-13 17:44:03.964   203   203 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+04-13 17:44:03.964 15411 15433 I Gralloc4: mapper 4.x is not supported
+04-13 17:44:03.965 15411 15433 D HostConnection: createUnique: call
+04-13 17:44:03.965 15411 15433 D HostConnection: HostConnection::get() New Host Connection established 0xb4000073e21e7950, tid 15433
+04-13 17:44:03.965 15411 15433 D goldfish-address-space: allocate: Ask for block of size 0x100
+04-13 17:44:03.965 15411 15433 D goldfish-address-space: allocate: ioctl allocate returned offset 0x1efff8000 size 0x8000
+04-13 17:44:03.966   203   203 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+04-13 17:44:03.966 15411 15433 W Gralloc4: allocator 4.x is not supported
+04-13 17:44:03.967   360   360 D goldfish-address-space: claimShared: Ask to claim region [0x1f1c38000 0x1f25a0000]
+04-13 17:44:03.980 15411 15433 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+04-13 17:44:03.981   360   360 D goldfish-address-space: claimShared: Ask to claim region [0x1f5788000 0x1f60f0000]
+04-13 17:44:03.982   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f60f0000 0x1f6a58000]
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.021   548  2160 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.044   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f4000000 0x1f4968000]
+04-13 17:44:04.045   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f4968000 0x1f52d0000]
+04-13 17:44:04.045   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f9c80000 0x1fa5e8000]
+04-13 17:44:04.058   548   563 I ActivityTaskManager: Displayed com.backbase.moviebox.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +132ms
+04-13 17:44:04.060   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f5788000 0x1f5d8c000]
+04-13 17:44:04.067   548  2160 W InputManager-JNI: Input channel object '7361087 com.backbase.moviebox.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+04-13 17:44:04.069   548  2150 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.069   548  2150 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.069   548  2150 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.069   548  2150 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.069   548  2150 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.069   548  2150 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.069   548  2150 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.069   548  2150 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.069   548  2150 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.069   548  2150 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.069   548  2150 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.070   548  2150 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.070   548  2150 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.070   548  2150 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.070   548  2150 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.070   548  2150 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.070   548  2150 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.070   548  2150 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.070   548  2150 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.070   548  2150 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-13 17:44:04.078  1642  1642 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=66, right=0, bottom=44}
+04-13 17:44:04.078  1642  1642 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=66, right=0, bottom=44}
+04-13 17:44:04.079   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f0968000 0x1f12d0000]
+04-13 17:44:04.080   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f1c38000 0x1f25a0000]
+04-13 17:44:04.081   360   410 D goldfish-address-space: claimShared: Ask to claim region [0x1f73c0000 0x1f7d28000]
+04-13 17:44:04.082 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2f5c9c1 in: STOPPED
+04-13 17:44:04.082 15388 15388 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.backbase.moviebox.presentation.MainActivity@2f5c9c1
+04-13 17:44:04.087 15388 15388 D LifecycleMonitor: Lifecycle status change: com.backbase.moviebox.presentation.MainActivity@2f5c9c1 in: DESTROYED
+04-13 17:44:04.087 15388 15388 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+04-13 17:44:04.095 15388 15409 I TestRunner: finished: splash_image_appeared(com.backbase.moviebox.presentation.AnimatedSplashScreenKtTest)

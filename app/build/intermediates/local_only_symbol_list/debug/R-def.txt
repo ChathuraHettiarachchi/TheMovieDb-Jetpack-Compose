@@ -1,0 +1,21 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color primary
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable app_logo
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable movie_placeholder
+mipmap ic_launcher
+mipmap ic_launcher_round
+raw error
+raw no_internet
+raw searching
+string app_name
+style Theme.MovieBox

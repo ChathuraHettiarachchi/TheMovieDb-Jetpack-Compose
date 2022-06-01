@@ -1,0 +1,2 @@
+04-13 17:44:02.751 15388 15409 I TestRunner: started: useAppContext(com.backbase.moviebox.ExampleInstrumentedTest)
+04-13 17:44:02.756 15388 15409 I TestRunner: finished: useAppContext(com.backbase.moviebox.ExampleInstrumentedTest)
