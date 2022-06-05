@@ -1,9 +1,9 @@
 
 # Backbase - Movie Box - Android (TMDB)
 
-<h3>Note: You can find dayNight theming support on branch [feature/day-night-theming](https://gitlab.com/chathurahettiarachchi/backbase-moviebox/-/tree/feature/day-night-theming) I haven't merge since it's not the inital requirement. Feel free to check it out</h2>
+<h3>Note: You can find dayNight theming support on branch [feature/day-night-theming](https://github.com/ChathuraHettiarachchi/TheMovieDb-Jetpack-Compose/tree/feature/day-night-theming) I haven't merge since it's not the inital requirement. Feel free to check it out</h2>
 
-![Poster](https://gitlab.com/chathurahettiarachchi/backbase-moviebox/-/raw/a252b74aefc5afc286f047854c6418c7cd547229/screen_shots/poster.jpg)
+![Poster](https://user-images.githubusercontent.com/13764097/172061913-8f2e3423-86e6-4cdf-ba2f-773c518a7acc.jpeg)
 
 Movie Box is an Android application to showcase TheMovieDB API with Jetpack Compose as the UI builder. The goal of the project is to demonstrate best practices by using up to date tech-stack and presenting modern Android application Architecture that is scalable, maintainable, and testable. This application may look quite simple,
 but it has all of these small details that will set the rock-solid foundation for the larger app suitable for bigger teams
@@ -156,7 +156,7 @@ Next, we have `RatingView` which combine text value and `RatingDot` as one singl
 
 This is how it looks on both below and over ratings.
 
-![Screenshot_2022-04-13_at_23.22.23](/uploads/b1fefe650cca6b8ef90d8bb8f5b169af/Screenshot_2022-04-13_at_23.22.23.png)
+![Screenshot_2022-04-13_at_23.22.23](https://user-images.githubusercontent.com/13764097/172061978-de3485e4-eeb5-4337-baea-04e5d984a5ca.png)
 
 #### Horizontal Pager for PopularMovies with Pagination
 Well, Jetpack has no way to implement this one, so I had come combine some basic with Accompanist-pager library, knowledge about state and pagination logic to achive that. I'm requesting data and update the state when ever user is reaching at the end. The treshold is 6.
@@ -207,7 +207,7 @@ HorizontalPager(
 Additionally I have added alpha change on page offset items and the size. Check how it looks.
 
 ## Demo of the application
-![ezgif.com-gif-maker](/uploads/418bcc6482676851e75fe90233788b0c/ezgif.com-gif-maker.gif)
+![ezgif.com-gif-maker](https://user-images.githubusercontent.com/13764097/172062017-4a2b9e70-29cb-4c28-997d-4b27e3e8eefc.gif)
 
 ## Dependencies and the usage
 ```gradle
