@@ -1,5 +1,5 @@
 
-# Backbase - Movie Box - Android (TMDB)
+# Movie Box - Android (TMDB) (Tested/build on Android Studio Flamingo)
 
 <h3>Note: You can find dayNight theming support on branch [feature/day-night-theming](https://github.com/ChathuraHettiarachchi/TheMovieDb-Jetpack-Compose/tree/feature/day-night-theming) I haven't merge since it's not the inital requirement. Feel free to check it out</h2>
 
