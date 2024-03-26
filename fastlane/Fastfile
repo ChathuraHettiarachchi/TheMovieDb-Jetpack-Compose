@@ -50,7 +50,7 @@ platform :android do
             package_name: app_identifier,
             track: "internal",
             json_key: ENV["ANDROID_JSON_KEY_FILE"]
-        )curl -sL firebase.tools | bash
+        )
 
         updated_version_code = version_codes[0] + 1
 
