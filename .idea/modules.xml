@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MovieBox.iml" filepath="$PROJECT_DIR$/.idea/modules/MovieBox.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MovieBox.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MovieBox.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MovieBox.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MovieBox.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MovieBox.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MovieBox.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MovieBox.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MovieBox.app.unitTest.iml" />
     </modules>
   </component>
 </project>

@@ -16,7 +16,7 @@ interface MovieDbAPI {
     suspend fun getNowPlayingMovies(
         @Query("api_key") apiKey: String = Constants.API_KEY,
         @Query("language") lan: String = "en-US",
-        @Query("page") page: String = "undefined"
+        @Query("page") page: String = "1"
     ): MovieDto
 
     @GET("/3/movie/popular")

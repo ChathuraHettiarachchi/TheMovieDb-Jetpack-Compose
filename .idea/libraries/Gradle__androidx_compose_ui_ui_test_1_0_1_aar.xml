@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.compose.ui:ui-test:1.0.1@aar">
+  <library name="Gradle: androidx.compose.ui:ui-test:1.0.1@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/30f4233fb8869e04d92bb6586930279d/transformed/ui-test-1.0.1/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/30f4233fb8869e04d92bb6586930279d/transformed/ui-test-1.0.1/res" />

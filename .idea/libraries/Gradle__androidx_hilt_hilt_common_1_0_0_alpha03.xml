@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.hilt:hilt-common:1.0.0-alpha03">
+  <library name="Gradle: androidx.hilt:hilt-common:1.0.0-alpha03" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.hilt/hilt-common/1.0.0-alpha03/90aeb66553da3c66ca5047835d9eb1fcf26dc10e/hilt-common-1.0.0-alpha03.jar!/" />
     </CLASSES>
