@@ -1,9 +1,9 @@
-name: Android Build & Deploy
+name: Android Build & Deploy to Store
 
 on:
   push:
     branches:
-      - develop
+      - master
 
 jobs:
   deploy:
