@@ -1,0 +1,220 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > PopularMovieInfoViewKt</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.backbase.moviebox.presentation.most_popular.components</a>
+</div>
+
+<h1>Coverage Summary for Class: PopularMovieInfoViewKt (com.backbase.moviebox.presentation.most_popular.components)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">PopularMovieInfoViewKt</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/76)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">PopularMovieInfoViewKt$PopularMovieInfoView$1$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">PopularMovieInfoViewKt$PopularMovieInfoView$2</td>
+  </tr>
+  <tr>
+    <td class="name">PopularMovieInfoViewKt$PopularMovieInfoViewPreview$1</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/77)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.backbase.moviebox.presentation.most_popular.components
+&nbsp;
+&nbsp;import android.widget.Space
+&nbsp;import androidx.compose.foundation.clickable
+&nbsp;import androidx.compose.foundation.layout.*
+&nbsp;import androidx.compose.material.Text
+&nbsp;import androidx.compose.runtime.Composable
+&nbsp;import androidx.compose.ui.Alignment
+&nbsp;import androidx.compose.ui.Modifier
+&nbsp;import androidx.compose.ui.semantics.Role
+&nbsp;import androidx.compose.ui.text.font.FontWeight
+&nbsp;import androidx.compose.ui.text.style.TextAlign
+&nbsp;import androidx.compose.ui.text.style.TextOverflow
+&nbsp;import androidx.compose.ui.tooling.preview.Preview
+&nbsp;import androidx.compose.ui.unit.dp
+&nbsp;import androidx.compose.ui.unit.sp
+&nbsp;import androidx.navigation.NavController
+&nbsp;import androidx.navigation.NavHostController
+&nbsp;import com.backbase.moviebox.common.addEmptyLines
+&nbsp;import com.backbase.moviebox.domain.model.Movie
+&nbsp;import com.backbase.moviebox.navigation.MovieScreenList
+&nbsp;import com.backbase.moviebox.presentation.common_components.RatingView
+&nbsp;import com.backbase.moviebox.presentation.common_components.ScreenTitleView
+&nbsp;import com.backbase.moviebox.theme.accent
+&nbsp;import com.backbase.moviebox.theme.textDescription
+&nbsp;
+&nbsp;/**
+&nbsp; * PopularMovieInfo view, can used to display main info of a movie
+&nbsp; *
+&nbsp; * @param movie movie object from domain package
+&nbsp; * @param navController is the main navigation controller of the application
+&nbsp; */
+&nbsp;@Composable
+<b class="nc">&nbsp;fun PopularMovieInfoView(movie: Movie, navController: NavController?) {</b>
+<b class="nc">&nbsp;    Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {</b>
+<b class="nc">&nbsp;        ScreenTitleView(</b>
+<b class="nc">&nbsp;            title = movie.original_title,</b>
+<b class="nc">&nbsp;            isCentered = true,</b>
+<b class="nc">&nbsp;            size = 20,</b>
+<b class="nc">&nbsp;            top = 12,</b>
+<b class="nc">&nbsp;            bottom = 8,</b>
+<b class="nc">&nbsp;            paddingEnd = 16,</b>
+<b class="nc">&nbsp;            paddingStart = 16</b>
+&nbsp;        )
+<b class="nc">&nbsp;        RatingView(rating = (movie.vote_average * 10).toInt())</b>
+<b class="nc">&nbsp;        Text(</b>
+<b class="nc">&nbsp;            modifier = Modifier</b>
+<b class="nc">&nbsp;                .fillMaxWidth()</b>
+<b class="nc">&nbsp;                .padding(16.dp),</b>
+<b class="nc">&nbsp;            text = movie.overview.addEmptyLines(3),</b>
+<b class="nc">&nbsp;            maxLines = 3,</b>
+<b class="nc">&nbsp;            overflow = TextOverflow.Ellipsis,</b>
+<b class="nc">&nbsp;            color = textDescription,</b>
+<b class="nc">&nbsp;            textAlign = TextAlign.Center,</b>
+<b class="nc">&nbsp;            fontSize = 14.sp</b>
+&nbsp;        )
+<b class="nc">&nbsp;        Text(</b>
+<b class="nc">&nbsp;            modifier = Modifier</b>
+<b class="nc">&nbsp;                .fillMaxWidth()</b>
+<b class="nc">&nbsp;                .padding(bottom = 16.dp)</b>
+<b class="nc">&nbsp;                .clickable(enabled = true, role = Role.Button) {</b>
+<b class="nc">&nbsp;                    navController?.navigate(MovieScreenList.MovieDetail.route + &quot;/${movie.id}&quot;)</b>
+&nbsp;                },
+<b class="nc">&nbsp;            text = &quot;See more&quot;,</b>
+<b class="nc">&nbsp;            color = accent,</b>
+<b class="nc">&nbsp;            textAlign = TextAlign.Center,</b>
+<b class="nc">&nbsp;            fontWeight = FontWeight.Bold,</b>
+<b class="nc">&nbsp;        )</b>
+<b class="nc">&nbsp;    }</b>
+&nbsp;}
+&nbsp;
+&nbsp;@Composable
+&nbsp;@Preview
+<b class="nc">&nbsp;fun PopularMovieInfoViewPreview() {</b>
+<b class="nc">&nbsp;    PopularMovieInfoView(</b>
+<b class="nc">&nbsp;        Movie(</b>
+<b class="nc">&nbsp;            id = 675353,</b>
+<b class="nc">&nbsp;            original_title = &quot;Sonic the Hedgehog 2&quot;,</b>
+<b class="nc">&nbsp;            overview = &quot;After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero. His test comes when Dr. Robotnik returns, this time with a new partner, Knuckles, in search for an emerald that has the power to destroy civilizations. Sonic teams up with his own sidekick, Tails, and together they embark on a globe-trotting journey to find the emerald before it falls into the wrong hands.&quot;,</b>
+<b class="nc">&nbsp;            vote_average = 5.6,</b>
+<b class="nc">&nbsp;            poster_path = &quot;/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg&quot;</b>
+<b class="nc">&nbsp;        ), null</b>
+&nbsp;    )
+<b class="nc">&nbsp;}</b>
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-03-26 16:45</div>
+</div>
+</body>
+</html>

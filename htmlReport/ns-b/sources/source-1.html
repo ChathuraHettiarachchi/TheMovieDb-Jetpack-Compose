@@ -1,0 +1,169 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > GetNowPlayingMoviesUseCase</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.backbase.moviebox.domain.use_case.get_playing_now</a>
+</div>
+
+<h1>Coverage Summary for Class: GetNowPlayingMoviesUseCase (com.backbase.moviebox.domain.use_case.get_playing_now)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">GetNowPlayingMoviesUseCase</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">GetNowPlayingMoviesUseCase$invoke$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (6/12)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    60%
+  </span>
+  <span class="absValue">
+    (9/15)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.backbase.moviebox.domain.use_case.get_playing_now
+&nbsp;
+&nbsp;import com.backbase.moviebox.common.Resource
+&nbsp;import com.backbase.moviebox.data.remote.dto.toMovies
+&nbsp;import com.backbase.moviebox.domain.model.Movie
+&nbsp;import com.backbase.moviebox.domain.repository.MovieRepository
+&nbsp;import kotlinx.coroutines.flow.Flow
+&nbsp;import kotlinx.coroutines.flow.flow
+&nbsp;import retrofit2.HttpException
+&nbsp;import java.io.IOException
+&nbsp;import java.net.SocketException
+&nbsp;import javax.inject.Inject
+&nbsp;
+&nbsp;/**
+&nbsp; * GetNowPlayingMoviesUseCase is used to get now playing movies
+&nbsp; * Have used kotlin flow and will emit results from time to time
+&nbsp; */
+<b class="fc">&nbsp;class GetNowPlayingMoviesUseCase @Inject constructor(</b>
+<b class="fc">&nbsp;    private val repository: MovieRepository</b>
+&nbsp;){
+&nbsp;    /**
+&nbsp;     * Used kotlin operator function, so it&#39;s corresponding member function is called automatically
+&nbsp;     */
+<b class="fc">&nbsp;    operator fun invoke() : Flow&lt;Resource&lt;List&lt;Movie&gt;&gt;&gt; = flow {</b>
+<b class="fc">&nbsp;        try{</b>
+<b class="fc">&nbsp;            emit(Resource.Loading&lt;List&lt;Movie&gt;&gt;())</b>
+<b class="fc">&nbsp;            val movies = repository.getNowPlayingMovies().toMovies()</b>
+<b class="fc">&nbsp;            emit(Resource.Success&lt;List&lt;Movie&gt;&gt;(movies))</b>
+<b class="nc">&nbsp;        } catch (e: HttpException){</b>
+<b class="nc">&nbsp;            emit(Resource.Error&lt;List&lt;Movie&gt;&gt;(e.localizedMessage ?: &quot;There is an exception occurred on HTTP Connection&quot;))</b>
+<b class="fc">&nbsp;        } catch (e: IOException){</b>
+<b class="fc">&nbsp;            emit(Resource.Error&lt;List&lt;Movie&gt;&gt;(e.localizedMessage ?: &quot;Couldn&#39;t connect to server. Please check the network connection&quot;))</b>
+<b class="nc">&nbsp;        } catch (e: SocketException){</b>
+<b class="nc">&nbsp;            emit(Resource.Error&lt;List&lt;Movie&gt;&gt;(e.localizedMessage ?: &quot;There is an exception occurred on Socket Connection&quot;))</b>
+<b class="nc">&nbsp;        } catch (e: Exception){</b>
+<b class="nc">&nbsp;            emit(Resource.Error&lt;List&lt;Movie&gt;&gt;(e.localizedMessage ?: &quot;Something went wrong&quot;))</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-03-26 16:45</div>
+</div>
+</body>
+</html>

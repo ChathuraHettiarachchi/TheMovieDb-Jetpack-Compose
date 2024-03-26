@@ -1,0 +1,312 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > NetowkUtilsKt</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.backbase.moviebox.presentation</a>
+</div>
+
+<h1>Coverage Summary for Class: NetowkUtilsKt (com.backbase.moviebox.presentation)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">NetowkUtilsKt</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/15)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">NetowkUtilsKt$connectivityState$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">NetowkUtilsKt$connectivityState$1$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">NetowkUtilsKt$NetworkCallback$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">NetowkUtilsKt$observeConnectivityAsFlow$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/10)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">NetowkUtilsKt$observeConnectivityAsFlow$1$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">NetowkUtilsKt$observeConnectivityAsFlow$1$callback$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/13)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/33)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.backbase.moviebox.presentation
+&nbsp;
+&nbsp;import android.content.Context
+&nbsp;import android.net.ConnectivityManager
+&nbsp;import android.net.Network
+&nbsp;import android.net.NetworkCapabilities
+&nbsp;import android.net.NetworkRequest
+&nbsp;import androidx.compose.runtime.Composable
+&nbsp;import androidx.compose.runtime.State
+&nbsp;import androidx.compose.runtime.produceState
+&nbsp;import androidx.compose.ui.platform.LocalContext
+&nbsp;import com.backbase.moviebox.common.ConnectionState
+&nbsp;import kotlinx.coroutines.ExperimentalCoroutinesApi
+&nbsp;import kotlinx.coroutines.channels.awaitClose
+&nbsp;import kotlinx.coroutines.flow.callbackFlow
+&nbsp;
+&nbsp;@ExperimentalCoroutinesApi
+&nbsp;@Composable
+&nbsp;fun connectivityState(): State&lt;ConnectionState&gt; {
+<b class="nc">&nbsp;    val context = LocalContext.current</b>
+&nbsp;
+&nbsp;    // Creates a State&lt;ConnectionState&gt; with current connectivity state as initial value
+<b class="nc">&nbsp;    return produceState(initialValue = context.currentConnectivityState) {</b>
+&nbsp;        // In a coroutine, can make suspend calls
+<b class="nc">&nbsp;        context.observeConnectivityAsFlow().collect { value = it }</b>
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;/**
+&nbsp; * Network utility to get current state of internet connection
+&nbsp; */
+&nbsp;val Context.currentConnectivityState: ConnectionState
+&nbsp;    get() {
+<b class="nc">&nbsp;        val connectivityManager =</b>
+<b class="nc">&nbsp;            getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager</b>
+<b class="nc">&nbsp;        return getCurrentState(connectivityManager)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;private fun getCurrentState(
+&nbsp;    connectivityManager: ConnectivityManager
+&nbsp;): ConnectionState {
+<b class="nc">&nbsp;    val connected = connectivityManager.allNetworks.any { network -&gt;</b>
+<b class="nc">&nbsp;        connectivityManager.getNetworkCapabilities(network)</b>
+<b class="nc">&nbsp;            ?.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)</b>
+<b class="nc">&nbsp;            ?: false</b>
+&nbsp;    }
+&nbsp;
+<b class="nc">&nbsp;    return if (connected) ConnectionState.Available else ConnectionState.Unavailable</b>
+&nbsp;}
+&nbsp;
+&nbsp;/**
+&nbsp; * Network Utility to observe availability or unavailability of Internet connection
+&nbsp; */
+&nbsp;@ExperimentalCoroutinesApi
+<b class="nc">&nbsp;fun Context.observeConnectivityAsFlow() = callbackFlow {</b>
+<b class="nc">&nbsp;    val connectivityManager = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager</b>
+&nbsp;
+<b class="nc">&nbsp;    val callback = NetworkCallback { connectionState -&gt; trySend(connectionState) }</b>
+&nbsp;
+<b class="nc">&nbsp;    val networkRequest = NetworkRequest.Builder()</b>
+<b class="nc">&nbsp;        .addCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)</b>
+<b class="nc">&nbsp;        .build()</b>
+&nbsp;
+<b class="nc">&nbsp;    connectivityManager.registerNetworkCallback(networkRequest, callback)</b>
+&nbsp;
+&nbsp;    // Set current state
+<b class="nc">&nbsp;    val currentState = getCurrentState(connectivityManager)</b>
+<b class="nc">&nbsp;    trySend(currentState)</b>
+&nbsp;
+&nbsp;    // Remove callback when not used
+<b class="nc">&nbsp;    awaitClose {</b>
+&nbsp;        // Remove listeners
+<b class="nc">&nbsp;        connectivityManager.unregisterNetworkCallback(callback)</b>
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;fun NetworkCallback(callback: (ConnectionState) -&gt; Unit): ConnectivityManager.NetworkCallback {
+<b class="nc">&nbsp;    return object : ConnectivityManager.NetworkCallback() {</b>
+&nbsp;        override fun onAvailable(network: Network) {
+<b class="nc">&nbsp;            callback(ConnectionState.Available)</b>
+&nbsp;        }
+&nbsp;
+&nbsp;        override fun onLost(network: Network) {
+<b class="nc">&nbsp;            callback(ConnectionState.Unavailable)</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-03-26 16:45</div>
+</div>
+</body>
+</html>

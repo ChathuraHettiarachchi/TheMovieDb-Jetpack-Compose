@@ -1,0 +1,200 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > Resource</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.backbase.moviebox.common</a>
+</div>
+
+<h1>Coverage Summary for Class: Resource (com.backbase.moviebox.common)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Resource</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">Resource$Error</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">Resource$Loading</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">Resource$Success</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.backbase.moviebox.common
+&nbsp;
+&nbsp;/**
+&nbsp; * A generic class to handle coroutine API state, no inheritance but instantiatable
+&nbsp; * Beauty will be, we can use this with custom objects and states
+&nbsp; *
+&nbsp; * @param data will be the output object/list
+&nbsp; * @param message will be the error/success message
+&nbsp; */
+<b class="fc">&nbsp;sealed class Resource&lt;T&gt;(val data: T? = null, val message: String? = null) {</b>
+&nbsp;    /**
+&nbsp;     * Resource.Success will used to notify success state
+&nbsp;     *
+&nbsp;     * @param data will be the success object
+&nbsp;     */
+<b class="fc">&nbsp;    class Success&lt;T&gt;(data: T) : Resource&lt;T&gt;(data)</b>
+&nbsp;
+&nbsp;    /**
+&nbsp;     * Resource.Error will used to nofity any error
+&nbsp;     *
+&nbsp;     * @param message will be the error message
+&nbsp;     * @param data will be the output
+&nbsp;     */
+<b class="fc">&nbsp;    class Error&lt;T&gt;(message: String, data: T? = null) : Resource&lt;T&gt;(data, message)</b>
+&nbsp;
+&nbsp;    /**
+&nbsp;     * Resource.Loading will use to notify still loading state
+&nbsp;     *
+&nbsp;     * @param data will be the output
+&nbsp;     */
+<b class="fc">&nbsp;    class Loading&lt;T&gt;(data: T? = null) : Resource&lt;T&gt;(data)</b>
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-03-26 16:45</div>
+</div>
+</body>
+</html>

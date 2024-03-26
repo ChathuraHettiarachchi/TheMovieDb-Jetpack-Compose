@@ -1,0 +1,216 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > MostPopularViewModel</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.backbase.moviebox.presentation.most_popular</a>
+</div>
+
+<h1>Coverage Summary for Class: MostPopularViewModel (com.backbase.moviebox.presentation.most_popular)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">MostPopularViewModel</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/18)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">MostPopularViewModel$getPopularMovies$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/16)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/34)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.backbase.moviebox.presentation.most_popular
+&nbsp;
+&nbsp;import androidx.compose.runtime.State
+&nbsp;import androidx.compose.runtime.mutableStateOf
+&nbsp;import androidx.lifecycle.ViewModel
+&nbsp;import androidx.lifecycle.viewModelScope
+&nbsp;import com.backbase.moviebox.common.Resource
+&nbsp;import com.backbase.moviebox.domain.model.Movie
+&nbsp;import com.backbase.moviebox.domain.model.MoviePage
+&nbsp;import com.backbase.moviebox.domain.use_case.get_playing_now.GetNowPlayingMoviesUseCase
+&nbsp;import com.backbase.moviebox.domain.use_case.get_popular.GetPopularMoviesUseCase
+&nbsp;import com.backbase.moviebox.presentation.playing_now.PlayingNowListState
+&nbsp;import dagger.hilt.android.lifecycle.HiltViewModel
+&nbsp;import kotlinx.coroutines.flow.launchIn
+&nbsp;import kotlinx.coroutines.flow.onEach
+&nbsp;import javax.inject.Inject
+&nbsp;
+&nbsp;@HiltViewModel
+&nbsp;class MostPopularViewModel @Inject constructor(
+<b class="nc">&nbsp;    private val popularMoviesUseCase: GetPopularMoviesUseCase</b>
+<b class="nc">&nbsp;) : ViewModel() {</b>
+&nbsp;
+&nbsp;    // mutable state for api response
+<b class="nc">&nbsp;    private val _state = mutableStateOf&lt;MostPopularDataState&gt;(MostPopularDataState())</b>
+<b class="nc">&nbsp;    val state: State&lt;MostPopularDataState&gt; = _state</b>
+&nbsp;
+&nbsp;    // mutable list of pages, will append pages if pagination triggered
+<b class="nc">&nbsp;    val pages = mutableStateOf&lt;MutableList&lt;Movie&gt;&gt;(mutableListOf())</b>
+&nbsp;
+<b class="nc">&nbsp;    private var _totalPages: Int = 1</b>
+<b class="nc">&nbsp;    private var _currentPage: Int = 2</b>
+&nbsp;
+<b class="nc">&nbsp;    init {</b>
+<b class="nc">&nbsp;        getPopularMovies()</b>
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    /**
+&nbsp;     * get popular movies as user scroll through
+&nbsp;     */
+<b class="nc">&nbsp;    private fun getPopularMovies(page: Int = 1) {</b>
+<b class="nc">&nbsp;        popularMoviesUseCase(pageId = page).onEach { result -&gt;</b>
+<b class="nc">&nbsp;            when (result) {</b>
+<b class="nc">&nbsp;                is Resource.Success -&gt; {</b>
+<b class="nc">&nbsp;                    _state.value =</b>
+<b class="nc">&nbsp;                        MostPopularDataState(data = result.data ?: MoviePage(), isLoading = false)</b>
+&nbsp;
+<b class="nc">&nbsp;                    _totalPages = _state.value.data.total_pages</b>
+<b class="nc">&nbsp;                    _currentPage = _state.value.data.page</b>
+&nbsp;
+<b class="nc">&nbsp;                    val data: MutableList&lt;Movie&gt; = pages.value</b>
+<b class="nc">&nbsp;                    data.addAll(result.data!!.results)</b>
+<b class="nc">&nbsp;                    pages.value = data</b>
+&nbsp;                }
+<b class="nc">&nbsp;                is Resource.Loading -&gt; {</b>
+<b class="nc">&nbsp;                    _state.value = MostPopularDataState(isLoading = true)</b>
+&nbsp;                }
+<b class="nc">&nbsp;                is Resource.Error -&gt; {</b>
+<b class="nc">&nbsp;                    _state.value = MostPopularDataState(</b>
+<b class="nc">&nbsp;                        isLoading = false,</b>
+<b class="nc">&nbsp;                        error = result.message ?: &quot;An unexpected error occurred&quot;</b>
+&nbsp;                    )
+&nbsp;                }
+&nbsp;            }
+<b class="nc">&nbsp;        }.launchIn(viewModelScope)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * Will request the next page if there are other pages
+&nbsp;     */
+&nbsp;    fun requestNextPage() {
+<b class="nc">&nbsp;        if (_currentPage &lt; _totalPages) {</b>
+<b class="nc">&nbsp;            getPopularMovies(++_currentPage)</b>
+&nbsp;        } else {
+<b class="nc">&nbsp;            _state.value = MostPopularDataState(</b>
+<b class="nc">&nbsp;                error = &quot;No more pages found in the TMDB server&quot;</b>
+&nbsp;            )
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * Request data from API
+&nbsp;     */
+&nbsp;    fun getData(){
+<b class="nc">&nbsp;        getPopularMovies()</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-03-26 16:45</div>
+</div>
+</body>
+</html>
