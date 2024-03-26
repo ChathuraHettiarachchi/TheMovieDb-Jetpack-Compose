@@ -1,0 +1,54 @@
+com.backbase.moviebox.app-ui-geometry-1.1.1-0 /Users/chathura/.gradle/caches/transforms-3/0549ea4eab8fd892ba920666a6e4b881/transformed/ui-geometry-1.1.1/res
+com.backbase.moviebox.app-core-1.25.0-1 /Users/chathura/.gradle/caches/transforms-3/098a12db0ffd4355e560780a26f69ad8/transformed/core-1.25.0/res
+com.backbase.moviebox.app-core-1.7.0-2 /Users/chathura/.gradle/caches/transforms-3/0cec78174bb0fbf5737975ff3a250301/transformed/core-1.7.0/res
+com.backbase.moviebox.app-appcompat-resources-1.4.1-3 /Users/chathura/.gradle/caches/transforms-3/0f92f2ff406a2ace60f0c9c00fd87a0d/transformed/appcompat-resources-1.4.1/res
+com.backbase.moviebox.app-material-ripple-1.0.1-4 /Users/chathura/.gradle/caches/transforms-3/186d9c6e9ed321ae3e6293a0ef5e8fd9/transformed/material-ripple-1.0.1/res
+com.backbase.moviebox.app-coil-base-2.0.0-rc01-5 /Users/chathura/.gradle/caches/transforms-3/1cfcd3bac6a8b859962c567549a3d932/transformed/coil-base-2.0.0-rc01/res
+com.backbase.moviebox.app-navigation-common-2.4.2-6 /Users/chathura/.gradle/caches/transforms-3/2e551f966ee173798508147a6fdf4a80/transformed/navigation-common-2.4.2/res
+com.backbase.moviebox.app-annotation-experimental-1.1.0-7 /Users/chathura/.gradle/caches/transforms-3/318486eb00322b7b332d10c275472f97/transformed/annotation-experimental-1.1.0/res
+com.backbase.moviebox.app-ui-unit-1.1.1-8 /Users/chathura/.gradle/caches/transforms-3/32d6e700cd92ae87a92be7d172a307f2/transformed/ui-unit-1.1.1/res
+com.backbase.moviebox.app-hilt-lifecycle-viewmodel-1.0.0-alpha03-9 /Users/chathura/.gradle/caches/transforms-3/37298a903fe634107554b70d979f1e49/transformed/hilt-lifecycle-viewmodel-1.0.0-alpha03/res
+com.backbase.moviebox.app-activity-1.3.1-10 /Users/chathura/.gradle/caches/transforms-3/3be3a491530f364c925f3b06108efa16/transformed/activity-1.3.1/res
+com.backbase.moviebox.app-foundation-layout-1.1.1-11 /Users/chathura/.gradle/caches/transforms-3/3c45c0f661585f0bbc14d13c8afe3061/transformed/foundation-layout-1.1.1/res
+com.backbase.moviebox.app-navigation-common-ktx-2.4.2-12 /Users/chathura/.gradle/caches/transforms-3/48fbb7437b3d9439a82a8c54b18aae83/transformed/navigation-common-ktx-2.4.2/res
+com.backbase.moviebox.app-ui-util-1.1.1-13 /Users/chathura/.gradle/caches/transforms-3/4f8b061efe8125046afe577ac4085f46/transformed/ui-util-1.1.1/res
+com.backbase.moviebox.app-ui-graphics-1.1.1-14 /Users/chathura/.gradle/caches/transforms-3/517ab9d0adfa026dd8964fb5b89fa59a/transformed/ui-graphics-1.1.1/res
+com.backbase.moviebox.app-animation-core-1.1.1-15 /Users/chathura/.gradle/caches/transforms-3/518235abe45b9441a13c080dd1305862/transformed/animation-core-1.1.1/res
+com.backbase.moviebox.app-fragment-1.3.6-16 /Users/chathura/.gradle/caches/transforms-3/569dae77dfb3776c45cf886ea60d6e5e/transformed/fragment-1.3.6/res
+com.backbase.moviebox.app-ui-tooling-preview-1.0.1-17 /Users/chathura/.gradle/caches/transforms-3/600323e73784c43e24db0e6d4fcf96da/transformed/ui-tooling-preview-1.0.1/res
+com.backbase.moviebox.app-navigation-runtime-ktx-2.4.2-18 /Users/chathura/.gradle/caches/transforms-3/60d855786ad3c0141a2af7aeca6fc5d0/transformed/navigation-runtime-ktx-2.4.2/res
+com.backbase.moviebox.app-navigation-compose-2.4.2-19 /Users/chathura/.gradle/caches/transforms-3/635ee82882638e7b643eb59fba0d67eb/transformed/navigation-compose-2.4.2/res
+com.backbase.moviebox.app-runtime-saveable-1.1.1-20 /Users/chathura/.gradle/caches/transforms-3/6544f905353552d227e2c67fd05a7023/transformed/runtime-saveable-1.1.1/res
+com.backbase.moviebox.app-material-icons-extended-1.0.1-21 /Users/chathura/.gradle/caches/transforms-3/79b10e365beedd0559c36b7f0c6ccee2/transformed/material-icons-extended-1.0.1/res
+com.backbase.moviebox.app-lottie-5.0.3-22 /Users/chathura/.gradle/caches/transforms-3/81b750f88f92feeac4f1e8691f8ece2f/transformed/lottie-5.0.3/res
+com.backbase.moviebox.app-ui-text-1.1.1-23 /Users/chathura/.gradle/caches/transforms-3/8275c06f4454aa17faf2548b517e351e/transformed/ui-text-1.1.1/res
+com.backbase.moviebox.app-lifecycle-viewmodel-compose-2.4.1-24 /Users/chathura/.gradle/caches/transforms-3/87b13d41293b1b9d20ef89b066886290/transformed/lifecycle-viewmodel-compose-2.4.1/res
+com.backbase.moviebox.app-ui-tooling-1.0.1-25 /Users/chathura/.gradle/caches/transforms-3/891ca5268ba1c86ec5a398b33410ee9b/transformed/ui-tooling-1.0.1/res
+com.backbase.moviebox.app-material-1.0.1-26 /Users/chathura/.gradle/caches/transforms-3/964278784f25bd25072e3d18511756d3/transformed/material-1.0.1/res
+com.backbase.moviebox.app-hilt-navigation-compose-1.0.0-27 /Users/chathura/.gradle/caches/transforms-3/97372cfdb50a7ee3d1243a34effb2e6d/transformed/hilt-navigation-compose-1.0.0/res
+com.backbase.moviebox.app-ui-1.1.1-28 /Users/chathura/.gradle/caches/transforms-3/98b0981f736a6424b0299db393aa9dc3/transformed/ui-1.1.1/res
+com.backbase.moviebox.app-profileinstaller-1.1.0-29 /Users/chathura/.gradle/caches/transforms-3/a9354896f8411a81ccdc04a6db60cd11/transformed/profileinstaller-1.1.0/res
+com.backbase.moviebox.app-savedstate-1.1.0-30 /Users/chathura/.gradle/caches/transforms-3/aee86b29196291a3385c4b390130dc54/transformed/savedstate-1.1.0/res
+com.backbase.moviebox.app-core-ktx-1.7.0-31 /Users/chathura/.gradle/caches/transforms-3/b040c7e7e7b8e98167df680f11f86450/transformed/core-ktx-1.7.0/res
+com.backbase.moviebox.app-appcompat-1.3.1-32 /Users/chathura/.gradle/caches/transforms-3/b42e583dbbcfae12407ba7f612381c6d/transformed/appcompat-1.3.1/res
+com.backbase.moviebox.app-activity-ktx-1.3.1-33 /Users/chathura/.gradle/caches/transforms-3/b730013d63880400a045303838a3fb16/transformed/activity-ktx-1.3.1/res
+com.backbase.moviebox.app-lifecycle-viewmodel-ktx-2.4.1-34 /Users/chathura/.gradle/caches/transforms-3/b93bfef39914881c6b56d9c8b7bd5345/transformed/lifecycle-viewmodel-ktx-2.4.1/res
+com.backbase.moviebox.app-material-icons-core-1.0.1-35 /Users/chathura/.gradle/caches/transforms-3/b975975df468821ce16d4da5468b4d18/transformed/material-icons-core-1.0.1/res
+com.backbase.moviebox.app-activity-compose-1.3.1-36 /Users/chathura/.gradle/caches/transforms-3/c02565612c69cce5774aee9b3e3ea7d4/transformed/activity-compose-1.3.1/res
+com.backbase.moviebox.app-lifecycle-runtime-2.4.1-37 /Users/chathura/.gradle/caches/transforms-3/c1b35b6ee5d458161d911b08a4f79fc7/transformed/lifecycle-runtime-2.4.1/res
+com.backbase.moviebox.app-ui-tooling-data-1.0.1-38 /Users/chathura/.gradle/caches/transforms-3/d1cf8ecd74a39ce226f3321f8ef57187/transformed/ui-tooling-data-1.0.1/res
+com.backbase.moviebox.app-startup-runtime-1.0.0-39 /Users/chathura/.gradle/caches/transforms-3/d635e8e166e6491d10afd48a6a8b21df/transformed/startup-runtime-1.0.0/res
+com.backbase.moviebox.app-foundation-1.1.1-40 /Users/chathura/.gradle/caches/transforms-3/d9379c01331d671fad4b74ef03958ee5/transformed/foundation-1.1.1/res
+com.backbase.moviebox.app-animation-1.1.1-41 /Users/chathura/.gradle/caches/transforms-3/ddafd4aec92b6089b04e017ce6b3d874/transformed/animation-1.1.1/res
+com.backbase.moviebox.app-runtime-1.1.1-42 /Users/chathura/.gradle/caches/transforms-3/ef760e36a3e1dda7234eeb3c52d939d4/transformed/runtime-1.1.1/res
+com.backbase.moviebox.app-lifecycle-viewmodel-2.4.1-43 /Users/chathura/.gradle/caches/transforms-3/f1e6323c09e9a743403f562f8b6dae8c/transformed/lifecycle-viewmodel-2.4.1/res
+com.backbase.moviebox.app-navigation-runtime-2.4.2-44 /Users/chathura/.gradle/caches/transforms-3/f318509ad54db23f30213ba8fe4f8162/transformed/navigation-runtime-2.4.2/res
+com.backbase.moviebox.app-lifecycle-runtime-ktx-2.4.1-45 /Users/chathura/.gradle/caches/transforms-3/f648a86a525a1d92e822462831c8fc7a/transformed/lifecycle-runtime-ktx-2.4.1/res
+com.backbase.moviebox.app-hilt-navigation-1.0.0-46 /Users/chathura/.gradle/caches/transforms-3/fc70334326f79be520539fd718554f50/transformed/hilt-navigation-1.0.0/res
+com.backbase.moviebox.app-resValues-47 /Users/chathura/Documents/Try outs/Android/TheMovieDb-Jetpack-Compose/app/build/generated/res/resValues/debug
+com.backbase.moviebox.app-rs-48 /Users/chathura/Documents/Try outs/Android/TheMovieDb-Jetpack-Compose/app/build/generated/res/rs/debug
+com.backbase.moviebox.app-packageDebugResources-49 /Users/chathura/Documents/Try outs/Android/TheMovieDb-Jetpack-Compose/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.backbase.moviebox.app-packageDebugResources-50 /Users/chathura/Documents/Try outs/Android/TheMovieDb-Jetpack-Compose/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.backbase.moviebox.app-merged_res-51 /Users/chathura/Documents/Try outs/Android/TheMovieDb-Jetpack-Compose/app/build/intermediates/merged_res/debug
+com.backbase.moviebox.app-debug-52 /Users/chathura/Documents/Try outs/Android/TheMovieDb-Jetpack-Compose/app/src/debug/res
+com.backbase.moviebox.app-main-53 /Users/chathura/Documents/Try outs/Android/TheMovieDb-Jetpack-Compose/app/src/main/res

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "720122379916",
+    "project_id": "moviebox-try",
+    "storage_bucket": "moviebox-try.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720122379916:android:c96cb9e78e495fb23f05a9",
+        "android_client_info": {
+          "package_name": "com.backbase.moviebox"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO2Rg6L1mYefUkae90UzjU31-69AvJFk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

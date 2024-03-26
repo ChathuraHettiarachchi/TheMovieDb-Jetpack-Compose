@@ -1,0 +1,351 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:2:1-32:12
+MERGED from [com.google.accompanist:accompanist-flowlayout:0.23.1] /Users/chathura/.gradle/caches/transforms-3/8ab32422de950a468bfd2f32ccb14448/transformed/accompanist-flowlayout-0.23.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0] /Users/chathura/.gradle/caches/transforms-3/e12768d09751582ac97a5f6162ebfedd/transformed/hilt-navigation-compose-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-compose:2.4.2] /Users/chathura/.gradle/caches/transforms-3/bdcd072669e12bf27239ed87f316396d/transformed/navigation-compose-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-compose:1.3.1] /Users/chathura/.gradle/caches/transforms-3/0d86db111bc6fd5bd51c87062a475aaa/transformed/activity-compose-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.2] /Users/chathura/.gradle/caches/transforms-3/1b312bd34d817ebf767c427a2dd4ee68/transformed/navigation-runtime-ktx-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.hilt:hilt-navigation:1.0.0] /Users/chathura/.gradle/caches/transforms-3/586ee5cb8c4e4c2f7a9cced69b1cff29/transformed/hilt-navigation-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.4.2] /Users/chathura/.gradle/caches/transforms-3/b9c23076dab66cffc8e3ecee09979242/transformed/navigation-runtime-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.3.1] /Users/chathura/.gradle/caches/transforms-3/53a613da20c764b7072831d93cbc90a1/transformed/activity-ktx-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.2] /Users/chathura/.gradle/caches/transforms-3/47f29a02e400d90d7f2d9d43b0a45888/transformed/navigation-common-ktx-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.4.2] /Users/chathura/.gradle/caches/transforms-3/40b5df551e2538ff49a44c8416e71769/transformed/navigation-common-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.1] /Users/chathura/.gradle/caches/transforms-3/35c57739e574e9516117ab4e23f3b93e/transformed/lifecycle-runtime-ktx-2.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1] /Users/chathura/.gradle/caches/transforms-3/f9939907b28defaf68b1effd2ecac2bb/transformed/lifecycle-viewmodel-compose-2.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1] /Users/chathura/.gradle/caches/transforms-3/2dd00482a041861aa197a8070f2a2865/transformed/lifecycle-viewmodel-ktx-2.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.material:material:1.0.1] /Users/chathura/.gradle/caches/transforms-3/8cf1564bf495ee4360f02c225bab5e5c/transformed/material-1.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.airbnb.android:lottie-compose:5.0.3] /Users/chathura/.gradle/caches/transforms-3/e723d3f0e038df68b23683c1cdf0b8d5/transformed/lottie-compose-5.0.3/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.compose.material:material-icons-extended:1.0.1] /Users/chathura/.gradle/caches/transforms-3/cf9ee0d7a363958ddc2178154bdb1d91/transformed/material-icons-extended-1.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.material:material-icons-core:1.0.1] /Users/chathura/.gradle/caches/transforms-3/e66ed9a0f5499ff4af206bba14fcc58a/transformed/material-icons-core-1.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.accompanist:accompanist-pager:0.23.1] /Users/chathura/.gradle/caches/transforms-3/7d08636283d701ea79ec7ba964db91b9/transformed/accompanist-pager-0.23.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.material:material-ripple:1.0.1] /Users/chathura/.gradle/caches/transforms-3/9d43e9e58510c65378948964653351ba/transformed/material-ripple-1.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [io.coil-kt:coil-compose:2.0.0-rc01] /Users/chathura/.gradle/caches/transforms-3/ad43b7853e7f93ec2a65ee981632e58e/transformed/coil-compose-2.0.0-rc01/AndroidManifest.xml:2:1-9:12
+MERGED from [io.coil-kt:coil-compose-base:2.0.0-rc01] /Users/chathura/.gradle/caches/transforms-3/8450df94f4d12a5b4134260e3371590d/transformed/coil-compose-base-2.0.0-rc01/AndroidManifest.xml:2:1-9:12
+MERGED from [dev.chrisbanes.snapper:snapper:0.1.2] /Users/chathura/.gradle/caches/transforms-3/7e833edd78e34de3450409ca7772689e/transformed/snapper-0.1.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.foundation:foundation:1.1.1] /Users/chathura/.gradle/caches/transforms-3/0f3f68bf3a96333bb5dd05026a9cf1b1/transformed/foundation-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.animation:animation:1.1.1] /Users/chathura/.gradle/caches/transforms-3/77127143c880bd8b3d46b3dc14613979/transformed/animation-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.foundation:foundation-layout:1.1.1] /Users/chathura/.gradle/caches/transforms-3/e4aae33194d923f3635289fe1951be71/transformed/foundation-layout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.23.1] /Users/chathura/.gradle/caches/transforms-3/849925f6386148c81603ff0f7f7d7877/transformed/accompanist-drawablepainter-0.23.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.animation:animation-core:1.1.1] /Users/chathura/.gradle/caches/transforms-3/0f081711c4e9761116d903536d6737bf/transformed/animation-core-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui:1.1.1] /Users/chathura/.gradle/caches/transforms-3/53ce9cddb68865d4220ccf46b35cd0fd/transformed/ui-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.0.1] /Users/chathura/.gradle/caches/transforms-3/183043c6dbdd1224d503706be75d78b5/transformed/ui-tooling-preview-1.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-text:1.1.1] /Users/chathura/.gradle/caches/transforms-3/0d7f5e84a2bfdca013199e070672206d/transformed/ui-text-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-graphics:1.1.1] /Users/chathura/.gradle/caches/transforms-3/38120fd3b01bb44aacef4d638858587a/transformed/ui-graphics-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.runtime:runtime-saveable:1.1.1] /Users/chathura/.gradle/caches/transforms-3/b6616777c1916625f3f909384b0d0505/transformed/runtime-saveable-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-unit:1.1.1] /Users/chathura/.gradle/caches/transforms-3/0b80b7cad4756a104254ea34cb075164/transformed/ui-unit-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-geometry:1.1.1] /Users/chathura/.gradle/caches/transforms-3/6817d65fab8440cf52485d5cf991b33b/transformed/ui-geometry-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.runtime:runtime:1.1.1] /Users/chathura/.gradle/caches/transforms-3/7a24fe12b7f4026a7d0d0f84e2e84a66/transformed/runtime-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [io.coil-kt:coil:2.0.0-rc01] /Users/chathura/.gradle/caches/transforms-3/7de03650d7e6194660a30ba59d87b38c/transformed/coil-2.0.0-rc01/AndroidManifest.xml:2:1-9:12
+MERGED from [io.coil-kt:coil-base:2.0.0-rc01] /Users/chathura/.gradle/caches/transforms-3/f83e093812cd93e5d5bf7e4076d52bb7/transformed/coil-base-2.0.0-rc01/AndroidManifest.xml:2:1-9:12
+MERGED from [com.airbnb.android:lottie:5.0.3] /Users/chathura/.gradle/caches/transforms-3/70f215b164b4c5c4b2d3a13575bcf9b2/transformed/lottie-5.0.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.core:core-ktx:1.7.0] /Users/chathura/.gradle/caches/transforms-3/7a673aa9d0fe72ccc143a8d88848dc59/transformed/core-ktx-1.7.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03] /Users/chathura/.gradle/caches/transforms-3/de2af78d2c4c89651ad2da26ab200204/transformed/hilt-lifecycle-viewmodel-1.0.0-alpha03/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:hilt-android:2.38.1] /Users/chathura/.gradle/caches/transforms-3/9537d805667b716e0ee1986e45236782/transformed/hilt-android-2.38.1/AndroidManifest.xml:16:1-19:12
+MERGED from [androidx.compose.ui:ui-util:1.1.1] /Users/chathura/.gradle/caches/transforms-3/38dd0db3134eb67c803ee83bd53a2d4d/transformed/ui-util-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/chathura/.gradle/caches/transforms-3/fdbce4e229e2e9011342e61cf8cfd5ba/transformed/appcompat-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/chathura/.gradle/caches/transforms-3/1fc8ef60a1fd0f5f0f689f0ee1342d61/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.3.1] /Users/chathura/.gradle/caches/transforms-3/0758e9431343bcc5d3367012f1df57e1/transformed/activity-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/chathura/.gradle/caches/transforms-3/0a049a40487d8de8a4335a07d66ba42b/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/chathura/.gradle/caches/transforms-3/41554d0c57b2f686fe45a7426899c761/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] /Users/chathura/.gradle/caches/transforms-3/dfc30d86e8d4b97caba0f8fa8c7addf5/transformed/lifecycle-viewmodel-2.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/chathura/.gradle/caches/transforms-3/dc6ec30a9424e80c0821b1c434c150c1/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [io.github.aakira:napier-android:1.4.1] /Users/chathura/.gradle/caches/transforms-3/e0c0edfeea478154edb29117f21a54e8/transformed/napier-release/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/chathura/.gradle/caches/transforms-3/b444d1fcf7192b602c7848b2207ef6ce/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/chathura/.gradle/caches/transforms-3/171afcddc4f6cbe6d55b2447c1372cef/transformed/appcompat-resources-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/chathura/.gradle/caches/transforms-3/c20c76cac4f1e3a246c2fccf96bb40c8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/chathura/.gradle/caches/transforms-3/53a153ad4bfd16e95cc2a86a53a843a9/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/chathura/.gradle/caches/transforms-3/cb5f8927b1941b1276a0136a4ef6c075/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chathura/.gradle/caches/transforms-3/2d7e1563a878559871dbd3aec473497f/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/chathura/.gradle/caches/transforms-3/6ba13cbfbc5c3a7483ca0639f6c3a401/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.7.0] /Users/chathura/.gradle/caches/transforms-3/16ea897b2a8351a573023874f0133b6a/transformed/core-1.7.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/chathura/.gradle/caches/transforms-3/7d5a5e78db729ee7e0b7a1361298b851/transformed/savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.1] /Users/chathura/.gradle/caches/transforms-3/5e0d0abf1cd86a1be086f43fb5c8dc60/transformed/lifecycle-runtime-2.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/chathura/.gradle/caches/transforms-3/264d9fd1d39e5030f9680ec3e3563241/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/chathura/.gradle/caches/transforms-3/d7b75257116a5831d6ce930e4adfc77d/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/chathura/.gradle/caches/transforms-3/ce74025c580d0a949f0100af6e5188f5/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/chathura/.gradle/caches/transforms-3/b9fa12cacb9468846387b5ccd34a6148/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:17:1-48:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/chathura/.gradle/caches/transforms-3/f4d8245530b32a4b6047a18d81cc07b0/transformed/startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/chathura/.gradle/caches/transforms-3/c1f7feaaf0280b8032028dfd0ef58b2b/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/chathura/.gradle/caches/transforms-3/e4269e393fed962f0321c923ed068789/transformed/exifinterface-1.3.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chathura/.gradle/caches/transforms-3/75abc9a9fac42ef6e488904a14c44881/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chathura/.gradle/caches/transforms-3/a70224f3b0b25a7dd34b417614a9379b/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.38.1] /Users/chathura/.gradle/caches/transforms-3/26ce6a8ec5c1c739ecd3bb5e8251dd52/transformed/dagger-lint-aar-2.38.1/AndroidManifest.xml:16:1-19:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/chathura/.gradle/caches/transforms-3/ab9e11efa4fd7a4ed4b44f8e35a957fd/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:2:1-32:12
+	package
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:4:5-36
+		INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:7:22-64
+application
+ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:9:5-30:19
+MERGED from [com.airbnb.android:lottie:5.0.3] /Users/chathura/.gradle/caches/transforms-3/70f215b164b4c5c4b2d3a13575bcf9b2/transformed/lottie-5.0.3/AndroidManifest.xml:9:5-20
+MERGED from [com.airbnb.android:lottie:5.0.3] /Users/chathura/.gradle/caches/transforms-3/70f215b164b4c5c4b2d3a13575bcf9b2/transformed/lottie-5.0.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.7.0] /Users/chathura/.gradle/caches/transforms-3/16ea897b2a8351a573023874f0133b6a/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] /Users/chathura/.gradle/caches/transforms-3/16ea897b2a8351a573023874f0133b6a/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/chathura/.gradle/caches/transforms-3/264d9fd1d39e5030f9680ec3e3563241/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/chathura/.gradle/caches/transforms-3/264d9fd1d39e5030f9680ec3e3563241/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:25:5-46:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:25:5-46:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/chathura/.gradle/caches/transforms-3/f4d8245530b32a4b6047a18d81cc07b0/transformed/startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/chathura/.gradle/caches/transforms-3/f4d8245530b32a4b6047a18d81cc07b0/transformed/startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.7.0] /Users/chathura/.gradle/caches/transforms-3/16ea897b2a8351a573023874f0133b6a/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:13:9-41
+	android:roundIcon
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:14:9-54
+	android:icon
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:12:9-43
+	android:allowBackup
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:11:9-35
+	android:theme
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:16:9-46
+	android:name
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:10:9-44
+activity#com.backbase.moviebox.presentation.MainActivity
+ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:17:9-29:20
+	android:screenOrientation
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:21:13-49
+	android:label
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:20:13-45
+	android:exported
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:19:13-36
+	tools:ignore
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:23:13-68
+	android:theme
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:22:13-50
+	android:name
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:18:13-54
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:24:13-28:29
+action#android.intent.action.MAIN
+ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:25:17-69
+	android:name
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:25:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml:27:27-74
+uses-sdk
+INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+MERGED from [com.google.accompanist:accompanist-flowlayout:0.23.1] /Users/chathura/.gradle/caches/transforms-3/8ab32422de950a468bfd2f32ccb14448/transformed/accompanist-flowlayout-0.23.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-flowlayout:0.23.1] /Users/chathura/.gradle/caches/transforms-3/8ab32422de950a468bfd2f32ccb14448/transformed/accompanist-flowlayout-0.23.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0] /Users/chathura/.gradle/caches/transforms-3/e12768d09751582ac97a5f6162ebfedd/transformed/hilt-navigation-compose-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0] /Users/chathura/.gradle/caches/transforms-3/e12768d09751582ac97a5f6162ebfedd/transformed/hilt-navigation-compose-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-compose:2.4.2] /Users/chathura/.gradle/caches/transforms-3/bdcd072669e12bf27239ed87f316396d/transformed/navigation-compose-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-compose:2.4.2] /Users/chathura/.gradle/caches/transforms-3/bdcd072669e12bf27239ed87f316396d/transformed/navigation-compose-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-compose:1.3.1] /Users/chathura/.gradle/caches/transforms-3/0d86db111bc6fd5bd51c87062a475aaa/transformed/activity-compose-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-compose:1.3.1] /Users/chathura/.gradle/caches/transforms-3/0d86db111bc6fd5bd51c87062a475aaa/transformed/activity-compose-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.2] /Users/chathura/.gradle/caches/transforms-3/1b312bd34d817ebf767c427a2dd4ee68/transformed/navigation-runtime-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.2] /Users/chathura/.gradle/caches/transforms-3/1b312bd34d817ebf767c427a2dd4ee68/transformed/navigation-runtime-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation:1.0.0] /Users/chathura/.gradle/caches/transforms-3/586ee5cb8c4e4c2f7a9cced69b1cff29/transformed/hilt-navigation-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation:1.0.0] /Users/chathura/.gradle/caches/transforms-3/586ee5cb8c4e4c2f7a9cced69b1cff29/transformed/hilt-navigation-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.4.2] /Users/chathura/.gradle/caches/transforms-3/b9c23076dab66cffc8e3ecee09979242/transformed/navigation-runtime-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.4.2] /Users/chathura/.gradle/caches/transforms-3/b9c23076dab66cffc8e3ecee09979242/transformed/navigation-runtime-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.3.1] /Users/chathura/.gradle/caches/transforms-3/53a613da20c764b7072831d93cbc90a1/transformed/activity-ktx-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.3.1] /Users/chathura/.gradle/caches/transforms-3/53a613da20c764b7072831d93cbc90a1/transformed/activity-ktx-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.2] /Users/chathura/.gradle/caches/transforms-3/47f29a02e400d90d7f2d9d43b0a45888/transformed/navigation-common-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.2] /Users/chathura/.gradle/caches/transforms-3/47f29a02e400d90d7f2d9d43b0a45888/transformed/navigation-common-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.4.2] /Users/chathura/.gradle/caches/transforms-3/40b5df551e2538ff49a44c8416e71769/transformed/navigation-common-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.4.2] /Users/chathura/.gradle/caches/transforms-3/40b5df551e2538ff49a44c8416e71769/transformed/navigation-common-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.1] /Users/chathura/.gradle/caches/transforms-3/35c57739e574e9516117ab4e23f3b93e/transformed/lifecycle-runtime-ktx-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.1] /Users/chathura/.gradle/caches/transforms-3/35c57739e574e9516117ab4e23f3b93e/transformed/lifecycle-runtime-ktx-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1] /Users/chathura/.gradle/caches/transforms-3/f9939907b28defaf68b1effd2ecac2bb/transformed/lifecycle-viewmodel-compose-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1] /Users/chathura/.gradle/caches/transforms-3/f9939907b28defaf68b1effd2ecac2bb/transformed/lifecycle-viewmodel-compose-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1] /Users/chathura/.gradle/caches/transforms-3/2dd00482a041861aa197a8070f2a2865/transformed/lifecycle-viewmodel-ktx-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1] /Users/chathura/.gradle/caches/transforms-3/2dd00482a041861aa197a8070f2a2865/transformed/lifecycle-viewmodel-ktx-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material:1.0.1] /Users/chathura/.gradle/caches/transforms-3/8cf1564bf495ee4360f02c225bab5e5c/transformed/material-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material:1.0.1] /Users/chathura/.gradle/caches/transforms-3/8cf1564bf495ee4360f02c225bab5e5c/transformed/material-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.airbnb.android:lottie-compose:5.0.3] /Users/chathura/.gradle/caches/transforms-3/e723d3f0e038df68b23683c1cdf0b8d5/transformed/lottie-compose-5.0.3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.airbnb.android:lottie-compose:5.0.3] /Users/chathura/.gradle/caches/transforms-3/e723d3f0e038df68b23683c1cdf0b8d5/transformed/lottie-compose-5.0.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.compose.material:material-icons-extended:1.0.1] /Users/chathura/.gradle/caches/transforms-3/cf9ee0d7a363958ddc2178154bdb1d91/transformed/material-icons-extended-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-icons-extended:1.0.1] /Users/chathura/.gradle/caches/transforms-3/cf9ee0d7a363958ddc2178154bdb1d91/transformed/material-icons-extended-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-icons-core:1.0.1] /Users/chathura/.gradle/caches/transforms-3/e66ed9a0f5499ff4af206bba14fcc58a/transformed/material-icons-core-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-icons-core:1.0.1] /Users/chathura/.gradle/caches/transforms-3/e66ed9a0f5499ff4af206bba14fcc58a/transformed/material-icons-core-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-pager:0.23.1] /Users/chathura/.gradle/caches/transforms-3/7d08636283d701ea79ec7ba964db91b9/transformed/accompanist-pager-0.23.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-pager:0.23.1] /Users/chathura/.gradle/caches/transforms-3/7d08636283d701ea79ec7ba964db91b9/transformed/accompanist-pager-0.23.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-ripple:1.0.1] /Users/chathura/.gradle/caches/transforms-3/9d43e9e58510c65378948964653351ba/transformed/material-ripple-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-ripple:1.0.1] /Users/chathura/.gradle/caches/transforms-3/9d43e9e58510c65378948964653351ba/transformed/material-ripple-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [io.coil-kt:coil-compose:2.0.0-rc01] /Users/chathura/.gradle/caches/transforms-3/ad43b7853e7f93ec2a65ee981632e58e/transformed/coil-compose-2.0.0-rc01/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-compose:2.0.0-rc01] /Users/chathura/.gradle/caches/transforms-3/ad43b7853e7f93ec2a65ee981632e58e/transformed/coil-compose-2.0.0-rc01/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-compose-base:2.0.0-rc01] /Users/chathura/.gradle/caches/transforms-3/8450df94f4d12a5b4134260e3371590d/transformed/coil-compose-base-2.0.0-rc01/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-compose-base:2.0.0-rc01] /Users/chathura/.gradle/caches/transforms-3/8450df94f4d12a5b4134260e3371590d/transformed/coil-compose-base-2.0.0-rc01/AndroidManifest.xml:5:5-7:41
+MERGED from [dev.chrisbanes.snapper:snapper:0.1.2] /Users/chathura/.gradle/caches/transforms-3/7e833edd78e34de3450409ca7772689e/transformed/snapper-0.1.2/AndroidManifest.xml:20:5-22:41
+MERGED from [dev.chrisbanes.snapper:snapper:0.1.2] /Users/chathura/.gradle/caches/transforms-3/7e833edd78e34de3450409ca7772689e/transformed/snapper-0.1.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.foundation:foundation:1.1.1] /Users/chathura/.gradle/caches/transforms-3/0f3f68bf3a96333bb5dd05026a9cf1b1/transformed/foundation-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.foundation:foundation:1.1.1] /Users/chathura/.gradle/caches/transforms-3/0f3f68bf3a96333bb5dd05026a9cf1b1/transformed/foundation-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation:1.1.1] /Users/chathura/.gradle/caches/transforms-3/77127143c880bd8b3d46b3dc14613979/transformed/animation-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation:1.1.1] /Users/chathura/.gradle/caches/transforms-3/77127143c880bd8b3d46b3dc14613979/transformed/animation-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.foundation:foundation-layout:1.1.1] /Users/chathura/.gradle/caches/transforms-3/e4aae33194d923f3635289fe1951be71/transformed/foundation-layout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.foundation:foundation-layout:1.1.1] /Users/chathura/.gradle/caches/transforms-3/e4aae33194d923f3635289fe1951be71/transformed/foundation-layout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.23.1] /Users/chathura/.gradle/caches/transforms-3/849925f6386148c81603ff0f7f7d7877/transformed/accompanist-drawablepainter-0.23.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.23.1] /Users/chathura/.gradle/caches/transforms-3/849925f6386148c81603ff0f7f7d7877/transformed/accompanist-drawablepainter-0.23.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation-core:1.1.1] /Users/chathura/.gradle/caches/transforms-3/0f081711c4e9761116d903536d6737bf/transformed/animation-core-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation-core:1.1.1] /Users/chathura/.gradle/caches/transforms-3/0f081711c4e9761116d903536d6737bf/transformed/animation-core-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui:1.1.1] /Users/chathura/.gradle/caches/transforms-3/53ce9cddb68865d4220ccf46b35cd0fd/transformed/ui-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui:1.1.1] /Users/chathura/.gradle/caches/transforms-3/53ce9cddb68865d4220ccf46b35cd0fd/transformed/ui-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.0.1] /Users/chathura/.gradle/caches/transforms-3/183043c6dbdd1224d503706be75d78b5/transformed/ui-tooling-preview-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.0.1] /Users/chathura/.gradle/caches/transforms-3/183043c6dbdd1224d503706be75d78b5/transformed/ui-tooling-preview-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-text:1.1.1] /Users/chathura/.gradle/caches/transforms-3/0d7f5e84a2bfdca013199e070672206d/transformed/ui-text-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-text:1.1.1] /Users/chathura/.gradle/caches/transforms-3/0d7f5e84a2bfdca013199e070672206d/transformed/ui-text-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-graphics:1.1.1] /Users/chathura/.gradle/caches/transforms-3/38120fd3b01bb44aacef4d638858587a/transformed/ui-graphics-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-graphics:1.1.1] /Users/chathura/.gradle/caches/transforms-3/38120fd3b01bb44aacef4d638858587a/transformed/ui-graphics-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime-saveable:1.1.1] /Users/chathura/.gradle/caches/transforms-3/b6616777c1916625f3f909384b0d0505/transformed/runtime-saveable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime-saveable:1.1.1] /Users/chathura/.gradle/caches/transforms-3/b6616777c1916625f3f909384b0d0505/transformed/runtime-saveable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-unit:1.1.1] /Users/chathura/.gradle/caches/transforms-3/0b80b7cad4756a104254ea34cb075164/transformed/ui-unit-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-unit:1.1.1] /Users/chathura/.gradle/caches/transforms-3/0b80b7cad4756a104254ea34cb075164/transformed/ui-unit-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-geometry:1.1.1] /Users/chathura/.gradle/caches/transforms-3/6817d65fab8440cf52485d5cf991b33b/transformed/ui-geometry-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-geometry:1.1.1] /Users/chathura/.gradle/caches/transforms-3/6817d65fab8440cf52485d5cf991b33b/transformed/ui-geometry-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime:1.1.1] /Users/chathura/.gradle/caches/transforms-3/7a24fe12b7f4026a7d0d0f84e2e84a66/transformed/runtime-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime:1.1.1] /Users/chathura/.gradle/caches/transforms-3/7a24fe12b7f4026a7d0d0f84e2e84a66/transformed/runtime-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [io.coil-kt:coil:2.0.0-rc01] /Users/chathura/.gradle/caches/transforms-3/7de03650d7e6194660a30ba59d87b38c/transformed/coil-2.0.0-rc01/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil:2.0.0-rc01] /Users/chathura/.gradle/caches/transforms-3/7de03650d7e6194660a30ba59d87b38c/transformed/coil-2.0.0-rc01/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-base:2.0.0-rc01] /Users/chathura/.gradle/caches/transforms-3/f83e093812cd93e5d5bf7e4076d52bb7/transformed/coil-base-2.0.0-rc01/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-base:2.0.0-rc01] /Users/chathura/.gradle/caches/transforms-3/f83e093812cd93e5d5bf7e4076d52bb7/transformed/coil-base-2.0.0-rc01/AndroidManifest.xml:5:5-7:41
+MERGED from [com.airbnb.android:lottie:5.0.3] /Users/chathura/.gradle/caches/transforms-3/70f215b164b4c5c4b2d3a13575bcf9b2/transformed/lottie-5.0.3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.airbnb.android:lottie:5.0.3] /Users/chathura/.gradle/caches/transforms-3/70f215b164b4c5c4b2d3a13575bcf9b2/transformed/lottie-5.0.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.7.0] /Users/chathura/.gradle/caches/transforms-3/7a673aa9d0fe72ccc143a8d88848dc59/transformed/core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.7.0] /Users/chathura/.gradle/caches/transforms-3/7a673aa9d0fe72ccc143a8d88848dc59/transformed/core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03] /Users/chathura/.gradle/caches/transforms-3/de2af78d2c4c89651ad2da26ab200204/transformed/hilt-lifecycle-viewmodel-1.0.0-alpha03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03] /Users/chathura/.gradle/caches/transforms-3/de2af78d2c4c89651ad2da26ab200204/transformed/hilt-lifecycle-viewmodel-1.0.0-alpha03/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:hilt-android:2.38.1] /Users/chathura/.gradle/caches/transforms-3/9537d805667b716e0ee1986e45236782/transformed/hilt-android-2.38.1/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.38.1] /Users/chathura/.gradle/caches/transforms-3/9537d805667b716e0ee1986e45236782/transformed/hilt-android-2.38.1/AndroidManifest.xml:18:3-42
+MERGED from [androidx.compose.ui:ui-util:1.1.1] /Users/chathura/.gradle/caches/transforms-3/38dd0db3134eb67c803ee83bd53a2d4d/transformed/ui-util-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-util:1.1.1] /Users/chathura/.gradle/caches/transforms-3/38dd0db3134eb67c803ee83bd53a2d4d/transformed/ui-util-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/chathura/.gradle/caches/transforms-3/fdbce4e229e2e9011342e61cf8cfd5ba/transformed/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/chathura/.gradle/caches/transforms-3/fdbce4e229e2e9011342e61cf8cfd5ba/transformed/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/chathura/.gradle/caches/transforms-3/1fc8ef60a1fd0f5f0f689f0ee1342d61/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/chathura/.gradle/caches/transforms-3/1fc8ef60a1fd0f5f0f689f0ee1342d61/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.3.1] /Users/chathura/.gradle/caches/transforms-3/0758e9431343bcc5d3367012f1df57e1/transformed/activity-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.3.1] /Users/chathura/.gradle/caches/transforms-3/0758e9431343bcc5d3367012f1df57e1/transformed/activity-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/chathura/.gradle/caches/transforms-3/0a049a40487d8de8a4335a07d66ba42b/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/chathura/.gradle/caches/transforms-3/0a049a40487d8de8a4335a07d66ba42b/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /Users/chathura/.gradle/caches/transforms-3/41554d0c57b2f686fe45a7426899c761/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/chathura/.gradle/caches/transforms-3/41554d0c57b2f686fe45a7426899c761/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] /Users/chathura/.gradle/caches/transforms-3/dfc30d86e8d4b97caba0f8fa8c7addf5/transformed/lifecycle-viewmodel-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] /Users/chathura/.gradle/caches/transforms-3/dfc30d86e8d4b97caba0f8fa8c7addf5/transformed/lifecycle-viewmodel-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/chathura/.gradle/caches/transforms-3/dc6ec30a9424e80c0821b1c434c150c1/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/chathura/.gradle/caches/transforms-3/dc6ec30a9424e80c0821b1c434c150c1/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [io.github.aakira:napier-android:1.4.1] /Users/chathura/.gradle/caches/transforms-3/e0c0edfeea478154edb29117f21a54e8/transformed/napier-release/AndroidManifest.xml:7:5-9:41
+MERGED from [io.github.aakira:napier-android:1.4.1] /Users/chathura/.gradle/caches/transforms-3/e0c0edfeea478154edb29117f21a54e8/transformed/napier-release/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/chathura/.gradle/caches/transforms-3/b444d1fcf7192b602c7848b2207ef6ce/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/chathura/.gradle/caches/transforms-3/b444d1fcf7192b602c7848b2207ef6ce/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/chathura/.gradle/caches/transforms-3/171afcddc4f6cbe6d55b2447c1372cef/transformed/appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/chathura/.gradle/caches/transforms-3/171afcddc4f6cbe6d55b2447c1372cef/transformed/appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/chathura/.gradle/caches/transforms-3/c20c76cac4f1e3a246c2fccf96bb40c8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/chathura/.gradle/caches/transforms-3/c20c76cac4f1e3a246c2fccf96bb40c8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/chathura/.gradle/caches/transforms-3/53a153ad4bfd16e95cc2a86a53a843a9/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/chathura/.gradle/caches/transforms-3/53a153ad4bfd16e95cc2a86a53a843a9/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/chathura/.gradle/caches/transforms-3/cb5f8927b1941b1276a0136a4ef6c075/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/chathura/.gradle/caches/transforms-3/cb5f8927b1941b1276a0136a4ef6c075/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chathura/.gradle/caches/transforms-3/2d7e1563a878559871dbd3aec473497f/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chathura/.gradle/caches/transforms-3/2d7e1563a878559871dbd3aec473497f/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/chathura/.gradle/caches/transforms-3/6ba13cbfbc5c3a7483ca0639f6c3a401/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/chathura/.gradle/caches/transforms-3/6ba13cbfbc5c3a7483ca0639f6c3a401/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.7.0] /Users/chathura/.gradle/caches/transforms-3/16ea897b2a8351a573023874f0133b6a/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] /Users/chathura/.gradle/caches/transforms-3/16ea897b2a8351a573023874f0133b6a/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/chathura/.gradle/caches/transforms-3/7d5a5e78db729ee7e0b7a1361298b851/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/chathura/.gradle/caches/transforms-3/7d5a5e78db729ee7e0b7a1361298b851/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.1] /Users/chathura/.gradle/caches/transforms-3/5e0d0abf1cd86a1be086f43fb5c8dc60/transformed/lifecycle-runtime-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.1] /Users/chathura/.gradle/caches/transforms-3/5e0d0abf1cd86a1be086f43fb5c8dc60/transformed/lifecycle-runtime-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/chathura/.gradle/caches/transforms-3/264d9fd1d39e5030f9680ec3e3563241/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/chathura/.gradle/caches/transforms-3/264d9fd1d39e5030f9680ec3e3563241/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/chathura/.gradle/caches/transforms-3/d7b75257116a5831d6ce930e4adfc77d/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/chathura/.gradle/caches/transforms-3/d7b75257116a5831d6ce930e4adfc77d/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/chathura/.gradle/caches/transforms-3/ce74025c580d0a949f0100af6e5188f5/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/chathura/.gradle/caches/transforms-3/ce74025c580d0a949f0100af6e5188f5/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/chathura/.gradle/caches/transforms-3/b9fa12cacb9468846387b5ccd34a6148/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/chathura/.gradle/caches/transforms-3/b9fa12cacb9468846387b5ccd34a6148/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/chathura/.gradle/caches/transforms-3/f4d8245530b32a4b6047a18d81cc07b0/transformed/startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/chathura/.gradle/caches/transforms-3/f4d8245530b32a4b6047a18d81cc07b0/transformed/startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/chathura/.gradle/caches/transforms-3/c1f7feaaf0280b8032028dfd0ef58b2b/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/chathura/.gradle/caches/transforms-3/c1f7feaaf0280b8032028dfd0ef58b2b/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/chathura/.gradle/caches/transforms-3/e4269e393fed962f0321c923ed068789/transformed/exifinterface-1.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/chathura/.gradle/caches/transforms-3/e4269e393fed962f0321c923ed068789/transformed/exifinterface-1.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chathura/.gradle/caches/transforms-3/75abc9a9fac42ef6e488904a14c44881/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chathura/.gradle/caches/transforms-3/75abc9a9fac42ef6e488904a14c44881/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chathura/.gradle/caches/transforms-3/a70224f3b0b25a7dd34b417614a9379b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chathura/.gradle/caches/transforms-3/a70224f3b0b25a7dd34b417614a9379b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-lint-aar:2.38.1] /Users/chathura/.gradle/caches/transforms-3/26ce6a8ec5c1c739ecd3bb5e8251dd52/transformed/dagger-lint-aar-2.38.1/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.38.1] /Users/chathura/.gradle/caches/transforms-3/26ce6a8ec5c1c739ecd3bb5e8251dd52/transformed/dagger-lint-aar-2.38.1/AndroidManifest.xml:18:3-42
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/chathura/.gradle/caches/transforms-3/ab9e11efa4fd7a4ed4b44f8e35a957fd/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/chathura/.gradle/caches/transforms-3/ab9e11efa4fd7a4ed4b44f8e35a957fd/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+		ADDED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chathura/Documents/TryOuts/Android/TheMovieDb-Jetpack-Compose/app/src/main/AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/chathura/.gradle/caches/transforms-3/f4d8245530b32a4b6047a18d81cc07b0/transformed/startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/chathura/.gradle/caches/transforms-3/f4d8245530b32a4b6047a18d81cc07b0/transformed/startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:27:13-67
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:32:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:36:9-45:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:39:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:40:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:41:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:38:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:37:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:42:13-44:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:43:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/chathura/.gradle/caches/transforms-3/0ec81cfb08847855618869d24d7f865e/transformed/profileinstaller-1.1.0/AndroidManifest.xml:43:25-88
