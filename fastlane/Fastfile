@@ -63,7 +63,7 @@ platform :android do
       desc "Submit a new Google Test Build to Firebase App Distribution"
       lane :firebase_release do |options|
          gradle(task: "clean")
-         gradle(task: "assemble", flavor: "Google", build_type: "Debug")
+         gradle(task: "assemble", build_type: "Debug")
 
           # find apk path
          output_path = "./app/build/outputs/apk/google/debug/"
